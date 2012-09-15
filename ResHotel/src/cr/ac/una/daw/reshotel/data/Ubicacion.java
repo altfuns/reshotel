@@ -2,6 +2,7 @@ package cr.ac.una.daw.reshotel.data;
 
 import java.util.Map;
 
+import cr.ac.una.daw.reshotel.data.Constantes.BaseColumns;
 import cr.ac.una.daw.reshotel.data.Constantes.UbicacionColumns;
 
 public class Ubicacion extends TableGateway<Ubicacion> {
@@ -42,7 +43,9 @@ public class Ubicacion extends TableGateway<Ubicacion> {
 
 	@Override
 	public String getInsertStatement() {
-		return "INSERT INTO " + getTableName() + " VALUES(?,?)";
+		return "INSERT INTO " + getTableName() + "(" + UbicacionColumns.PAIS
+				+ ", " + UbicacionColumns.CIUDAD + "," + UbicacionColumns.ID
+				+ ")" + " VALUES(?,?)";
 	}
 
 	@Override
@@ -59,7 +62,7 @@ public class Ubicacion extends TableGateway<Ubicacion> {
 				(String) values.get(UbicacionColumns.CIUDAD));
 		return result;
 	}
-	
+
 	@Override
 	public void load() {
 		// TODO Auto-generated method stub
