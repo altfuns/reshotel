@@ -13,16 +13,6 @@ public abstract class TableGateway<T> {
 
 	protected JdbcTemplate jdbcTemplate;
 
-	protected String tableName;
-
-	protected String findAllQuery;
-
-	protected String insertStatement;
-
-	protected String updateStatement;
-
-	protected String deleteStatement;
-
 	protected int id;
 
 	public JdbcTemplate getJdbcTemplate() {
@@ -32,6 +22,20 @@ public abstract class TableGateway<T> {
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public abstract String getTableName();
+
+	public abstract String getInsertStatement();
+
+	public abstract String getUpdateStatement();
 
 	public abstract T fromMap(Map<String, Object> values);
 
@@ -43,15 +47,15 @@ public abstract class TableGateway<T> {
 		if (id == -1) {
 			Random generator = new Random();
 			id = Math.abs(generator.nextInt());
-			jdbcTemplate.update(insertStatement, getUpdateArgs());
+			jdbcTemplate.update(getInsertStatement(), getUpdateArgs());
 		} else {
-			jdbcTemplate.update(updateStatement, getUpdateArgs());
+			jdbcTemplate.update(getUpdateStatement(), getUpdateArgs());
 		}
 		return id;
 	}
 
 	public boolean delete() {
-		String deleteStatement = "DELETE FROM " + tableName + " WHERE "
+		String deleteStatement = "DELETE FROM " + getTableName() + " WHERE "
 				+ BaseColumns.ID + " = ?";
 		int rows = jdbcTemplate.update(deleteStatement, id);
 		return rows == 1;
@@ -59,8 +63,10 @@ public abstract class TableGateway<T> {
 
 	public List<T> findAll() {
 		List<T> result = new ArrayList<T>();
+		String findAllQuery = "SELECT * FROM " + getTableName();
 		List<Map<String, Object>> items = jdbcTemplate
 				.queryForList(findAllQuery);
+
 		for (Map<String, Object> item : items) {
 			result.add(fromMap(item));
 		}
@@ -69,8 +75,10 @@ public abstract class TableGateway<T> {
 
 	public T find() {
 		T result = null;
+		String findQuery = "SELECT * FROM " + getTableName() + " WHERE "
+				+ BaseColumns.ID + " = ?";
 		List<Map<String, Object>> items = jdbcTemplate
-				.queryForList(findAllQuery);
+				.queryForList(findQuery);
 
 		if (items != null && items.size() > 0) {
 			result = fromMap(items.get(0));
