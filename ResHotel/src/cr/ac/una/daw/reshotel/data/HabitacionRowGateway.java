@@ -2,21 +2,21 @@ package cr.ac.una.daw.reshotel.data;
 
 import java.util.List;
 
-public class Habitacion {
+public class HabitacionRowGateway {
 
 	private int ocupacionMaxima;
 	private int numero;
 	// TODO: revisar que es mobiliario
 	private String mobiliario;
 	private float costo;
-	private List<Reservacion> reservaciones;
+	private List<ReservacionRowGateway> reservaciones;
 
-	public Habitacion() {
+	public HabitacionRowGateway() {
 		super();
 	}
 
-	public Habitacion(int ocupacionMaxima, int numero, String mobiliario,
-			float costo, List<Reservacion> reservaciones) {
+	public HabitacionRowGateway(int ocupacionMaxima, int numero, String mobiliario,
+			float costo, List<ReservacionRowGateway> reservaciones) {
 		super();
 		this.ocupacionMaxima = ocupacionMaxima;
 		this.numero = numero;
@@ -57,11 +57,11 @@ public class Habitacion {
 		this.costo = costo;
 	}
 
-	public List<Reservacion> getReservaciones() {
+	public List<ReservacionRowGateway> getReservaciones() {
 		return reservaciones;
 	}
 
-	public void setReservaciones(List<Reservacion> reservaciones) {
+	public void setReservaciones(List<ReservacionRowGateway> reservaciones) {
 		this.reservaciones = reservaciones;
 	}
 

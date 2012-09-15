@@ -2,7 +2,7 @@ package cr.ac.una.daw.reshotel.data;
 
 import java.util.Date;
 
-public class Reservacion {
+public class ReservacionRowGateway {
 
 	private Date fechaEntrada;
 	private Date fechaSalida;
@@ -10,11 +10,11 @@ public class Reservacion {
 	private float monto;
 	private String identificacionCliente;
 
-	public Reservacion() {
+	public ReservacionRowGateway() {
 		super();
 	}
 
-	public Reservacion(Date fechaEntrada, Date fechaSalida, int ocupacion,
+	public ReservacionRowGateway(Date fechaEntrada, Date fechaSalida, int ocupacion,
 			float monto, String identificacionCliente) {
 		super();
 		this.fechaEntrada = fechaEntrada;

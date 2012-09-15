@@ -1,19 +1,19 @@
 package cr.ac.una.daw.reshotel.data;
 
-public class Cliente {
+public class ClienteRowGateway {
 
 	private String nombre;
 	private String identificacion;
 	private String telefono;
 	private int numeroTarjetaCredito;
-	private Ubicacion residencia;
+	private UbicacionRowGateway residencia;
 
-	public Cliente() {
+	public ClienteRowGateway() {
 		super();
 	}
 
-	public Cliente(String nombre, String identificacion, String telefono,
-			int numeroTarjetaCredito, Ubicacion residencia) {
+	public ClienteRowGateway(String nombre, String identificacion, String telefono,
+			int numeroTarjetaCredito, UbicacionRowGateway residencia) {
 		super();
 		this.nombre = nombre;
 		this.identificacion = identificacion;
@@ -54,11 +54,11 @@ public class Cliente {
 		this.numeroTarjetaCredito = numeroTarjetaCredito;
 	}
 
-	public Ubicacion getResidencia() {
+	public UbicacionRowGateway getResidencia() {
 		return residencia;
 	}
 
-	public void setResidencia(Ubicacion residencia) {
+	public void setResidencia(UbicacionRowGateway residencia) {
 		this.residencia = residencia;
 	}
 

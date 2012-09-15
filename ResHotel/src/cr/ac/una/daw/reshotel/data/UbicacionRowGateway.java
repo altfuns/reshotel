@@ -2,20 +2,20 @@ package cr.ac.una.daw.reshotel.data;
 
 import java.util.Map;
 
-import cr.ac.una.daw.reshotel.data.Constantes.BaseColumns;
 import cr.ac.una.daw.reshotel.data.Constantes.UbicacionColumns;
 
-public class Ubicacion extends TableGateway<Ubicacion> {
+public class UbicacionRowGateway extends RowGateway<UbicacionRowGateway> {
 
 	private String pais;
 	private String ciudad;
 
-	public Ubicacion() {
+	public UbicacionRowGateway() {
 		super();
 	}
 
-	public Ubicacion(String pais, String ciudad) {
+	public UbicacionRowGateway(int id, String pais, String ciudad) {
 		super();
+		this.id = id;
 		this.pais = pais;
 		this.ciudad = ciudad;
 	}
@@ -56,17 +56,11 @@ public class Ubicacion extends TableGateway<Ubicacion> {
 	}
 
 	@Override
-	public Ubicacion fromMap(Map<String, Object> values) {
-		Ubicacion result = new Ubicacion(
+	public UbicacionRowGateway fromMap(Map<String, Object> values) {
+		UbicacionRowGateway result = new UbicacionRowGateway((Integer) values.get(UbicacionColumns.ID),
 				(String) values.get(UbicacionColumns.PAIS),
 				(String) values.get(UbicacionColumns.CIUDAD));
 		return result;
-	}
-
-	@Override
-	public void load() {
-		// TODO Auto-generated method stub
-
 	}
 
 	@Override

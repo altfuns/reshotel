@@ -1,18 +1,18 @@
 package cr.ac.una.daw.reshotel.data;
 
-public class Hotel {
+public class HotelRowGateway {
 
-	private Ubicacion ubicacion;
+	private UbicacionRowGateway ubicacion;
 	private String telefono;
 	private String email;
 	private int clase;
 	private String nombrePersonaEncargada;
 
-	public Hotel() {
+	public HotelRowGateway() {
 		super();
 	}
 
-	public Hotel(Ubicacion ubicacion, String telefono, String email, int clase,
+	public HotelRowGateway(UbicacionRowGateway ubicacion, String telefono, String email, int clase,
 			String nombrePersonaEncargada) {
 		super();
 		this.ubicacion = ubicacion;
@@ -22,11 +22,11 @@ public class Hotel {
 		this.nombrePersonaEncargada = nombrePersonaEncargada;
 	}
 
-	public Ubicacion getUbicacion() {
+	public UbicacionRowGateway getUbicacion() {
 		return ubicacion;
 	}
 
-	public void setUbicacion(Ubicacion ubicacion) {
+	public void setUbicacion(UbicacionRowGateway ubicacion) {
 		this.ubicacion = ubicacion;
 	}
 
