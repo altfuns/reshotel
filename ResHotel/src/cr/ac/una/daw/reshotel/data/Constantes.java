@@ -8,16 +8,16 @@ public class Constantes {
 	public static final String RESERVACION_TABLE_NAME = "reservacion";
 	public static final String CLIENTE_TABLE_NAME = "cliente";
 
-	public class BaseColumns {
+	public static interface BaseColumns {
 		public String ID = "id";
 	}
 
-	public class UbicacionColumns extends BaseColumns {
+	public static interface UbicacionColumns extends BaseColumns {
 		public String PAIS = "pais";
 		public String CIUDAD = "ciudad";
 	}
 
-	public class HotelColumns extends BaseColumns {
+	public static interface HotelColumns extends BaseColumns {
 		public String UBICACION = "ubicacion";
 		public String TELEFONO = "telefono";
 		public String EMAIL = "email";
@@ -25,14 +25,14 @@ public class Constantes {
 		public String NOMBRE_PERSONA_ENCARGADA = "nombre_persona_encargada";
 	}
 
-	public class HabitacionColumns extends BaseColumns {
+	public static interface HabitacionColumns extends BaseColumns {
 		public String OCUPACION_MAXIMA = "ocupacion_maxima";
 		public String NUMERO = "numero";
 		public String MOBILIARIO = "mobiliario";
 		public String COSTO = "costo";
 	}
 
-	public class ReservacionColumns extends BaseColumns {
+	public static interface ReservacionColumns extends BaseColumns {
 		public String FECHA_ENTRADA = "fecha_entrada";
 		public String FECHA_SALIDA = "fecha_salida";
 		public String OCUPACION = "ocupacion";
@@ -40,7 +40,7 @@ public class Constantes {
 		public String IDENTIFICACION_CLIENTE = "identificacion_cliente";
 	}
 
-	public class ClienteColumns extends BaseColumns {
+	public static interface ClienteColumns extends BaseColumns {
 		public String NOMBRE = "nombre";
 		public String IDENTIFICACION = "identificacion";
 		public String TELEFONO = "telefono";
