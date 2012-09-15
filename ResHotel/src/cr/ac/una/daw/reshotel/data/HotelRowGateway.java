@@ -1,7 +1,12 @@
 package cr.ac.una.daw.reshotel.data;
 
-public class HotelRowGateway {
+import java.util.Map;
 
+import cr.ac.una.daw.reshotel.data.Constantes.HotelColumns;
+
+public class HotelRowGateway extends RowGateway<HotelRowGateway> {
+
+	private int ubicacionId;
 	private UbicacionRowGateway ubicacion;
 	private String telefono;
 	private String email;
@@ -12,14 +17,22 @@ public class HotelRowGateway {
 		super();
 	}
 
-	public HotelRowGateway(UbicacionRowGateway ubicacion, String telefono, String email, int clase,
-			String nombrePersonaEncargada) {
+	public HotelRowGateway(UbicacionRowGateway ubicacion, String telefono,
+			String email, int clase, String nombrePersonaEncargada) {
 		super();
 		this.ubicacion = ubicacion;
 		this.telefono = telefono;
 		this.email = email;
 		this.clase = clase;
 		this.nombrePersonaEncargada = nombrePersonaEncargada;
+	}
+
+	public int getUbicacionId() {
+		return ubicacionId;
+	}
+
+	public void setUbicacionId(int ubicacionId) {
+		this.ubicacionId = ubicacionId;
 	}
 
 	public UbicacionRowGateway getUbicacion() {
@@ -60,6 +73,46 @@ public class HotelRowGateway {
 
 	public void setNombrePersonaEncargada(String nombrePersonaEncargada) {
 		this.nombrePersonaEncargada = nombrePersonaEncargada;
+	}
+
+	@Override
+	public String getTableName() {
+		return Constantes.HOTEL_TABLE_NAME;
+	}
+
+	@Override
+	public String getInsertStatement() {
+		return "INSERT INTO " + getTableName() + "(" + HotelColumns.TELEFONO
+				+ ", " + HotelColumns.EMAIL + "," + HotelColumns.CLASE + ","
+				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + "," + HotelColumns.ID
+				+ ")" + " VALUES(?,?,?,?,?)";
+	}
+
+	@Override
+	public String getUpdateStatement() {
+		return "UPDATE	 " + getTableName() + "SET " + HotelColumns.TELEFONO
+				+ " = ?" + ", " + HotelColumns.EMAIL + " = ?" + ", "
+				+ HotelColumns.CLASE + " = ?" + ", "
+				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + " = ?" + " WHERE "
+				+ HotelColumns.ID + " = ?";
+	}
+
+	@Override
+	public HotelRowGateway fromMap(Map<String, Object> values) {
+		HotelRowGateway result = new HotelRowGateway();
+		result.setId((Integer) values.get(HotelColumns.ID));
+		result.setTelefono((String) values.get(HotelColumns.TELEFONO));
+		result.setEmail((String) values.get(HotelColumns.EMAIL));
+		result.setClase((Integer) values.get(HotelColumns.CLASE));
+		result.setNombrePersonaEncargada((String) values
+				.get(HotelColumns.NOMBRE_PERSONA_ENCARGADA));
+		return result;
+	}
+
+	@Override
+	public Object[] getUpdateArgs() {
+		return new Object[] { getTelefono(), getEmail(), getClase(),
+				getNombrePersonaEncargada(), getId() };
 	}
 
 }

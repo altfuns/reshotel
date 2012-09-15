@@ -33,6 +33,7 @@ public class Constantes {
 	}
 
 	public static interface ReservacionColumns extends BaseColumns {
+		public String HABITACION = "habitacion";
 		public String FECHA_ENTRADA = "fecha_entrada";
 		public String FECHA_SALIDA = "fecha_salida";
 		public String OCUPACION = "ocupacion";

@@ -1,20 +1,27 @@
 package cr.ac.una.daw.reshotel.data;
 
-public class ClienteRowGateway {
+import java.util.Map;
+
+import cr.ac.una.daw.reshotel.data.Constantes.ClienteColumns;
+
+public class ClienteRowGateway extends RowGateway<ClienteRowGateway> {
 
 	private String nombre;
 	private String identificacion;
 	private String telefono;
 	private int numeroTarjetaCredito;
+	private int residenciaId;
 	private UbicacionRowGateway residencia;
 
 	public ClienteRowGateway() {
 		super();
 	}
 
-	public ClienteRowGateway(String nombre, String identificacion, String telefono,
-			int numeroTarjetaCredito, UbicacionRowGateway residencia) {
+	public ClienteRowGateway(int id, String nombre, String identificacion,
+			String telefono, int numeroTarjetaCredito,
+			UbicacionRowGateway residencia) {
 		super();
+		this.id = id;
 		this.nombre = nombre;
 		this.identificacion = identificacion;
 		this.telefono = telefono;
@@ -54,12 +61,66 @@ public class ClienteRowGateway {
 		this.numeroTarjetaCredito = numeroTarjetaCredito;
 	}
 
+	public int getResidenciaId() {
+		return residenciaId;
+	}
+
+	public void setResidenciaId(int residenciaId) {
+		this.residenciaId = residenciaId;
+	}
+
 	public UbicacionRowGateway getResidencia() {
 		return residencia;
 	}
 
 	public void setResidencia(UbicacionRowGateway residencia) {
 		this.residencia = residencia;
+	}
+
+	@Override
+	public String getTableName() {
+		return Constantes.CLIENTE_TABLE_NAME;
+	}
+
+	@Override
+	public String getInsertStatement() {
+		return "INSERT INTO " + getTableName() + "("
+				+ ClienteColumns.IDENTIFICACION + ", " + ClienteColumns.NOMBRE
+				+ "," + ", " + ClienteColumns.TELEFONO + "," + ", "
+				+ ClienteColumns.NUMERO_TARJETA_CREDITO + "," + ", "
+				+ ClienteColumns.RESIDENCIA + "," + ClienteColumns.ID + ")"
+				+ " VALUES(?,?,?,?,?,?)";
+	}
+
+	@Override
+	public String getUpdateStatement() {
+		return "UPDATE " + getTableName() + "SET "
+				+ ClienteColumns.IDENTIFICACION + " = ?" + ", "
+				+ ClienteColumns.NOMBRE + " = ?" + ", "
+				+ ClienteColumns.TELEFONO + " = ?" + ", "
+				+ ClienteColumns.NUMERO_TARJETA_CREDITO + " = ?" + ", "
+				+ ClienteColumns.RESIDENCIA + " = ?" + " WHERE "
+				+ ClienteColumns.ID + " = ?";
+	}
+
+	@Override
+	public ClienteRowGateway fromMap(Map<String, Object> values) {
+		ClienteRowGateway result = new ClienteRowGateway();
+		result.setId((Integer) values.get(ClienteColumns.ID));
+		result.setNombre((String) values.get(ClienteColumns.NOMBRE));
+		result.setIdentificacion((String) values
+				.get(ClienteColumns.IDENTIFICACION));
+		result.setNumeroTarjetaCredito((Integer) values
+				.get(ClienteColumns.NUMERO_TARJETA_CREDITO));
+		result.setResidenciaId((Integer) values.get(ClienteColumns.RESIDENCIA));
+
+		return result;
+	}
+
+	@Override
+	public Object[] getUpdateArgs() {
+		return new Object[] { getIdentificacion(), getNombre(), getTelefono(),
+				getNumeroTarjetaCredito(), getResidenciaId(), getId() };
 	}
 
 }

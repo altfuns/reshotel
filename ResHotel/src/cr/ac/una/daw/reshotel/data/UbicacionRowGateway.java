@@ -45,7 +45,7 @@ public class UbicacionRowGateway extends RowGateway<UbicacionRowGateway> {
 	public String getInsertStatement() {
 		return "INSERT INTO " + getTableName() + "(" + UbicacionColumns.PAIS
 				+ ", " + UbicacionColumns.CIUDAD + "," + UbicacionColumns.ID
-				+ ")" + " VALUES(?,?)";
+				+ ")" + " VALUES(?,?,?)";
 	}
 
 	@Override

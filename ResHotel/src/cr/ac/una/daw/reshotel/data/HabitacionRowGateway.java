@@ -1,8 +1,11 @@
 package cr.ac.una.daw.reshotel.data;
 
 import java.util.List;
+import java.util.Map;
 
-public class HabitacionRowGateway {
+import cr.ac.una.daw.reshotel.data.Constantes.HabitacionColumns;
+
+public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 
 	private int ocupacionMaxima;
 	private int numero;
@@ -15,8 +18,9 @@ public class HabitacionRowGateway {
 		super();
 	}
 
-	public HabitacionRowGateway(int ocupacionMaxima, int numero, String mobiliario,
-			float costo, List<ReservacionRowGateway> reservaciones) {
+	public HabitacionRowGateway(int ocupacionMaxima, int numero,
+			String mobiliario, float costo,
+			List<ReservacionRowGateway> reservaciones) {
 		super();
 		this.ocupacionMaxima = ocupacionMaxima;
 		this.numero = numero;
@@ -63,6 +67,48 @@ public class HabitacionRowGateway {
 
 	public void setReservaciones(List<ReservacionRowGateway> reservaciones) {
 		this.reservaciones = reservaciones;
+	}
+	
+	@Override
+	public String getTableName() {
+		return Constantes.HABITACION_TABLE_NAME;
+	}
+
+	@Override
+	public String getInsertStatement() {
+		return "INSERT INTO " + getTableName() + "("
+				+ HabitacionColumns.OCUPACION_MAXIMA + ", "
+				+ HabitacionColumns.NUMERO + "," + HabitacionColumns.MOBILIARIO
+				+ "," + HabitacionColumns.COSTO + "," + HabitacionColumns.ID
+				+ ")" + " VALUES(?,?,?,?,?)";
+	}
+
+	@Override
+	public String getUpdateStatement() {
+		return "UPDATE	 " + getTableName() + "SET "
+				+ HabitacionColumns.OCUPACION_MAXIMA + " = ?" + ", "
+				+ HabitacionColumns.NUMERO + " = ?" + ", "
+				+ HabitacionColumns.MOBILIARIO + " = ?" + ", "
+				+ HabitacionColumns.COSTO + " = ?" + " WHERE "
+				+ HabitacionColumns.ID + " = ?";
+	}
+
+	@Override
+	public HabitacionRowGateway fromMap(Map<String, Object> values) {
+		HabitacionRowGateway result = new HabitacionRowGateway();
+		result.setId((Integer) values.get(HabitacionColumns.ID));
+		result.setOcupacionMaxima((Integer) values
+				.get(HabitacionColumns.OCUPACION_MAXIMA));
+		result.setNumero((Integer) values.get(HabitacionColumns.NUMERO));
+		result.setMobiliario((String) values.get(HabitacionColumns.MOBILIARIO));
+		result.setCosto((Float) values.get(HabitacionColumns.COSTO));
+		return result;
+	}
+
+	@Override
+	public Object[] getUpdateArgs() {
+		return new Object[] { getOcupacionMaxima(), getNumero(),
+				getMobiliario(), getCosto(), getId() };
 	}
 
 }
