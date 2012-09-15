@@ -1,6 +1,6 @@
 package cr.ac.una.daw.reshotel.display;
 
-import cr.ac.una.daw.reshotel.data.Ubicacion;
+import cr.ac.una.daw.reshotel.data.UbicacionGateway;
 
 public class ClienteDTO {
 
@@ -8,5 +8,5 @@ public class ClienteDTO {
 	public String identificacion;
 	public String telefono;
 	public int numeroTarjetaCredito;
-	public Ubicacion residencia;
+	public UbicacionGateway residencia;
 }
