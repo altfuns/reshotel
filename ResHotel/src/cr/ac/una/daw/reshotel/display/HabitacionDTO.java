@@ -8,7 +8,7 @@ public class HabitacionDTO {
 
 	public int ocupacionMaxima;
 	public int numero;
-	//TODO: revisar que es mobiliario
+	// TODO: revisar que es mobiliario
 	public String mobiliario;
 	public float costo;
 	public List<ReservacionRowGateway> reservaciones;
