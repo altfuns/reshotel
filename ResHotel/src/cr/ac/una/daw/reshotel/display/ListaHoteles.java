@@ -7,6 +7,7 @@ import java.util.List;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+import cr.ac.una.daw.reshotel.assembler.HotelAssembler;
 import cr.ac.una.daw.reshotel.data.HotelRowGateway;
 import cr.ac.una.daw.reshotel.domain.HotelModule;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;

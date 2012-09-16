@@ -1,4 +1,4 @@
-package cr.ac.una.daw.reshotel.display;
+package cr.ac.una.daw.reshotel.assembler;
 
 import cr.ac.una.daw.reshotel.data.UbicacionRowGateway;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;

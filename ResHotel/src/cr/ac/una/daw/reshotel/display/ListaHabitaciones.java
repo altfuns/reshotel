@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cr.ac.una.daw.reshotel.assembler.HabitacionAssembler;
 import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
