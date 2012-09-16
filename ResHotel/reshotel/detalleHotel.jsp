@@ -8,7 +8,7 @@
 
 <jsp:include page="header.jsp"></jsp:include>
 
-<h2>Hotel</h2>
+<div class="encabezadoPagina">Detalle de hotel</div>
 <%
 	HotelDTO hotel = (HotelDTO) request
 			.getAttribute("hotel");

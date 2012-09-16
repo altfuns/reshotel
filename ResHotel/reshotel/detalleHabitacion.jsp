@@ -8,7 +8,7 @@
 
 <jsp:include page="header.jsp"></jsp:include>
 
-<h2>Habitaci&oacute;n</h2>
+<div class="encabezadoPagina">Detalle de habitaci&oacute;n</div>
 <%
 	HabitacionDTO habitacion = (HabitacionDTO) request
 			.getAttribute("habitacion");

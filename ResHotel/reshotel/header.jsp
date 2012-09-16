@@ -1,5 +1,5 @@
 <style>
-html {
+body {
 	font-family: sans-serif;
 	margin: 30px 0 0 0;
 }
@@ -24,6 +24,18 @@ html {
 
 .header a:hover {
 	color: silver;
+}
+
+.encabezadoPagina {
+	background: #F2F2F2;
+	width: 100%;
+	height: 50px;
+	padding: 5px 10px;
+	line-height: 50px;
+	color: #AAA;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 0 0px 10px black;
 }
 </style>
 <div class="header">

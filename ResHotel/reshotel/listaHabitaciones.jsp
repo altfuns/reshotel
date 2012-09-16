@@ -7,7 +7,7 @@
 
 <jsp:include page="header.jsp"></jsp:include>
 
-<h2>Listado de habitaciones</h2>
+<div class="encabezadoPagina">Listado de habitaciones</div>
 <%
 	List<HabitacionDTO> objs = (List<HabitacionDTO>) request
 			.getAttribute("habitaciones");
