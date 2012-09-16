@@ -16,18 +16,14 @@
     </listener-class>
  </listener>
 
-<!-- Servlets ---------------------------------------------------------------------------------- -->
- 
  <servlet>
-   <servlet-name>ListaUbicaciones</servlet-name>
-   <servlet-class>display.ListaUbicaciones</servlet-class>
+   <servlet-name>ListaHoteles</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.ListaHoteles</servlet-class>
  </servlet>
- 
-<!-- Mappings ---------------------------------------------------------------------------------- -->
- 
+
  <servlet-mapping>
-   <servlet-name>ListaUbicaciones</servlet-name>
-   <url-pattern>/reshotel/ListaUbicaciones</url-pattern>
+   <servlet-name>ListaHoteles</servlet-name>
+   <url-pattern>/reshotel/listaHoteles</url-pattern>
  </servlet-mapping>
 
 </web-app>

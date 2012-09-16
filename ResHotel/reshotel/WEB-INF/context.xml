@@ -7,19 +7,12 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-<!-- Beans Modules ---------------------------------------------------------------------------------- -->
-
-	<bean id="UbicacionModule" class="domain.UbicacionModule">
-		<property name="gateway" ref="hotelGateway" />
-	</bean>
-
-<!-- Beans Gateways ---------------------------------------------------------------------------------- -->
-
-	<bean id="hotelGateway" class="data.UbicacionGateway">
+	<bean id="hotelRowGateway" class="cr.ac.una.daw.reshotel.data.HotelRowGateway">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
-
-<!-- Bean dataSourse ---------------------------------------------------------------------------------- -->
+	<bean id="hotelModule" class="cr.ac.una.daw.reshotel.domain.HotelModule">
+		<property name="gateway" ref="hotelRowGateway" />
+	</bean>
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
