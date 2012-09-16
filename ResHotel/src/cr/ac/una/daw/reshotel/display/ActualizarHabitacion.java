@@ -6,11 +6,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
 public class ActualizarHabitacion extends PageController {
+
+	private static final long serialVersionUID = 7900939974504489200L;
+
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HabitacionModule module = (HabitacionModule) context

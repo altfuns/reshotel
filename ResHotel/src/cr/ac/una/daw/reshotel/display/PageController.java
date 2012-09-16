@@ -8,6 +8,10 @@ import org.springframework.web.context.*;
 import org.springframework.web.context.support.*;
 
 public class PageController extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2581877634900440920L;
 	protected WebApplicationContext context;
 
 	public void init(ServletConfig config) throws ServletException {

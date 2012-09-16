@@ -1,17 +1,21 @@
 package cr.ac.una.daw.reshotel.display;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.IOException;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 
 
 public class EliminarHabitacion extends PageController {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HabitacionModule module = (HabitacionModule) context
