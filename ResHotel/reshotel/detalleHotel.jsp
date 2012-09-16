@@ -40,7 +40,7 @@
 
 		<tr>
 			<td></td>
-			<td><input type="submit" value="Actualizar" /></td>
+			<td><input class="btn" type="submit" value="Guardar cambios" /></td>
 		</tr>
 	</table>
 </form>

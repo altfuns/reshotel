@@ -13,33 +13,38 @@
 			.getAttribute("habitaciones");
 %>
 <table>
-	<tr>
-		<th>Ocupaci&oacute;n M&aacute;xima</th>
-		<th>N&uacute;mero</th>
-		<th>Mobiliario</th>
-		<th>Costo</th>
-	</tr>
-	<%
-		for (HabitacionDTO obj : objs) {
-	%>
-	<tr>
-		<td><%=obj.ocupacionMaxima%></td>
-		<td><%=obj.numero%></td>
-		<td><%=obj.mobiliario%></td>
-		<td><%=obj.costo%></td>
-		<td><a href='/reshotel/detalleHabitacion?id=<%=obj.id%>'> <input
-				type="submit" value="Detalle" /></a> <a
-			href='/reshotel/eliminarHabitacion?id=<%=obj.id%>'> <input
-				type="submit" value="Eliminar" /></a></td>
-	</tr>
-	<%
-		}
-	%>
-</table>
-<table>
-	<tr>
-		<td><a href='/reshotel/agregarHabitacion'> <input
-				type="submit" name="action" value="Agregar" /></a></td>
-	</tr>
+	<thead>
+		<tr>
+			<th>Ocupaci&oacute;n M&aacute;xima</th>
+			<th>N&uacute;mero</th>
+			<th>Mobiliario</th>
+			<th>Costo</th>
+			<th>Acciones</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%
+			for (HabitacionDTO obj : objs) {
+		%>
+		<tr>
+			<td><%=obj.ocupacionMaxima%></td>
+			<td><%=obj.numero%></td>
+			<td><%=obj.mobiliario%></td>
+			<td><%=obj.costo%></td>
+			<td><a href='/reshotel/detalleHabitacion?id=<%=obj.id%>'> <input class="btn" 
+					type="submit" value="Detalle" /></a> <a
+				href='/reshotel/eliminarHabitacion?id=<%=obj.id%>'> <input class="btn" 
+					type="submit" value="Eliminar" /></a></td>
+		</tr>
+		<%
+			}
+		%>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td><a href='/reshotel/agregarHabitacion'> <input class="btn" 
+					type="submit" name="action" value="Agregar" /></a></td>
+		</tr>
+	</tfoot>
 </table>
 </html>

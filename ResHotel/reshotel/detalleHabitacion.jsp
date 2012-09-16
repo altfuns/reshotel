@@ -17,31 +17,34 @@
 	action="/reshotel/actualizarHabitacion" method="get">
 	<input type="hidden" name="id" value="<%=habitacion.id%>" />
 	<table>
-		<tr>
-			<td>Ocupaci&oacute;n M&aacute;xima:</td>
-			<td><input type="text" name="ocupacionMaxima"
-				value="<%=habitacion.ocupacionMaxima%>" /></td>
-		</tr>
-		<tr>
-			<td>N&uacute;mero</td>
-			<td><input type="text" name="numero"
-				value="<%=habitacion.numero%>" /></td>
-		</tr>
-		<tr>
-			<td>Mobiliario</td>
-			<td><input type="text" name="mobiliario"
-				value="<%=habitacion.mobiliario%>" /></td>
-		</tr>
-		<tr>
-			<td>Costo:</td>
-			<td><input type="text" name="costo"
-				value="<%=habitacion.costo%>" /></td>
-		</tr>
-
-		<tr>
-			<td></td>
-			<td><input type="submit" value="Actualizar" /></td>
-		</tr>
+		<tbody>
+			<tr>
+				<th>Ocupaci&oacute;n M&aacute;xima:</th>
+				<td><input type="text" name="ocupacionMaxima"
+					value="<%=habitacion.ocupacionMaxima%>" /></td>
+			</tr>
+			<tr>
+				<th>N&uacute;mero</th>
+				<td><input type="text" name="numero"
+					value="<%=habitacion.numero%>" /></td>
+			</tr>
+			<tr>
+				<th>Mobiliario</th>
+				<td><input type="text" name="mobiliario"
+					value="<%=habitacion.mobiliario%>" /></td>
+			</tr>
+			<tr>
+				<th>Costo:</th>
+				<td><input type="text" name="costo"
+					value="<%=habitacion.costo%>" /></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>			
+				<td><input class="btn" type="submit" value="Guardar cambios" /></td>
+				<td></td>
+			</tr>
+		</tfoot>
 	</table>
 </form>
 </html>
