@@ -39,7 +39,7 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<td><input class="btn" type="submit" value="Guardar cambios" /></td>
+				<td><input class="btn btn-success" type="submit" value="Guardar cambios" /></td>
 				<td></td>
 			</tr>
 		</tfoot>

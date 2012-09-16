@@ -33,7 +33,7 @@
 			<td><%=obj.costo%></td>
 			<td><a href='/reshotel/detalleHabitacion?id=<%=obj.id%>'> <input class="btn" 
 					type="submit" value="Detalle" /></a> <a
-				href='/reshotel/eliminarHabitacion?id=<%=obj.id%>'> <input class="btn" 
+				href='/reshotel/eliminarHabitacion?id=<%=obj.id%>'> <input class="btn btn-danger" 
 					type="submit" value="Eliminar" /></a></td>
 		</tr>
 		<%
@@ -42,7 +42,7 @@
 	</tbody>
 	<tfoot>
 		<tr>
-			<td><a href='/reshotel/agregarHabitacion'> <input class="btn" 
+			<td><a href='/reshotel/agregarHabitacion'> <input class="btn btn-success" 
 					type="submit" name="action" value="Agregar" /></a></td>
 		</tr>
 	</tfoot>
