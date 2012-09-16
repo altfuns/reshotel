@@ -10,38 +10,39 @@
 
 <div class="encabezadoPagina">Detalle de hotel</div>
 <%
-	HotelDTO hotel = (HotelDTO) request
-			.getAttribute("hotel");
+	HotelDTO hotel = (HotelDTO) request.getAttribute("hotel");
 %>
-<form name="ActualizarHotel"
-	action="/reshotel/actualizarHotel" method="get">
+
+<form name="ActualizarHotel" action="/reshotel/actualizarHotel"
+	method="get">
 	<input type="hidden" name="id" value="<%=hotel.id%>" />
 	<table>
-		<tr>
-			<td>Ocupaci&oacute;n M&aacute;xima:</td>
-			<td><input type="text" name="ocupacionMaxima"
-				value="<%=hotel.ocupacionMaxima%>" /></td>
-		</tr>
-		<tr>
-			<td>N&uacute;mero</td>
-			<td><input type="text" name="numero"
-				value="<%=hotel.numero%>" /></td>
-		</tr>
-		<tr>
-			<td>Mobiliario</td>
-			<td><input type="text" name="mobiliario"
-				value="<%=hotel.mobiliario%>" /></td>
-		</tr>
-		<tr>
-			<td>Costo:</td>
-			<td><input type="text" name="costo"
-				value="<%=hotel.costo%>" /></td>
-		</tr>
-
-		<tr>
-			<td></td>
-			<td><input class="btn" type="submit" value="Guardar cambios" /></td>
-		</tr>
+		<tbody>
+			<tr>
+				<th>Tel&eacute;fono:</th>
+				<td><input type="text" name="telefono"
+					value="<%=hotel.telefono%>" /></td>
+			</tr>
+			<tr>
+				<th>Email:</th>
+				<td><input type="text" name="email" value="<%=hotel.email%>" /></td>
+			</tr>
+			<tr>
+				<th>Clase:</th>
+				<td><input type="text" name="clase" value="<%=hotel.clase%>" /></td>
+			</tr>
+			<tr>
+				<th>Nombre de encargado:</th>
+				<td><input type="text" name="nombrePersonaEncargada"
+					value="<%=hotel.nombrePersonaEncargada%>" /></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td><input class="btn" type="submit" value="Guardar cambios" /></td>
+				<td></td>
+			</tr>
+		</tfoot>
 	</table>
 </form>
 </html>

@@ -1,31 +1,32 @@
 package cr.ac.una.daw.reshotel.display;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.IOException;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-import cr.ac.una.daw.reshotel.assembler.HotelAssembler;
 import cr.ac.una.daw.reshotel.data.HotelRowGateway;
 import cr.ac.una.daw.reshotel.domain.HotelModule;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
-public class ListaHoteles extends PageController {
+public class AgregarHotel extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HotelModule module = (HotelModule) context.getBean("hotelModule");
 		try {
-			List<HotelRowGateway> data = module.listado();
-			List<HotelDTO> dtoData = new ArrayList<HotelDTO>();
+
+			HotelDTO dto = new HotelDTO();
 			
-			for(HotelRowGateway obj : data){
-				dtoData.add(HotelAssembler.create(obj));
-			}
+			dto.id = -1;
+			dto.telefono = "";
+			dto.email = "";
+			dto.clase = 0;
+			dto.nombrePersonaEncargada = "";
 			
-			request.setAttribute("hoteles", dtoData);
-			forward("/listaHoteles.jsp", request, response);
+			request.setAttribute("hotel", dto);
+			forward("/detalleHotel.jsp", request, response);
+
 		} catch (Exception e) {
 			request.setAttribute("mensaje", e.getMessage());
 			forward("/paginaError.jsp", request, response);

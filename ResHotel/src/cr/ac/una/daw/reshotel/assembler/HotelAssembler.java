@@ -4,7 +4,7 @@ import cr.ac.una.daw.reshotel.data.HotelRowGateway;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
 public class HotelAssembler {
-  public static HotelDTO Create(HotelRowGateway obj) {
+  public static HotelDTO create(HotelRowGateway obj) {
     HotelDTO dto = new HotelDTO();
     dto.id = obj.getId();
     dto.telefono = obj.getTelefono();
