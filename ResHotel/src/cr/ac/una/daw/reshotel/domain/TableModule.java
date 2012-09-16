@@ -26,9 +26,10 @@ public abstract class TableModule<T, K extends DTO> {
 		}
 	}
 
-	public void eliminar(K dto) throws Exception {
-		validarId(dto.id);
+	public void eliminar(int id) throws Exception {
+		validarId(id);
 		if (gateway != null) {
+			gateway.setId(id);
 			gateway.delete();
 		}
 	}

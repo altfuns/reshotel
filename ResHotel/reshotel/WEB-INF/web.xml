@@ -20,10 +20,18 @@
    <servlet-name>ListaHoteles</servlet-name>
    <servlet-class>cr.ac.una.daw.reshotel.display.ListaHoteles</servlet-class>
  </servlet>
+  <servlet>
+   <servlet-name>EliminarHotel</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.EliminarHotel</servlet-class>
+ </servlet>
 
  <servlet-mapping>
    <servlet-name>ListaHoteles</servlet-name>
    <url-pattern>/reshotel/listaHoteles</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>EliminarHotel</servlet-name>
+   <url-pattern>/reshotel/eliminarHotel</url-pattern>
  </servlet-mapping>
 
 </web-app>

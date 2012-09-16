@@ -55,7 +55,7 @@ public abstract class RowGateway<T> {
 		return id;
 	}
 
-	public boolean delete() {
+	public boolean delete() throws Exception {
 		String deleteStatement = "DELETE FROM " + getTableName() + " WHERE "
 				+ BaseColumns.ID + " = ?";
 		int rows = jdbcTemplate.update(deleteStatement, id);
@@ -78,7 +78,7 @@ public abstract class RowGateway<T> {
 		T result = null;
 		String findQuery = "SELECT * FROM " + getTableName() + " WHERE "
 				+ BaseColumns.ID + " = ?";
-		List<Map<String, Object>> items = jdbcTemplate.queryForList(findQuery);
+		List<Map<String, Object>> items = jdbcTemplate.queryForList(findQuery, id);
 
 		if (items != null && items.size() > 0) {
 			result = fromMap(items.get(0));
