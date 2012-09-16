@@ -27,16 +27,6 @@ public class EliminarHabitacion extends PageController {
 			module.eliminar(id);
 
 			response.sendRedirect("listaHabitaciones");
-			/*
-			 * List<HabitacionRowGateway> data = module.listado();
-			 * List<HabitacionDTO> dtoData = new ArrayList<HabitacionDTO>();
-			 * 
-			 * for (HabitacionRowGateway obj : data) {
-			 * dtoData.add(HabitacionAssembler.Create(obj)); }
-			 * 
-			 * request.setAttribute("habitaciones", dtoData);
-			 * forward("/listaHabitaciones.jsp", request, response);
-			 */
 		} catch (Exception e) {
 			request.setAttribute("mensaje", e.getMessage());
 			forward("/paginaError.jsp", request, response);

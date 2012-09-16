@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import cr.ac.una.daw.reshotel.data.Constantes.BaseColumns;
-	
+
 public abstract class RowGateway<T> {
 
 	protected JdbcTemplate jdbcTemplate;
@@ -78,7 +78,8 @@ public abstract class RowGateway<T> {
 		T result = null;
 		String findQuery = "SELECT * FROM " + getTableName() + " WHERE "
 				+ BaseColumns.ID + " = ?";
-		List<Map<String, Object>> items = jdbcTemplate.queryForList(findQuery, id);
+		List<Map<String, Object>> items = jdbcTemplate.queryForList(findQuery,
+				id);
 
 		if (items != null && items.size() > 0) {
 			result = fromMap(items.get(0));

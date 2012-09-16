@@ -29,10 +29,23 @@
    <servlet-name>ListaHabitaciones</servlet-name>
    <servlet-class>cr.ac.una.daw.reshotel.display.ListaHabitaciones</servlet-class>
  </servlet>
+ <servlet>
+   <servlet-name>DetalleHabitacion</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.DetalleHabitacion</servlet-class>
+ </servlet>
+ <servlet>
+	 <servlet-name>AgregarHabitacion</servlet-name>
+	   <servlet-class>cr.ac.una.daw.reshotel.display.AgregarHabitacion</servlet-class>
+ </servlet>
+ <servlet>
+	 <servlet-name>ActualizarHabitacion</servlet-name>
+	   <servlet-class>cr.ac.una.daw.reshotel.display.ActualizarHabitacion</servlet-class>
+ </servlet>
   <servlet>
    <servlet-name>EliminarHabitacion</servlet-name>
    <servlet-class>cr.ac.una.daw.reshotel.display.EliminarHabitacion</servlet-class>
  </servlet>
+ 
 
  <servlet-mapping>
    <servlet-name>ListaHoteles</servlet-name>
@@ -46,6 +59,18 @@
  <servlet-mapping>
    <servlet-name>ListaHabitaciones</servlet-name>
    <url-pattern>/reshotel/listaHabitaciones</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>DetalleHabitacion</servlet-name>
+   <url-pattern>/reshotel/detalleHabitacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>AgregarHabitacion</servlet-name>
+   <url-pattern>/reshotel/agregarHabitacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>ActualizarHabitacion</servlet-name>
+   <url-pattern>/reshotel/actualizarHabitacion</url-pattern>
  </servlet-mapping>
  <servlet-mapping>
    <servlet-name>EliminarHabitacion</servlet-name>

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import cr.ac.una.daw.reshotel.data.Constantes.HabitacionColumns;
+import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
 public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 
@@ -68,7 +69,7 @@ public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 	public void setReservaciones(List<ReservacionRowGateway> reservaciones) {
 		this.reservaciones = reservaciones;
 	}
-	
+
 	@Override
 	public String getTableName() {
 		return Constantes.HABITACION_TABLE_NAME;
@@ -110,5 +111,4 @@ public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 		return new Object[] { getOcupacionMaxima(), getNumero(),
 				getMobiliario(), getCosto(), getId() };
 	}
-
 }
