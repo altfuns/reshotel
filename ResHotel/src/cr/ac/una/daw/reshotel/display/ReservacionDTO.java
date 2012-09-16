@@ -2,7 +2,7 @@ package cr.ac.una.daw.reshotel.display;
 
 import java.util.Date;
 
-public class ReservacionDTO {
+public class ReservacionDTO extends DTO{
 
 	public Date fechaEntrada;
 	public Date fechaSalida;

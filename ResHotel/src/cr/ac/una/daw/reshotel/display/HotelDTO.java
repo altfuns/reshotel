@@ -1,10 +1,8 @@
 package cr.ac.una.daw.reshotel.display;
 
-import cr.ac.una.daw.reshotel.data.UbicacionRowGateway;
+public class HotelDTO extends DTO{
 
-public class HotelDTO {
-
-	public UbicacionRowGateway ubicacion;
+	public UbicacionDTO ubicacion;
 	public String telefono;
 	public String email;
 	public int clase;

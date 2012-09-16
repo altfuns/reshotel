@@ -4,7 +4,7 @@ import java.util.List;
 
 import cr.ac.una.daw.reshotel.data.ReservacionRowGateway;
 
-public class HabitacionDTO {
+public class HabitacionDTO extends DTO{
 
 	public int ocupacionMaxima;
 	public int numero;
