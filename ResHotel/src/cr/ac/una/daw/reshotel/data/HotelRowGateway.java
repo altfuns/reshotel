@@ -90,7 +90,7 @@ public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 
 	@Override
 	public String getUpdateStatement() {
-		return "UPDATE	 " + getTableName() + "SET " + HotelColumns.TELEFONO
+		return "UPDATE	 " + getTableName() + " SET " + HotelColumns.TELEFONO
 				+ " = ?" + ", " + HotelColumns.EMAIL + " = ?" + ", "
 				+ HotelColumns.CLASE + " = ?" + ", "
 				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + " = ?" + " WHERE "

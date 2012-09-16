@@ -22,6 +22,7 @@ public abstract class TableModule<T extends RowGateway<T>, K extends DTO> {
 	}
 
 	public void actualizar(K dto) throws Exception {
+		this.gateway = gatewayfromDTO(gateway, dto);
 		validarId(dto.id);
 		if (gateway != null) {
 			gateway.update();

@@ -86,7 +86,7 @@ public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 
 	@Override
 	public String getUpdateStatement() {
-		return "UPDATE	 " + getTableName() + "SET "
+		return "UPDATE	 " + getTableName() + " SET "
 				+ HabitacionColumns.OCUPACION_MAXIMA + " = ?" + ", "
 				+ HabitacionColumns.NUMERO + " = ?" + ", "
 				+ HabitacionColumns.MOBILIARIO + " = ?" + ", "

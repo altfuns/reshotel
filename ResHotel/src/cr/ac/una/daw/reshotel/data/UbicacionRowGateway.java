@@ -50,7 +50,7 @@ public class UbicacionRowGateway extends RowGateway<UbicacionRowGateway> {
 
 	@Override
 	public String getUpdateStatement() {
-		return "UPDATE " + getTableName() + "SET " + UbicacionColumns.PAIS
+		return "UPDATE " + getTableName() + " SET " + UbicacionColumns.PAIS
 				+ " = ?" + ", " + UbicacionColumns.PAIS + " = ?" + " WHERE "
 				+ UbicacionColumns.ID + " = ?";
 	}

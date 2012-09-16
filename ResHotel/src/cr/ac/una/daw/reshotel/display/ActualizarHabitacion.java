@@ -6,6 +6,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
@@ -16,7 +17,9 @@ public class ActualizarHabitacion extends PageController {
 				.getBean("habitacionModule");
 		try {
 			int id = Integer.parseInt(request.getParameter("id"));
-			HabitacionDTO dto = id == -1 ? new HabitacionDTO() : null;
+
+			HabitacionDTO dto = id == -1 ? new HabitacionDTO()
+					: HabitacionAssembler.create(module.buscar(id));
 			dto.ocupacionMaxima = Integer.parseInt(request
 					.getParameter("ocupacionMaxima"));
 			dto.numero = Integer.parseInt(request.getParameter("numero"));
@@ -24,7 +27,7 @@ public class ActualizarHabitacion extends PageController {
 			dto.costo = Double.parseDouble(request.getParameter("costo"));
 
 			if (id == -1) {
-				module.insertar(dto);	
+				module.insertar(dto);
 			} else {
 				module.actualizar(dto);
 			}

@@ -86,15 +86,15 @@ public class ClienteRowGateway extends RowGateway<ClienteRowGateway> {
 	public String getInsertStatement() {
 		return "INSERT INTO " + getTableName() + "("
 				+ ClienteColumns.IDENTIFICACION + ", " + ClienteColumns.NOMBRE
-				+ "," + ", " + ClienteColumns.TELEFONO + "," + ", "
-				+ ClienteColumns.NUMERO_TARJETA_CREDITO + "," + ", "
+				+ "," + ClienteColumns.TELEFONO + ","
+				+ ClienteColumns.NUMERO_TARJETA_CREDITO + ","
 				+ ClienteColumns.RESIDENCIA + "," + ClienteColumns.ID + ")"
 				+ " VALUES(?,?,?,?,?,?)";
 	}
 
 	@Override
 	public String getUpdateStatement() {
-		return "UPDATE " + getTableName() + "SET "
+		return "UPDATE " + getTableName() + " SET "
 				+ ClienteColumns.IDENTIFICACION + " = ?" + ", "
 				+ ClienteColumns.NOMBRE + " = ?" + ", "
 				+ ClienteColumns.TELEFONO + " = ?" + ", "

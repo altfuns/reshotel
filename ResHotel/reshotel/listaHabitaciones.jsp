@@ -14,8 +14,8 @@
 %>
 <table>
 	<tr>
-		<th>Ocupación Máxima</th>
-		<th>Número</th>
+		<th>Ocupaci&oacute;n M&aacute;xima</th>
+		<th>N&uacute;mero</th>
 		<th>Mobiliario</th>
 		<th>Costo</th>
 	</tr>

@@ -103,7 +103,7 @@ public class ReservacionRowGateway extends RowGateway<ReservacionRowGateway> {
 
 	@Override
 	public String getUpdateStatement() {
-		return "UPDATE	 " + getTableName() + "SET "
+		return "UPDATE	 " + getTableName() + " SET "
 				+ ReservacionColumns.HABITACION + " = ?" + ", "
 				+ ReservacionColumns.FECHA_ENTRADA + " = ?" + ", "
 				+ ReservacionColumns.FECHA_SALIDA + " = ?" + ", "
