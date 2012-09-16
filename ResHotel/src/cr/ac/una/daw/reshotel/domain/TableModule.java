@@ -1,7 +1,7 @@
 package cr.ac.una.daw.reshotel.domain;
 
 import cr.ac.una.daw.reshotel.data.RowGateway;
-import cr.ac.una.daw.reshotel.display.DTO;
+import cr.ac.una.daw.reshotel.dto.DTO;
 
 import java.util.List;
 

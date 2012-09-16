@@ -9,6 +9,7 @@ import javax.servlet.http.*;
 
 import cr.ac.una.daw.reshotel.data.HotelRowGateway;
 import cr.ac.una.daw.reshotel.domain.HotelModule;
+import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
 public class ListaHoteles extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)

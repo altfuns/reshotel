@@ -1,6 +1,7 @@
-package cr.ac.una.daw.reshotel.display;
+package cr.ac.una.daw.reshotel.dto;
 
 import java.util.Date;
+
 
 public class ReservacionDTO extends DTO{
 

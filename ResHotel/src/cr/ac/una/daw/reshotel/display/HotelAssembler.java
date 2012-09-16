@@ -1,6 +1,7 @@
 package cr.ac.una.daw.reshotel.display;
 
 import cr.ac.una.daw.reshotel.data.HotelRowGateway;
+import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
 public class HotelAssembler {
   public static HotelDTO Create(HotelRowGateway obj) {

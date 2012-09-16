@@ -1,4 +1,4 @@
-package cr.ac.una.daw.reshotel.display;
+package cr.ac.una.daw.reshotel.dto;
 
 import java.util.List;
 
