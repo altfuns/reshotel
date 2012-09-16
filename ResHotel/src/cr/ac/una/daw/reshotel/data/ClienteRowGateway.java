@@ -110,6 +110,8 @@ public class ClienteRowGateway extends RowGateway<ClienteRowGateway> {
 		result.setNombre((String) values.get(ClienteColumns.NOMBRE));
 		result.setIdentificacion((String) values
 				.get(ClienteColumns.IDENTIFICACION));
+		result.setTelefono((String) values
+				.get(ClienteColumns.TELEFONO));
 		result.setNumeroTarjetaCredito((Integer) values
 				.get(ClienteColumns.NUMERO_TARJETA_CREDITO));
 		result.setResidenciaId((Integer) values.get(ClienteColumns.RESIDENCIA));
