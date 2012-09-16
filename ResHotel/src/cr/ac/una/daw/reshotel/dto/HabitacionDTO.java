@@ -10,6 +10,6 @@ public class HabitacionDTO extends DTO{
 	public int numero;
 	// TODO: revisar que es mobiliario
 	public String mobiliario;
-	public float costo;
+	public double costo;
 	public List<ReservacionRowGateway> reservaciones;
 }

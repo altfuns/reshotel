@@ -11,7 +11,7 @@ public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 	private int numero;
 	// TODO: revisar que es mobiliario
 	private String mobiliario;
-	private float costo;
+	private double costo;
 	private List<ReservacionRowGateway> reservaciones;
 
 	public HabitacionRowGateway() {
@@ -53,11 +53,11 @@ public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 		this.mobiliario = mobiliario;
 	}
 
-	public float getCosto() {
+	public double getCosto() {
 		return costo;
 	}
 
-	public void setCosto(float costo) {
+	public void setCosto(double costo) {
 		this.costo = costo;
 	}
 
@@ -101,7 +101,7 @@ public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 				.get(HabitacionColumns.OCUPACION_MAXIMA));
 		result.setNumero((Integer) values.get(HabitacionColumns.NUMERO));
 		result.setMobiliario((String) values.get(HabitacionColumns.MOBILIARIO));
-		result.setCosto((Float) values.get(HabitacionColumns.COSTO));
+		result.setCosto((Double) values.get(HabitacionColumns.COSTO));
 		return result;
 	}
 

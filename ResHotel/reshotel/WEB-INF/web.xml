@@ -24,6 +24,15 @@
    <servlet-name>EliminarHotel</servlet-name>
    <servlet-class>cr.ac.una.daw.reshotel.display.EliminarHotel</servlet-class>
  </servlet>
+ 
+  <servlet>
+   <servlet-name>ListaHabitaciones</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.ListaHabitaciones</servlet-class>
+ </servlet>
+  <servlet>
+   <servlet-name>EliminarHabitacion</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.EliminarHabitacion</servlet-class>
+ </servlet>
 
  <servlet-mapping>
    <servlet-name>ListaHoteles</servlet-name>
@@ -32,6 +41,15 @@
  <servlet-mapping>
    <servlet-name>EliminarHotel</servlet-name>
    <url-pattern>/reshotel/eliminarHotel</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+   <servlet-name>ListaHabitaciones</servlet-name>
+   <url-pattern>/reshotel/listaHabitaciones</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>EliminarHabitacion</servlet-name>
+   <url-pattern>/reshotel/eliminarHabitacion</url-pattern>
  </servlet-mapping>
 
 </web-app>

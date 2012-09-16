@@ -13,6 +13,13 @@
 	<bean id="hotelModule" class="cr.ac.una.daw.reshotel.domain.HotelModule">
 		<property name="gateway" ref="hotelRowGateway" />
 	</bean>
+	
+	<bean id="habitacionRowGateway" class="cr.ac.una.daw.reshotel.data.HabitacionRowGateway">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="habitacionModule" class="cr.ac.una.daw.reshotel.domain.HabitacionModule">
+		<property name="gateway" ref="habitacionRowGateway" />
+	</bean>
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">

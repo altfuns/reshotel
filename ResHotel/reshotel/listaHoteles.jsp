@@ -1,4 +1,4 @@
-<%@page import="cr.ac.una.daw.reshotel.display.HotelDTO"%>
+<%@page import="cr.ac.una.daw.reshotel.dto.HotelDTO"%>
 <%@ page import="java.util.*" %>
 <html>
     <head>
