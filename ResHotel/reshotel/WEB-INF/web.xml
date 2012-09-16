@@ -37,7 +37,7 @@
    <servlet-class>cr.ac.una.daw.reshotel.display.EliminarHotel</servlet-class>
  </servlet>
  
-  <servlet>
+ <servlet>
    <servlet-name>ListaHabitaciones</servlet-name>
    <servlet-class>cr.ac.una.daw.reshotel.display.ListaHabitaciones</servlet-class>
  </servlet>
@@ -58,7 +58,32 @@
    <servlet-class>cr.ac.una.daw.reshotel.display.EliminarHabitacion</servlet-class>
  </servlet>
  
+ <servlet>
+   <servlet-name>ListaClientes</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.ListaClientes</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>DetalleCliente</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.DetalleCliente</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>ActualizarCliente</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.ActualizarCliente</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>AgregarCliente</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.AgregarCliente</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>EliminarCliente</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.EliminarCliente</servlet-class>
+ </servlet>
+ 
 
+ 
+ 
+ 
+ 
  <servlet-mapping>
    <servlet-name>ListaHoteles</servlet-name>
    <url-pattern>/reshotel/listaHoteles</url-pattern>
@@ -99,6 +124,27 @@
  <servlet-mapping>
    <servlet-name>EliminarHabitacion</servlet-name>
    <url-pattern>/reshotel/eliminarHabitacion</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+   <servlet-name>ListaClientes</servlet-name>
+   <url-pattern>/reshotel/listaClientes</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>DetalleCliente</servlet-name>
+   <url-pattern>/reshotel/detalleCliente</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>ActualizarCliente</servlet-name>
+   <url-pattern>/reshotel/actualizarCliente</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>AgregarCliente</servlet-name>
+   <url-pattern>/reshotel/agregarCliente</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>EliminarCliente</servlet-name>
+   <url-pattern>/reshotel/eliminarCliente</url-pattern>
  </servlet-mapping>
 
 </web-app>
