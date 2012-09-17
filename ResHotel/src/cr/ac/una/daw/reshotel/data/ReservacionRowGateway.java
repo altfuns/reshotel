@@ -5,12 +5,18 @@ import java.util.Map;
 
 import cr.ac.una.daw.reshotel.data.Constantes.ReservacionColumns;
 
+/**
+ * 
+ * {@link ReservacionRowGateway} representa los datos de una fila de la tabla
+ * RESERVACION
+ * 
+ */
 public class ReservacionRowGateway extends RowGateway<ReservacionRowGateway> {
 
 	private int habitacionId;
 	private HabitacionRowGateway habitacion;
 	private String fechaEntrada;
-	private String fechaSalida;	
+	private String fechaSalida;
 	private int ocupacion; // TODO revisar tipo de dato
 	private double monto;
 	private String identificacionCliente;

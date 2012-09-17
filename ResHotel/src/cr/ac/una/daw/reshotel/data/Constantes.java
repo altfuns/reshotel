@@ -1,5 +1,10 @@
 package cr.ac.una.daw.reshotel.data;
 
+/**
+ * 
+ * Clase para el manejo de constantes de la capa de acceso a datos.
+ *
+ */
 public class Constantes {
 
 	public static final String UBICACION_TABLE_NAME = "ubicacion";

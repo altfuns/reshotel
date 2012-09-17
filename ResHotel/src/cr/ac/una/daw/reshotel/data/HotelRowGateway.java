@@ -5,6 +5,11 @@ import java.util.Map;
 import cr.ac.una.daw.reshotel.data.Constantes.ClienteColumns;
 import cr.ac.una.daw.reshotel.data.Constantes.HotelColumns;
 
+/**
+ * 
+ * {@link HotelRowGateway} representa los datos de una fila de la tabla HOTEL
+ * 
+ */
 public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 
 	private int ubicacionId;
@@ -86,8 +91,8 @@ public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 		return "INSERT INTO " + getTableName() + "(" + HotelColumns.TELEFONO
 				+ ", " + HotelColumns.EMAIL + "," + HotelColumns.CLASE + ","
 				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + ","
-				+ HotelColumns.UBICACION + ","  + HotelColumns.ID
-				+ ")" + " VALUES(?,?,?,?,?,?)";
+				+ HotelColumns.UBICACION + "," + HotelColumns.ID + ")"
+				+ " VALUES(?,?,?,?,?,?)";
 	}
 
 	@Override
@@ -96,8 +101,8 @@ public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 				+ " = ?" + ", " + HotelColumns.EMAIL + " = ?" + ", "
 				+ HotelColumns.CLASE + " = ?" + ", "
 				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + " = ?" + ", "
-				+ HotelColumns.UBICACION + " = ?" +" WHERE "
-				+ HotelColumns.ID + " = ?";
+				+ HotelColumns.UBICACION + " = ?" + " WHERE " + HotelColumns.ID
+				+ " = ?";
 	}
 
 	@Override
@@ -107,9 +112,10 @@ public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 		result.setTelefono((String) values.get(HotelColumns.TELEFONO));
 		result.setEmail((String) values.get(HotelColumns.EMAIL));
 		result.setClase((Integer) values.get(HotelColumns.CLASE));
-		result.setNombrePersonaEncargada((String) values.get(HotelColumns.NOMBRE_PERSONA_ENCARGADA));		
+		result.setNombrePersonaEncargada((String) values
+				.get(HotelColumns.NOMBRE_PERSONA_ENCARGADA));
 		result.setUbicacionId((Integer) values.get(HotelColumns.UBICACION));
-		
+
 		return result;
 	}
 

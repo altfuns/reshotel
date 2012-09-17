@@ -5,6 +5,12 @@ import java.util.Map;
 
 import cr.ac.una.daw.reshotel.data.Constantes.HabitacionColumns;
 
+/**
+ * 
+ * {@link HabitacionRowGateway} representa los datos de una fila de la tabla
+ * HABITACION
+ * 
+ */
 public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 
 	private int ocupacionMaxima;

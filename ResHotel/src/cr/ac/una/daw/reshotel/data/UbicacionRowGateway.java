@@ -4,6 +4,12 @@ import java.util.Map;
 
 import cr.ac.una.daw.reshotel.data.Constantes.UbicacionColumns;
 
+/**
+ * 
+ * {@link UbicacionRowGateway} representa los datos de una fila de la tabla
+ * UBICACION
+ * 
+ */
 public class UbicacionRowGateway extends RowGateway<UbicacionRowGateway> {
 
 	private String pais;
@@ -57,7 +63,8 @@ public class UbicacionRowGateway extends RowGateway<UbicacionRowGateway> {
 
 	@Override
 	public UbicacionRowGateway fromMap(Map<String, Object> values) {
-		UbicacionRowGateway result = new UbicacionRowGateway((Integer) values.get(UbicacionColumns.ID),
+		UbicacionRowGateway result = new UbicacionRowGateway(
+				(Integer) values.get(UbicacionColumns.ID),
 				(String) values.get(UbicacionColumns.PAIS),
 				(String) values.get(UbicacionColumns.CIUDAD));
 		return result;

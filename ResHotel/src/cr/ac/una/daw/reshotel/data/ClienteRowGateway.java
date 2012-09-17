@@ -4,6 +4,11 @@ import java.util.Map;
 
 import cr.ac.una.daw.reshotel.data.Constantes.ClienteColumns;
 
+/**
+ * 
+ * Clase contiene los datos de una fila de la tabla CLIENTE.
+ *
+ */
 public class ClienteRowGateway extends RowGateway<ClienteRowGateway> {
 
 	private String nombre;

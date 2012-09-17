@@ -1,5 +1,10 @@
 package cr.ac.una.daw.reshotel.data;
 
+/**
+ * 
+ * {@link TipoHotelGateway} enumarado para especifcar los tipos de hoteles.
+ *
+ */
 public enum TipoHotelGateway {
 
 	MONTANA(1, "Montaña"), PLAYA(2, "Playa"), CIUDAD(3, "Ciudad");
