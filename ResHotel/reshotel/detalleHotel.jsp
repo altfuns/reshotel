@@ -1,4 +1,5 @@
 <%@page import="cr.ac.una.daw.reshotel.dto.HotelDTO"%>
+<%@page import="cr.ac.una.daw.reshotel.dto.UbicacionDTO"%>
 <%@ page import="java.util.*"%>
 <html>
 <head>
@@ -11,6 +12,8 @@
 <div class="encabezadoPagina">Detalle de hotel</div>
 <%
 	HotelDTO hotel = (HotelDTO) request.getAttribute("hotel");
+	List<UbicacionDTO> ubicaciones = (List<UbicacionDTO>) request
+			.getAttribute("ubicaciones");
 %>
 
 <form name="ActualizarHotel" action="/reshotel/actualizarHotel"
@@ -28,18 +31,39 @@
 				<td><input type="text" name="email" value="<%=hotel.email%>" /></td>
 			</tr>
 			<tr>
-				<th>Clase:</th>
-				<td><input type="text" name="clase" value="<%=hotel.clase%>" /></td>
+				<th>Clase:</th>			
+				<td><select name="clase">
+						<% for (int i = 1; i<=5; i++) { %>
+						<option value="<%= i %>"
+							<%= i == hotel.clase ? "selected" : ""%>><%= i %></option>
+						<% } %>
+				</select></td>
 			</tr>
 			<tr>
 				<th>Nombre de encargado:</th>
 				<td><input type="text" name="nombrePersonaEncargada"
 					value="<%=hotel.nombrePersonaEncargada%>" /></td>
 			</tr>
+			<tr>
+				<th>Ubicacion:</th>
+				<td><select name="ubicacion">
+						<option value="-1">Seleccione una opción</option>
+						<%
+							for (UbicacionDTO ubicacion : ubicaciones) {
+						%>
+						<option value="<%=ubicacion.id%>"
+							<%=ubicacion.id == hotel.ubicacion.id ? "selected"
+						: ""%>><%=ubicacion.ciudad + ", " + ubicacion.pais%></option>
+						<%
+							}
+						%>
+				</select></td>
+			</tr>
 		</tbody>
 		<tfoot>
 			<tr>
-				<td><input class="btn btn-success" type="submit" value="Guardar cambios" /></td>
+				<td><input class="btn btn-success" type="submit"
+					value="Guardar cambios" /></td>
 				<td></td>
 			</tr>
 		</tfoot>

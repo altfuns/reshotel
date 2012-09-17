@@ -11,7 +11,7 @@ public class HotelAssembler {
     dto.email = obj.getEmail();
     dto.clase = obj.getClase();
     dto.nombrePersonaEncargada = obj.getNombrePersonaEncargada();
-    //dto.ubicacion = UbicacionAssembler.Create(obj.getUbicacion());
+    dto.ubicacion.id = obj.getUbicacionId();
 
     return dto;
   }

@@ -18,7 +18,6 @@
 			<th>Telefono</th>
 			<th>Email</th>
 			<th>Clase</th>
-			<th>Ubicaci&oacute;n</th>
 			<th>Encargado</th>
 			<th>Acciones</th>
 		</tr>
@@ -31,7 +30,6 @@
 			<td><%=obj.telefono%></td>
 			<td><%=obj.email%></td>
 			<td><%=obj.clase%></td>
-			<td> -- </td>
 			<td><%=obj.nombrePersonaEncargada%></td>
 			<td><a href='/reshotel/detalleHotel?id=<%=obj.id%>'> <input class="btn" 
 					type="submit" value="Detalle" /></a> <a

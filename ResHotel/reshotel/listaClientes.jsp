@@ -17,7 +17,6 @@
 			<th>Identificaci&oacute;n</th>
 			<th>Nombre</th>
 			<th>Tel&eacute;fono</th>
-			<th>Residencia</th>
 			<th>Acciones</th>
 		</tr>
 	</thead>
@@ -29,7 +28,6 @@
 			<td><%=obj.identificacion%></td>
 			<td><%=obj.nombre%></td>
 			<td><%=obj.telefono%></td>
-			<td> -- </td>
 			<td><a href='/reshotel/detalleCliente?id=<%=obj.id%>'> <input class="btn" 
 					type="submit" value="Detalle" /></a> <a
 				href='/reshotel/eliminarCliente?id=<%=obj.id%>'> <input class="btn btn-danger" 

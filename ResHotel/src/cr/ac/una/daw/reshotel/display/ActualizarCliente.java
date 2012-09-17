@@ -29,6 +29,7 @@ public class ActualizarCliente extends PageController {
 			dto.nombre = request.getParameter("nombre");
 			dto.identificacion = request.getParameter("identificacion");
 			dto.numeroTarjetaCredito = Integer.parseInt(request.getParameter("numeroTarjetaCredito"));
+			dto.residencia.id = Integer.parseInt(request.getParameter("residencia"));
 
 			if (id == -1) {
 				module.insertar(dto);

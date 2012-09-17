@@ -11,7 +11,7 @@ public class ClienteAssembler {
 		dto.nombre = obj.getNombre();
 		dto.telefono = obj.getTelefono();
 		dto.numeroTarjetaCredito = obj.getNumeroTarjetaCredito();
-		//dto.residencia = UbicacionAssembler.create(obj.getResidencia());
+		dto.residencia.id = obj.getResidenciaId();
 
 		return dto;
 	}

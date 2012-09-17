@@ -28,6 +28,7 @@ public class ActualizarHotel extends PageController {
 			dto.clase = Integer.parseInt(request.getParameter("clase"));
 			dto.email = request.getParameter("email");
 			dto.nombrePersonaEncargada = request.getParameter("nombrePersonaEncargada");
+			dto.ubicacion.id = Integer.parseInt(request.getParameter("ubicacion"));
 
 			if (id == -1) {
 				module.insertar(dto);

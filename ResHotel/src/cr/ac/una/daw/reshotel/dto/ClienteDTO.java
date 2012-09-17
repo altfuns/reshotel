@@ -7,5 +7,5 @@ public class ClienteDTO extends DTO{
 	public String identificacion;
 	public String telefono;
 	public int numeroTarjetaCredito;
-	public UbicacionDTO residencia;
+	public UbicacionDTO residencia = new UbicacionDTO();
 }

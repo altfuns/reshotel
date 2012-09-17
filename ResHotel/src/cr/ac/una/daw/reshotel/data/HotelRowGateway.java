@@ -2,6 +2,7 @@ package cr.ac.una.daw.reshotel.data;
 
 import java.util.Map;
 
+import cr.ac.una.daw.reshotel.data.Constantes.ClienteColumns;
 import cr.ac.una.daw.reshotel.data.Constantes.HotelColumns;
 
 public class HotelRowGateway extends RowGateway<HotelRowGateway> {
@@ -84,8 +85,9 @@ public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 	public String getInsertStatement() {
 		return "INSERT INTO " + getTableName() + "(" + HotelColumns.TELEFONO
 				+ ", " + HotelColumns.EMAIL + "," + HotelColumns.CLASE + ","
-				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + "," + HotelColumns.ID
-				+ ")" + " VALUES(?,?,?,?,?)";
+				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + ","
+				+ HotelColumns.UBICACION + ","  + HotelColumns.ID
+				+ ")" + " VALUES(?,?,?,?,?,?)";
 	}
 
 	@Override
@@ -93,7 +95,8 @@ public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 		return "UPDATE	 " + getTableName() + " SET " + HotelColumns.TELEFONO
 				+ " = ?" + ", " + HotelColumns.EMAIL + " = ?" + ", "
 				+ HotelColumns.CLASE + " = ?" + ", "
-				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + " = ?" + " WHERE "
+				+ HotelColumns.NOMBRE_PERSONA_ENCARGADA + " = ?" + ", "
+				+ HotelColumns.UBICACION + " = ?" +" WHERE "
 				+ HotelColumns.ID + " = ?";
 	}
 
@@ -104,15 +107,16 @@ public class HotelRowGateway extends RowGateway<HotelRowGateway> {
 		result.setTelefono((String) values.get(HotelColumns.TELEFONO));
 		result.setEmail((String) values.get(HotelColumns.EMAIL));
 		result.setClase((Integer) values.get(HotelColumns.CLASE));
-		result.setNombrePersonaEncargada((String) values
-				.get(HotelColumns.NOMBRE_PERSONA_ENCARGADA));
+		result.setNombrePersonaEncargada((String) values.get(HotelColumns.NOMBRE_PERSONA_ENCARGADA));		
+		result.setUbicacionId((Integer) values.get(HotelColumns.UBICACION));
+		
 		return result;
 	}
 
 	@Override
 	public Object[] getUpdateArgs() {
 		return new Object[] { getTelefono(), getEmail(), getClase(),
-				getNombrePersonaEncargada(), getId() };
+				getNombrePersonaEncargada(), getUbicacionId(), getId() };
 	}
 
 }

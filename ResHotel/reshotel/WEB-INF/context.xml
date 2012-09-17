@@ -28,6 +28,15 @@
 		<property name="gateway" ref="clienteRowGateway" />
 	</bean>
 
+	<bean id="ubicacionRowGateway" class="cr.ac.una.daw.reshotel.data.UbicacionRowGateway">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="ubicacionModule" class="cr.ac.una.daw.reshotel.domain.UbicacionModule">
+		<property name="gateway" ref="ubicacionRowGateway" />
+	</bean>
+
+
+
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="${jdbc.driverClassName}" />

@@ -1,4 +1,5 @@
 <%@page import="cr.ac.una.daw.reshotel.dto.ClienteDTO"%>
+<%@page import="cr.ac.una.daw.reshotel.dto.UbicacionDTO"%>
 <%@ page import="java.util.*"%>
 <html>
 <head>
@@ -11,6 +12,9 @@
 <div class="encabezadoPagina">Detalle de cliente</div>
 <%
 	ClienteDTO cliente = (ClienteDTO) request.getAttribute("cliente");
+	List<UbicacionDTO> ubicaciones = (List<UbicacionDTO>) request
+			.getAttribute("ubicaciones");
+
 %>
 
 <form name="ActualizarCliente" action="/reshotel/actualizarCliente"
@@ -37,6 +41,21 @@
 				<th>N&uacute;mero tarjeta cr&eacute;dito:</th>
 				<td><input type="text" name="numeroTarjetaCredito"
 					value="<%=cliente.numeroTarjetaCredito%>" /></td>
+			</tr>
+			<tr>
+				<th>Residencia:</th>
+				<td><select name="residencia">
+						<option value="-1">Seleccione una opción</option>
+						<%
+							for (UbicacionDTO ubicacion : ubicaciones) {
+						%>
+						<option value="<%= ubicacion.id %>"
+							<%= ubicacion.id == cliente.residencia.id ? "selected" : ""%>><%= ubicacion.ciudad + ", " + ubicacion.pais %></option>
+						<%
+							}
+						%>
+				</select>
+				</td>
 			</tr>
 		</tbody>
 		<tfoot>

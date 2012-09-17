@@ -78,8 +78,7 @@ public abstract class RowGateway<T> {
 		T result = null;
 		String findQuery = "SELECT * FROM " + getTableName() + " WHERE "
 				+ BaseColumns.ID + " = ?";
-		List<Map<String, Object>> items = jdbcTemplate.queryForList(findQuery,
-				id);
+		List<Map<String, Object>> items = jdbcTemplate.queryForList(findQuery, id);
 
 		if (items != null && items.size() > 0) {
 			result = fromMap(items.get(0));
