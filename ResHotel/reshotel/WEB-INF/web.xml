@@ -79,7 +79,26 @@
    <servlet-class>cr.ac.una.daw.reshotel.display.EliminarCliente</servlet-class>
  </servlet>
  
-
+<servlet>
+   <servlet-name>ListaReservaciones</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.ListaReservaciones</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>DetalleReservacion</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.DetalleReservacion</servlet-class>
+ </servlet>
+ <servlet>
+	 <servlet-name>AgregarReservacion</servlet-name>
+	   <servlet-class>cr.ac.una.daw.reshotel.display.AgregarReservacion</servlet-class>
+ </servlet>
+ <servlet>
+	 <servlet-name>ActualizarReservacion</servlet-name>
+	   <servlet-class>cr.ac.una.daw.reshotel.display.ActualizarReservacion</servlet-class>
+ </servlet>
+  <servlet>
+   <servlet-name>EliminarReservacion</servlet-name>
+   <servlet-class>cr.ac.una.daw.reshotel.display.EliminarReservacion</servlet-class>
+ </servlet>
  
  
  
@@ -145,6 +164,27 @@
  <servlet-mapping>
    <servlet-name>EliminarCliente</servlet-name>
    <url-pattern>/reshotel/eliminarCliente</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+   <servlet-name>ListaReservaciones</servlet-name>
+   <url-pattern>/reshotel/listaReservaciones</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>DetalleReservacion</servlet-name>
+   <url-pattern>/reshotel/detalleReservacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>AgregarReservacion</servlet-name>
+   <url-pattern>/reshotel/agregarReservacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>ActualizarReservacion</servlet-name>
+   <url-pattern>/reshotel/actualizarReservacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>EliminarReservacion</servlet-name>
+   <url-pattern>/reshotel/eliminarReservacion</url-pattern>
  </servlet-mapping>
 
 </web-app>

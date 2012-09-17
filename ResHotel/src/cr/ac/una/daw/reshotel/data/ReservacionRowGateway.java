@@ -9,18 +9,18 @@ public class ReservacionRowGateway extends RowGateway<ReservacionRowGateway> {
 
 	private int habitacionId;
 	private HabitacionRowGateway habitacion;
-	private Date fechaEntrada;
-	private Date fechaSalida;	
+	private String fechaEntrada;
+	private String fechaSalida;	
 	private int ocupacion; // TODO revisar tipo de dato
-	private float monto;
+	private double monto;
 	private String identificacionCliente;
 
 	public ReservacionRowGateway() {
 		super();
 	}
 
-	public ReservacionRowGateway(Date fechaEntrada, Date fechaSalida,
-			int ocupacion, float monto, String identificacionCliente) {
+	public ReservacionRowGateway(String fechaEntrada, String fechaSalida,
+			int ocupacion, double monto, String identificacionCliente) {
 		super();
 		this.fechaEntrada = fechaEntrada;
 		this.fechaSalida = fechaSalida;
@@ -45,19 +45,19 @@ public class ReservacionRowGateway extends RowGateway<ReservacionRowGateway> {
 		this.habitacion = habitacion;
 	}
 
-	public Date getFechaEntrada() {
+	public String getFechaEntrada() {
 		return fechaEntrada;
 	}
 
-	public void setFechaEntrada(Date fechaEntrada) {
+	public void setFechaEntrada(String fechaEntrada) {
 		this.fechaEntrada = fechaEntrada;
 	}
 
-	public Date getFechaSalida() {
+	public String getFechaSalida() {
 		return fechaSalida;
 	}
 
-	public void setFechaSalida(Date fechaSalida) {
+	public void setFechaSalida(String fechaSalida) {
 		this.fechaSalida = fechaSalida;
 	}
 
@@ -69,11 +69,11 @@ public class ReservacionRowGateway extends RowGateway<ReservacionRowGateway> {
 		this.ocupacion = ocupacion;
 	}
 
-	public float getMonto() {
+	public double getMonto() {
 		return monto;
 	}
 
-	public void setMonto(float monto) {
+	public void setMonto(double monto) {
 		this.monto = monto;
 	}
 
@@ -120,15 +120,15 @@ public class ReservacionRowGateway extends RowGateway<ReservacionRowGateway> {
 		result.setHabitacionId((Integer) values
 				.get(ReservacionColumns.HABITACION));
 		// TODO Convertir string en date
-		result.setFechaEntrada((Date) values
+		result.setFechaEntrada((String) values
 				.get(ReservacionColumns.FECHA_ENTRADA));
-		result.setFechaSalida((Date) values
+		result.setFechaSalida((String) values
 				.get(ReservacionColumns.FECHA_SALIDA));
 		result.setOcupacion((Integer) values.get(ReservacionColumns.OCUPACION));
-		result.setMonto((Float) values.get(ReservacionColumns.MONTO));
+		result.setMonto((Double) values.get(ReservacionColumns.MONTO));
 		result.setIdentificacionCliente((String) values
 				.get(ReservacionColumns.IDENTIFICACION_CLIENTE));
-		return null;
+		return result;
 	}
 
 	@Override

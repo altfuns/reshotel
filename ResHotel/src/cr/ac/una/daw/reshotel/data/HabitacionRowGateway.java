@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import cr.ac.una.daw.reshotel.data.Constantes.HabitacionColumns;
-import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
 public class HabitacionRowGateway extends RowGateway<HabitacionRowGateway> {
 

@@ -34,6 +34,13 @@
 	<bean id="ubicacionModule" class="cr.ac.una.daw.reshotel.domain.UbicacionModule">
 		<property name="gateway" ref="ubicacionRowGateway" />
 	</bean>
+	
+	<bean id="reservacionRowGateway" class="cr.ac.una.daw.reshotel.data.ReservacionRowGateway">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="reservacionModule" class="cr.ac.una.daw.reshotel.domain.ReservacionModule">
+		<property name="gateway" ref="reservacionRowGateway" />
+	</bean>
 
 
 
