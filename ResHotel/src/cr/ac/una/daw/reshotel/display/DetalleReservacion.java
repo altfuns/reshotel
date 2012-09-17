@@ -1,14 +1,20 @@
 package cr.ac.una.daw.reshotel.display;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cr.ac.una.daw.reshotel.assembler.HabitacionAssembler;
 import cr.ac.una.daw.reshotel.assembler.ReservacionAssembler;
+import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.data.ReservacionRowGateway;
+import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.domain.ReservacionModule;
+import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
 public class DetalleReservacion extends PageController {
@@ -32,11 +38,25 @@ public class DetalleReservacion extends PageController {
 			ReservacionDTO dto = ReservacionAssembler.create(obj);
 
 			request.setAttribute("reservacion", dto);
+			request.setAttribute("habitaciones", getHabitaciones());
 			forward("/detalleReservacion.jsp", request, response);
 
 		} catch (Exception e) {
 			request.setAttribute("mensaje", e.getMessage());
 			forward("/paginaError.jsp", request, response);
 		}
+	}
+
+	public List<HabitacionDTO> getHabitaciones() throws Exception {
+		HabitacionModule module = (HabitacionModule) context
+				.getBean("habitacionModule");
+		List<HabitacionRowGateway> data = module.listado();
+		List<HabitacionDTO> result = new ArrayList<HabitacionDTO>();
+
+		for (HabitacionRowGateway obj : data) {
+			result.add(HabitacionAssembler.create(obj));
+		}
+
+		return result;
 	}
 }

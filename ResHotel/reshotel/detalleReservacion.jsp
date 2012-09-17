@@ -1,3 +1,4 @@
+<%@page import="cr.ac.una.daw.reshotel.dto.HabitacionDTO"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.ReservacionDTO"%>
 <%@ page import="java.util.*"%>
 <html>
@@ -12,6 +13,8 @@
 <%
 	ReservacionDTO reservacion = (ReservacionDTO) request
 			.getAttribute("reservacion");
+	List<HabitacionDTO> habitaciones = (List<HabitacionDTO>) request
+			.getAttribute("habitaciones");
 %>
 <form name="ActualizarReservacion"
 	action="/reshotel/actualizarReservacion" method="get">
@@ -20,8 +23,18 @@
 		<tbody>
 			<tr>
 				<th>Habitaci&oacute;n</th>
-				<td><input type="text" name="habitacion"
-					value="<%=reservacion.habitacionId%>" /></td>
+				<td><select name="habitacion">
+						<option value="-1">Seleccione una opción</option>
+						<%
+							for (HabitacionDTO habitacion : habitaciones) {
+						%>
+						<option value="<%=habitacion.id%>"
+							<%=habitacion.id == reservacion.habitacionId ? "selected"
+						: ""%>><%=habitacion.numero%></option>
+						<%
+							}
+						%>
+				</select></td>
 			</tr>
 			<tr>
 				<th>Fecha Entrada</th>
