@@ -22,44 +22,44 @@ En resumen se puede destacar que el sistema permite:
 
 EL menú principal, muestra las principales opciones de la aplicación, por lo que el acceso a las mismas se realiza de forma sencilla.
 
-![menuPrincipal](img/menuPrincipal.png)
+![menuPrincipal](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/menuPrincipal.png)
 
 > **Mantenimiento de hoteles**
 
 Listado general de hoteles en donde se puede observar el teléfono, email, clase (cantidad de estrellas) y el nombre del encargado del mismo, además de las acciones correspondientes para ver el detalle y eliminar un hotel.
 
-![listaHoteles](img/listaHoteles.png)
+![listaHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/listaHoteles.png)
 
 Detalle correspodiente al hotel, lo cual permite actualizar los datos del hotel:
 
-![detalleHoteles](img/detalleHotel.png)
+![detalleHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/detalleHotel.png)
 
 > **Mantenimiento de habitaciones**
 
 Listado general de habitaciones en donde se puede observar su ocupación, número, mobiliario y el costo de la misma, además de las acciones correspondientes para ver el detalle y eliminar una habitación.
 
-![listaHoteles](img/listaHabitaciones.png)
+![listaHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/listaHabitaciones.png)
 
 Detalle correspodiente a la habitación, lo cual permite actualizar los datos de la habitación:
 
-![listaHoteles](img/detalleHabitacion.png)
+![listaHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/detalleHabitacion.png)
 
 > **Mantenimiento de reservaciones**
 
 Listado general de reservaciones en donde se puede observar la habitación seleccionada, fecha de entrada, fecha de salida, la ocupación, el costo y el cliente que realizó la reservación, además de las acciones correspondientes para ver el detalle y eliminar una reservación.
 
-![listaHoteles](img/listaReservaciones.png)
+![listaHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/listaReservaciones.png)
 
 Detalle correspodiente a la reservación, lo cual permite actualizar los datos de la reservación:
 
-![listaHoteles](img/detalleReservacion.png)
+![listaHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/detalleReservacion.png)
 
 > **Mantenimiento de clientes**
 
 Listado general de cliente en donde se puede observar la identificación, nombre, teléfono, además de las acciones correspondientes para ver el detalle y eliminar un cliente.
 
-![listaHoteles](img/listaClientes.png)
+![listaHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/listaClientes.png)
 
 Detalle correspodiente al cliente, lo cual permite actualizar los datos del cliente:
 
-![listaHoteles](img/detalleCliente.png)
+![listaHoteles](https://raw.github.com/altfuns/reshotel/master/Manual%20usuario/img/detalleCliente.png)
