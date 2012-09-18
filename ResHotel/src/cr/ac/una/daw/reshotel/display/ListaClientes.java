@@ -12,6 +12,11 @@ import cr.ac.una.daw.reshotel.data.ClienteRowGateway;
 import cr.ac.una.daw.reshotel.domain.ClienteModule;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los datos de la lista de clientes
+ *
+ */
 public class ListaClientes extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

@@ -17,6 +17,11 @@ import cr.ac.una.daw.reshotel.domain.UbicacionModule;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los valores inciales al agregar un cliente.
+ *
+ */
 public class AgregarCliente extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

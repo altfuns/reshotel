@@ -1,7 +1,10 @@
 package cr.ac.una.daw.reshotel.dto;
 
-import java.util.Date;
 
+/**
+ * Objeto de transferencia de datos de la entidad reservacion
+ *
+ */
 public class ReservacionDTO extends DTO {
 
 	public int habitacionId;

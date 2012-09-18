@@ -4,6 +4,11 @@ import cr.ac.una.daw.reshotel.data.HotelRowGateway;
 import cr.ac.una.daw.reshotel.dto.DTO;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
+/**
+ * 
+ * Modulo de tabla de la entidad cliente.
+ *
+ */
 public class HotelModule extends TableModule<HotelRowGateway, HotelDTO> {
 
 	@Override
@@ -29,9 +34,15 @@ public class HotelModule extends TableModule<HotelRowGateway, HotelDTO> {
 		super.actualizar(dto);
 	}
 	
+	/**
+	 * Realiza las validaciones generales para un hotel
+	 * @param dto
+	 * Informacion del hotel por validar
+	 * @throws Exception
+	 */
 	private void validacionesGenerales(HotelDTO dto) throws Exception{
 		if(dto.ubicacion.id == -1){
-			throw new Exception("Debe seleccionar una ubicación");
+			throw new Exception("Debe seleccionar una ubicaciï¿½n");
 		}
 		if(dto.clase < 1 || dto.clase > 5){
 			throw new Exception("La clase del hotel debe estar entre 1 y 5");

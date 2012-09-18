@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import cr.ac.una.daw.reshotel.domain.ReservacionModule;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los valores inciales al agregar una reservacion.
+ *
+ */
 public class AgregarReservacion extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

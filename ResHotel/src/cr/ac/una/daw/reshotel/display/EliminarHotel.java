@@ -9,7 +9,11 @@ import javax.servlet.http.*;
 
 import cr.ac.una.daw.reshotel.data.HotelRowGateway;
 import cr.ac.una.daw.reshotel.domain.HotelModule;
-
+/**
+ * 
+ * Controlador de pagina para eliminar un hotel.
+ *
+ */
 public class EliminarHotel extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

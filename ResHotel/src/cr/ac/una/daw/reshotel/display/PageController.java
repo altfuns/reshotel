@@ -7,6 +7,10 @@ import javax.servlet.http.*;
 import org.springframework.web.context.*;
 import org.springframework.web.context.support.*;
 
+/**
+ * Controlador de pagina base
+ *
+ */
 public class PageController extends HttpServlet {
 	/**
 	 * 

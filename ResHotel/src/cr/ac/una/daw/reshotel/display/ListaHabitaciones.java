@@ -13,6 +13,11 @@ import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los datos de la lista de habitaciones
+ *
+ */
 public class ListaHabitaciones extends PageController {
 	/**
 	 * 

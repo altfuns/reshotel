@@ -12,6 +12,11 @@ import cr.ac.una.daw.reshotel.data.HotelRowGateway;
 import cr.ac.una.daw.reshotel.domain.HotelModule;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los datos de la lista de hoteles
+ *
+ */
 public class ListaHoteles extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

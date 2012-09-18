@@ -10,6 +10,11 @@ import cr.ac.una.daw.reshotel.data.ReservacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.ReservacionModule;
 
 
+/**
+ * 
+ * Controlador de pagina para eliminar una reservacion.
+ *
+ */
 public class EliminarReservacion extends PageController {
 	/**
 	 * 

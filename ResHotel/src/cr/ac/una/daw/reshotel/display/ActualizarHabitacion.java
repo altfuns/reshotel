@@ -10,6 +10,10 @@ import cr.ac.una.daw.reshotel.assembler.HabitacionAssembler;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * Controlador de pagina para actualizar o insertar la informacion de la habitacion.
+ *
+ */
 public class ActualizarHabitacion extends PageController {
 
 	private static final long serialVersionUID = 7900939974504489200L;

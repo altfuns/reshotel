@@ -11,6 +11,11 @@ import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los valores de una habitacion.
+ *
+ */
 public class DetalleHabitacion extends PageController {
 	/**
 	 * 

@@ -11,6 +11,11 @@ import cr.ac.una.daw.reshotel.domain.ClienteModule;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para actualizar o insertar la informacion del cliente.
+ *
+ */
 public class ActualizarCliente extends PageController {
 
 	private static final long serialVersionUID = 7900939974504489200L;

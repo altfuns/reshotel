@@ -10,6 +10,11 @@ import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los valores inciales al agregar una habitacion.
+ *
+ */
 public class AgregarHabitacion extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

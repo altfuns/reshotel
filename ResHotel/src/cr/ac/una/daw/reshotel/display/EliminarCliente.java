@@ -8,6 +8,11 @@ import javax.servlet.http.*;
 import cr.ac.una.daw.reshotel.data.ClienteRowGateway;
 import cr.ac.una.daw.reshotel.domain.ClienteModule;
 
+/**
+ * 
+ * Controlador de pagina para eliminar un cliente.
+ *
+ */
 public class EliminarCliente extends PageController {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

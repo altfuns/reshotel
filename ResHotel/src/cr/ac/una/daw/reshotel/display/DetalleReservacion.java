@@ -17,6 +17,11 @@ import cr.ac.una.daw.reshotel.domain.ReservacionModule;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los valores de una reservacion.
+ *
+ */
 public class DetalleReservacion extends PageController {
 	/**
 	 * 

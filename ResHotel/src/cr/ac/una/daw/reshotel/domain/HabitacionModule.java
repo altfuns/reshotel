@@ -3,6 +3,11 @@ package cr.ac.una.daw.reshotel.domain;
 import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * 
+ * Modulo de tabla de la entidad habitacion.
+ *
+ */
 public class HabitacionModule extends
 		TableModule<HabitacionRowGateway, HabitacionDTO> {
 

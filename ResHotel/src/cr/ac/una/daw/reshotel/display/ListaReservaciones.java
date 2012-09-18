@@ -13,6 +13,11 @@ import cr.ac.una.daw.reshotel.data.ReservacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.ReservacionModule;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para establecer los datos de la lista de reservaciones
+ *
+ */
 public class ListaReservaciones extends PageController {
 	/**
 	 * 

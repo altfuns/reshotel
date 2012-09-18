@@ -9,7 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
 import cr.ac.una.daw.reshotel.domain.HabitacionModule;
 
-
+/**
+ * 
+ * Controlador de pagina para eliminar una habitacion.
+ *
+ */
 public class EliminarHabitacion extends PageController {
 	/**
 	 * 

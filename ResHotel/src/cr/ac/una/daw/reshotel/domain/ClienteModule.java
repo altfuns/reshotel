@@ -3,6 +3,11 @@ package cr.ac.una.daw.reshotel.domain;
 import cr.ac.una.daw.reshotel.data.ClienteRowGateway;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 
+/**
+ * 
+ * Modulo de tabla de la entidad cliente.
+ *
+ */
 public class ClienteModule extends TableModule<ClienteRowGateway, ClienteDTO> {
 	@Override
 	public ClienteRowGateway gatewayfromDTO(ClienteRowGateway gateway, ClienteDTO dto) {

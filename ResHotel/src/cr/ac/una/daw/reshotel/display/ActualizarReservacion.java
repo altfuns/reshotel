@@ -11,6 +11,11 @@ import cr.ac.una.daw.reshotel.assembler.ReservacionAssembler;
 import cr.ac.una.daw.reshotel.domain.ReservacionModule;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
+/**
+ * 
+ * Controlador de pagina para actualizar o insertar la informacion de la reservacion.
+ *
+ */
 public class ActualizarReservacion extends PageController {
 
 	private static final long serialVersionUID = 7900939974504489200L;

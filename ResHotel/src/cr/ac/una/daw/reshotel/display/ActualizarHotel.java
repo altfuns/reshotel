@@ -10,6 +10,11 @@ import cr.ac.una.daw.reshotel.assembler.HotelAssembler;
 import cr.ac.una.daw.reshotel.domain.HotelModule;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
+/**
+ * 
+ * Controlador de pagina para actualizar o insertar la informacion del hotel.
+ *
+ */
 public class ActualizarHotel extends PageController {
 
 	private static final long serialVersionUID = 7900939974504489200L;

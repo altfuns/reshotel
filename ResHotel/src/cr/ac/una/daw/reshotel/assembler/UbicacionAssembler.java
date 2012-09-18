@@ -1,8 +1,6 @@
 package cr.ac.una.daw.reshotel.assembler;
 
-import cr.ac.una.daw.reshotel.data.ReservacionRowGateway;
 import cr.ac.una.daw.reshotel.data.UbicacionRowGateway;
-import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 
 public class UbicacionAssembler {

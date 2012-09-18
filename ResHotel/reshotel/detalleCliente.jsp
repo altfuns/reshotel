@@ -1,6 +1,6 @@
 <%@page import="cr.ac.una.daw.reshotel.dto.ClienteDTO"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.UbicacionDTO"%>
-<%@ page import="java.util.*"%>
+<%@page import="java.util.*"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

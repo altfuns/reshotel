@@ -1,6 +1,9 @@
 package cr.ac.una.daw.reshotel.dto;
 
-
+/**
+ * Objeto de transferencia de datos de la entidad cliente
+ *
+ */
 public class ClienteDTO extends DTO{
 
 	public String nombre;
