@@ -1,6 +1,6 @@
 package cr.ac.una.daw.reshotel.assembler;
 
-import cr.ac.una.daw.reshotel.data.HabitacionRowGateway;
+import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
 public class HabitacionAssembler {
@@ -13,7 +13,7 @@ public class HabitacionAssembler {
 	 *            los datos por convertir
 	 * @return Una nueva instancia de la clase {@link HabitacionDTO}
 	 */
-	public static HabitacionDTO create(HabitacionRowGateway obj) {
+	public static HabitacionDTO create(Habitacion obj) {
 		HabitacionDTO dto = new HabitacionDTO();
 		dto.id = obj.getId();
 		dto.ocupacionMaxima = obj.getOcupacionMaxima();
@@ -23,5 +23,21 @@ public class HabitacionAssembler {
 		dto.reservaciones = obj.getReservaciones();
 
 		return dto;
+	}
+
+	/**
+	 * Actualizado los datos del dto basado en los del objeto
+	 * 
+	 * @param obj
+	 * @param dto
+	 */
+	public static void update(Habitacion obj, HabitacionDTO dto) {
+		dto.id = obj.getId();
+		dto.ocupacionMaxima = obj.getOcupacionMaxima();
+		dto.numero = obj.getNumero();
+		dto.mobiliario = obj.getMobiliario();
+		dto.costo = obj.getCosto();
+		dto.reservaciones = obj.getReservaciones();
+
 	}
 }

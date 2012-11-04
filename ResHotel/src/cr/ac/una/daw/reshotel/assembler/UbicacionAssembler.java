@@ -1,25 +1,38 @@
 package cr.ac.una.daw.reshotel.assembler;
 
-import cr.ac.una.daw.reshotel.data.UbicacionRowGateway;
+import cr.ac.una.daw.reshotel.domain.Ubicacion;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 
 public class UbicacionAssembler {
 
 	/**
 	 * Crea una nueva instancia de la clase {@link UbicacionDTO} desde un objeto
-	 * {@link UbicacionRowGateway}
+	 * {@link Ubicacion}
 	 * 
 	 * @param obj
-	 *            Intancia de la clase {@link UbicacionRowGateway} que contiene
-	 *            los datos por convertir
+	 *            Intancia de la clase {@link Ubicacion} que contiene los datos
+	 *            por convertir
 	 * @return Una nueva instancia de la clase {@link UbicacionDTO}
 	 */
-	public static UbicacionDTO create(UbicacionRowGateway obj) {
+	public static UbicacionDTO create(Ubicacion obj) {
 		UbicacionDTO dto = new UbicacionDTO();
 		dto.id = obj.getId();
 		dto.ciudad = obj.getCiudad();
 		dto.pais = obj.getPais();
 
 		return dto;
+	}
+
+	/**
+	 * Actualizado los datos del dto basado en los del objeto
+	 * 
+	 * @param obj
+	 * @param dto
+	 */
+	public static void update(Ubicacion obj, UbicacionDTO dto) {
+		dto.id = obj.getId();
+		dto.ciudad = obj.getCiudad();
+		dto.pais = obj.getPais();
+
 	}
 }

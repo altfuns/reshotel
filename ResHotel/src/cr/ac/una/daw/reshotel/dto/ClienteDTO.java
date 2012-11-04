@@ -11,4 +11,36 @@ public class ClienteDTO extends DTO{
 	public String telefono;
 	public int numeroTarjetaCredito;
 	public UbicacionDTO residencia = new UbicacionDTO();
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getIdentificacion() {
+		return identificacion;
+	}
+	public void setIdentificacion(String identificacion) {
+		this.identificacion = identificacion;
+	}
+	public String getTelefono() {
+		return telefono;
+	}
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+	public int getNumeroTarjetaCredito() {
+		return numeroTarjetaCredito;
+	}
+	public void setNumeroTarjetaCredito(int numeroTarjetaCredito) {
+		this.numeroTarjetaCredito = numeroTarjetaCredito;
+	}
+	public UbicacionDTO getResidencia() {
+		return residencia;
+	}
+	public void setResidencia(UbicacionDTO residencia) {
+		this.residencia = residencia;
+	}
+	
+	
 }

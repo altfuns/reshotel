@@ -7,25 +7,25 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 
 public class ClienteDAO extends HibernateDaoSupport{
-	public boolean insert(ClienteDTO grupoDTO) {
-		getHibernateTemplate().saveOrUpdate(grupoDTO);
+	public boolean insert(ClienteDTO clienteDTO) {
+		getHibernateTemplate().saveOrUpdate(clienteDTO);
 		return true;
 	}
 
-	public boolean delete(ClienteDTO grupoDTO) {
-		getHibernateTemplate().delete(grupoDTO);
+	public boolean delete(ClienteDTO clienteDTO) {
+		getHibernateTemplate().delete(clienteDTO);
 		return true;
 	}
 
 	public ClienteDTO findById(int id) {
-		ClienteDTO grupo;
-		grupo = (ClienteDTO) getHibernateTemplate().get(ClienteDTO.class,
+		ClienteDTO cliente;
+		cliente = (ClienteDTO) getHibernateTemplate().get(ClienteDTO.class,
 				new Integer(id));
-		return grupo;
+		return cliente;
 	}
 
-	public boolean update(ClienteDTO grupoDTO) {
-		getHibernateTemplate().saveOrUpdate(grupoDTO);
+	public boolean update(ClienteDTO clienteDTO) {
+		getHibernateTemplate().saveOrUpdate(clienteDTO);
 		return true;
 	}
 
