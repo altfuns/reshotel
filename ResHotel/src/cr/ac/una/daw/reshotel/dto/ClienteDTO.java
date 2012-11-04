@@ -10,6 +10,7 @@ public class ClienteDTO extends DTO{
 	public String identificacion;
 	public String telefono;
 	public int numeroTarjetaCredito;
+	public int residenciaId;
 	public UbicacionDTO residencia = new UbicacionDTO();
 	public String getNombre() {
 		return nombre;
@@ -40,6 +41,12 @@ public class ClienteDTO extends DTO{
 	}
 	public void setResidencia(UbicacionDTO residencia) {
 		this.residencia = residencia;
+	}
+	public int getResidenciaId() {
+		return residenciaId;
+	}
+	public void setResidenciaId(int residenciaId) {
+		this.residenciaId = residenciaId;
 	}
 	
 	
