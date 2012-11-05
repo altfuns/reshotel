@@ -37,7 +37,7 @@ public class ReservacionDetalleController implements Controller {
 
 		int id = Integer.parseInt(request.getParameter("id"));
 		Collection<Cliente> clientes = clienteManager.getClientes();
-		List<Habitacion> habitaciones = habitacionManager.getHabitaciones();
+		Collection<Habitacion> habitaciones = habitacionManager.getHabitaciones();
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("reservacion", this.reservacionManager.find(id));
 		myModel.put("clientes", clientes);
@@ -48,5 +48,13 @@ public class ReservacionDetalleController implements Controller {
 
 	public void setReservacionManager(ReservacionManager ReservacionManager) {
 		this.reservacionManager = ReservacionManager;
+	}
+	
+	public void setClienteManager(ClienteManager clienteManager) {
+		this.clienteManager = clienteManager;
+	}
+
+	public void setHabitacionManager(HabitacionManager habitacionManager) {
+		this.habitacionManager = habitacionManager;
 	}
 }

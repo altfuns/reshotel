@@ -51,6 +51,7 @@ public class HotelRepositoryDAOImpl implements HotelRepository {
 		while (itr.hasNext()) {
 			HotelDTO hotelDTO = (HotelDTO) itr.next();
 			Hotel hotel = HotelAssembler.create(hotelDTO);
+			System.out.println(hotel.getId());
 			hotelList.add(hotel);
 		}
 		return hotelList;

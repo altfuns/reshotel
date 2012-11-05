@@ -48,8 +48,10 @@ public class HabitacionRepositoryDAOImpl implements HabitacionRepository {
 		Iterator<HabitacionDTO> itr = habitacionsDTO.iterator();
 		while (itr.hasNext()) {
 			HabitacionDTO habitacionDTO = (HabitacionDTO) itr.next();
+			System.out.println(habitacionDTO.id);
 			Habitacion habitacion = HabitacionAssembler.create(habitacionDTO);
 			habitacionList.add(habitacion);
+			System.out.println(habitacion.getId());
 		}
 		return habitacionList;
 	}

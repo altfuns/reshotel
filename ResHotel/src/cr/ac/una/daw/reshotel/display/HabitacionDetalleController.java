@@ -1,8 +1,8 @@
 package cr.ac.una.daw.reshotel.display;
 
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletException;
@@ -30,7 +30,7 @@ public class HabitacionDetalleController implements Controller {
 		logger.info("returning habitacion view with " + now);
 
 		int id = Integer.parseInt(request.getParameter("id"));
-		List<Hotel> hoteles = hotelManager.getHoteles();
+		Collection<Hotel> hoteles = hotelManager.getHoteles();
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("habitacion", this.habitacionManager.find(id));
 		myModel.put("hoteles", hoteles);
@@ -41,4 +41,10 @@ public class HabitacionDetalleController implements Controller {
 	public void setHabitacionManager(HabitacionManager HabitacionManager) {
 		this.habitacionManager = HabitacionManager;
 	}
+
+	public void setHotelManager(HotelManager hotelManager) {
+		this.hotelManager = hotelManager;
+	}
+	
+	
 }

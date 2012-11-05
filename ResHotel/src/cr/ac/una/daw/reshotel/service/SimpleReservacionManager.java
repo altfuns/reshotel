@@ -1,5 +1,6 @@
 package cr.ac.una.daw.reshotel.service;
 
+import java.util.Collection;
 import java.util.List;
 
 import cr.ac.una.daw.reshotel.domain.Reservacion;
@@ -14,8 +15,8 @@ public class SimpleReservacionManager implements ReservacionManager {
 		this.repository = repository;
 	}
 
-	public List<Reservacion> getReservaciones() {
-		return reservaciones;
+	public Collection<Reservacion> getReservaciones() {
+		return repository.findAllReservacion();
 	}
 
 	public void setReservaciones(List<Reservacion> reservaciones) {

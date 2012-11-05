@@ -41,6 +41,9 @@
         <property
             name="clienteManager"
             ref="clienteManager" />
+        <property
+            name="ubicacionManager"
+            ref="ubicacionManager" />
     </bean>
 
     <bean
@@ -51,6 +54,172 @@
             name="clienteManager"
             ref="clienteManager" />
     </bean>
+    
+    <bean
+        name="/reshotel/listaHabitaciones"
+        class="cr.ac.una.daw.reshotel.display.HabitacionController" >
+
+        <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/detalleHabitacion"
+        class="cr.ac.una.daw.reshotel.display.HabitacionDetalleController" >
+
+        <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+        <property
+            name="hotelManager"
+            ref="hotelManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/actualizarHabitacion"
+        class="cr.ac.una.daw.reshotel.display.HabitacionActualizarController" >
+
+        <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/agregarHabitacion"
+        class="cr.ac.una.daw.reshotel.display.HabitacionAgregarController" >
+
+        <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+        <property
+            name="hotelManager"
+            ref="hotelManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/eliminarHabitacion"
+        class="cr.ac.una.daw.reshotel.display.HabitacionEliminarController" >
+
+        <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+    </bean>
+    
+    <bean
+        name="/reshotel/listaHoteles"
+        class="cr.ac.una.daw.reshotel.display.HotelController" >
+
+        <property
+            name="hotelManager"
+            ref="hotelManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/detalleHotel"
+        class="cr.ac.una.daw.reshotel.display.HotelDetalleController" >
+
+        <property
+            name="hotelManager"
+            ref="hotelManager" />
+        <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+        <property
+            name="ubicacionManager"
+            ref="ubicacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/actualizarHotel"
+        class="cr.ac.una.daw.reshotel.display.HotelActualizarController" >
+
+        <property
+            name="hotelManager"
+            ref="hotelManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/agregarHotel"
+        class="cr.ac.una.daw.reshotel.display.HotelAgregarController" >
+
+        <property
+            name="hotelManager"
+            ref="hotelManager" />
+        <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+        <property
+            name="ubicacionManager"
+            ref="ubicacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/eliminarHotel"
+        class="cr.ac.una.daw.reshotel.display.HotelEliminarController" >
+
+        <property
+            name="hotelManager"
+            ref="hotelManager" />
+    </bean>
+    
+    <bean
+        name="/reshotel/listaReservaciones"
+        class="cr.ac.una.daw.reshotel.display.ReservacionController" >
+
+        <property
+            name="reservacionManager"
+            ref="reservacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/detalleReservacion"
+        class="cr.ac.una.daw.reshotel.display.ReservacionDetalleController" >
+
+        <property
+            name="reservacionManager"
+            ref="reservacionManager" />
+         <property
+            name="clienteManager"
+            ref="clienteManager" />
+          <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/actualizarReservacion"
+        class="cr.ac.una.daw.reshotel.display.ReservacionActualizarController" >
+
+        <property
+            name="reservacionManager"
+            ref="reservacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/agregarReservacion"
+        class="cr.ac.una.daw.reshotel.display.ReservacionAgregarController" >
+
+        <property
+            name="reservacionManager"
+            ref="reservacionManager" />
+         <property
+            name="clienteManager"
+            ref="clienteManager" />
+          <property
+            name="habitacionManager"
+            ref="habitacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/eliminarReservacion"
+        class="cr.ac.una.daw.reshotel.display.ReservacionEliminarController" >
+
+        <property
+            name="reservacionManager"
+            ref="reservacionManager" />
+    </bean>
+    
 
     <bean
         id="viewResolver"

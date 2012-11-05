@@ -1,5 +1,6 @@
 package cr.ac.una.daw.reshotel.service;
 
+import java.util.Collection;
 import java.util.List;
 
 import cr.ac.una.daw.reshotel.domain.ClienteRepository;
@@ -16,8 +17,8 @@ public class SimpleHabitacionManager implements HabitacionManager {
 		this.repository = repository;
 	}
 
-	public List<Habitacion> getHabitaciones() {
-		return habitaciones;
+	public Collection<Habitacion> getHabitaciones() {
+		return repository.findAllHabitacion();
 	}
 
 	public void setHabitaciones(List<Habitacion> habitaciones) {

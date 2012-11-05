@@ -1,5 +1,6 @@
 package cr.ac.una.daw.reshotel.service;
 
+import java.util.Collection;
 import java.util.List;
 
 import cr.ac.una.daw.reshotel.domain.Hotel;
@@ -14,8 +15,8 @@ public class SimpleHotelManager implements HotelManager {
 		this.repository = repository;
 	}
 	
-	public List<Hotel> getHoteles() {
-		return hoteles;
+	public Collection<Hotel> getHoteles() {
+		return repository.findAllHotel();
 	}
 
 	public void setHoteles(List<Hotel> hoteles) {

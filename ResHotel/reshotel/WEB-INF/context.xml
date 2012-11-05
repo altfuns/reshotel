@@ -138,6 +138,16 @@ classpath:hibernate.cfg.xml
             <ref bean="hotelDAO" />
         </constructor-arg>
     </bean>
+    
+     <bean
+        id="hotelManager"
+        class="cr.ac.una.daw.reshotel.service.SimpleHotelManager" >
+
+        <property name="repository" >
+
+            <ref bean="hotelRepository" />
+        </property>
+    </bean>
 
     <bean
         id="reservacionDAO"
@@ -157,6 +167,16 @@ classpath:hibernate.cfg.xml
 
             <ref bean="reservacionDAO" />
         </constructor-arg>
+    </bean>
+    
+    <bean
+        id="reservacionManager"
+        class="cr.ac.una.daw.reshotel.service.SimpleReservacionManager" >
+
+        <property name="repository" >
+
+            <ref bean="reservacionRepository" />
+        </property>
     </bean>
 
     <bean

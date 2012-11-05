@@ -27,12 +27,12 @@ public class HabitacionAssembler {
 
 	public static Habitacion create(HabitacionDTO dto) {
 		Habitacion obj = new Habitacion();
-		obj.setId(obj.getId());
-		obj.setOcupacionMaxima(obj.getOcupacionMaxima());
-		obj.setNumero(obj.getNumero());
-		obj.setMobiliario(obj.getMobiliario());
-		obj.setCosto(obj.getCosto());
-		obj.setReservaciones(obj.getReservaciones());
+		obj.setId(dto.getId());
+		obj.setOcupacionMaxima(dto.getOcupacionMaxima());
+		obj.setNumero(dto.getNumero());
+		obj.setMobiliario(dto.getMobiliario());
+		obj.setCosto(dto.getCosto());
+		obj.setReservaciones(dto.getReservaciones());
 
 		return obj;
 	}

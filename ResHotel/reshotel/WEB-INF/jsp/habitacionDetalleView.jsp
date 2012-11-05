@@ -1,3 +1,4 @@
+<%@page import="cr.ac.una.daw.reshotel.domain.Habitacion"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.HabitacionDTO"%>
 <%@ page import="java.util.*"%>
 <html>
@@ -10,38 +11,41 @@
 
 <div class="encabezadoPagina">Detalle de habitaci&oacute;n</div>
 <%
-	HabitacionDTO habitacion = (HabitacionDTO) request
-			.getAttribute("habitacion");
+	Map<String, Object> myModel = (Map<String, Object>) request
+			.getAttribute("model");
+	Habitacion habitacion = (Habitacion) myModel
+			.get("habitacion");
 %>
 <form name="ActualizarHabitacion"
 	action="/reshotel/actualizarHabitacion" method="get">
-	<input type="hidden" name="id" value="<%=habitacion.id%>" />
+	<input type="hidden" name="id" value="<%=habitacion.getId()%>" />
 	<table>
 		<tbody>
 			<tr>
 				<th>Ocupaci&oacute;n M&aacute;xima:</th>
 				<td><input type="text" name="ocupacionMaxima"
-					value="<%=habitacion.ocupacionMaxima%>" /></td>
+					value="<%=habitacion.getOcupacionMaxima()%>" /></td>
 			</tr>
 			<tr>
 				<th>N&uacute;mero</th>
 				<td><input type="text" name="numero"
-					value="<%=habitacion.numero%>" /></td>
+					value="<%=habitacion.getNumero()%>" /></td>
 			</tr>
 			<tr>
 				<th>Mobiliario</th>
 				<td><input type="text" name="mobiliario"
-					value="<%=habitacion.mobiliario%>" /></td>
+					value="<%=habitacion.getMobiliario()%>" /></td>
 			</tr>
 			<tr>
 				<th>Costo:</th>
 				<td><input type="text" name="costo"
-					value="<%=habitacion.costo%>" /></td>
+					value="<%=habitacion.getCosto()%>" /></td>
 			</tr>
 		</tbody>
 		<tfoot>
-			<tr>			
-				<td><input class="btn btn-success" type="submit" value="Guardar cambios" /></td>
+			<tr>
+				<td><input class="btn btn-success" type="submit"
+					value="Guardar cambios" /></td>
 				<td></td>
 			</tr>
 		</tfoot>

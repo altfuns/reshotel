@@ -1,3 +1,5 @@
+<%@page import="cr.ac.una.daw.reshotel.domain.Ubicacion"%>
+<%@page import="cr.ac.una.daw.reshotel.domain.Hotel"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.HotelDTO"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.UbicacionDTO"%>
 <%@ page import="java.util.*"%>
@@ -11,49 +13,56 @@
 
 <div class="encabezadoPagina">Detalle de hotel</div>
 <%
-	HotelDTO hotel = (HotelDTO) request.getAttribute("hotel");
-	List<UbicacionDTO> ubicaciones = (List<UbicacionDTO>) request
-			.getAttribute("ubicaciones");
+	Map<String, Object> myModel = (Map<String, Object>) request
+			.getAttribute("model");
+	Hotel hotel = (Hotel) myModel.get("hotel");
+	List<Ubicacion> ubicaciones = (List<Ubicacion>) myModel
+			.get("ubicaciones");
 %>
 
 <form name="ActualizarHotel" action="/reshotel/actualizarHotel"
 	method="get">
-	<input type="hidden" name="id" value="<%=hotel.id%>" />
+	<input type="hidden" name="id" value="<%=hotel.getId()%>" />
 	<table>
 		<tbody>
 			<tr>
 				<th>Tel&eacute;fono:</th>
 				<td><input type="text" name="telefono"
-					value="<%=hotel.telefono%>" /></td>
+					value="<%=hotel.getTelefono()%>" /></td>
 			</tr>
 			<tr>
 				<th>Email:</th>
-				<td><input type="text" name="email" value="<%=hotel.email%>" /></td>
+				<td><input type="text" name="email"
+					value="<%=hotel.getEmail()%>" /></td>
 			</tr>
 			<tr>
-				<th>Clase:</th>			
+				<th>Clase:</th>
 				<td><select name="clase">
-						<% for (int i = 1; i<=5; i++) { %>
-						<option value="<%= i %>"
-							<%= i == hotel.clase ? "selected" : ""%>><%= i %></option>
-						<% } %>
+						<%
+							for (int i = 1; i <= 5; i++) {
+						%>
+						<option value="<%=i%>"
+							<%=i == hotel.getClase() ? "selected" : ""%>><%=i%></option>
+						<%
+							}
+						%>
 				</select></td>
 			</tr>
 			<tr>
 				<th>Nombre de encargado:</th>
 				<td><input type="text" name="nombrePersonaEncargada"
-					value="<%=hotel.nombrePersonaEncargada%>" /></td>
+					value="<%=hotel.getNombrePersonaEncargada()%>" /></td>
 			</tr>
 			<tr>
 				<th>Ubicacion:</th>
 				<td><select name="ubicacion">
 						<option value="-1">Seleccione una opción</option>
 						<%
-							for (UbicacionDTO ubicacion : ubicaciones) {
+							for (Ubicacion ubicacion : ubicaciones) {
 						%>
-						<option value="<%=ubicacion.id%>"
-							<%=ubicacion.id == hotel.ubicacion.id ? "selected"
-						: ""%>><%=ubicacion.ciudad + ", " + ubicacion.pais%></option>
+						<option value="<%=ubicacion.getId()%>"
+							<%=ubicacion.getId() == hotel.getUbicacionId() ? "selected"
+						: ""%>><%=ubicacion.getCiudad() + ", " + ubicacion.getPais()%></option>
 						<%
 							}
 						%>

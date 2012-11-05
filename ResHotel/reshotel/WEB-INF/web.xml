@@ -42,5 +42,68 @@
    <servlet-name>reshotel</servlet-name>
    <url-pattern>/reshotel/eliminarCliente</url-pattern>
  </servlet-mapping>
+ 
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/listaHabitaciones</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/detalleHabitacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/actualizarHabitacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/agregarHabitacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/eliminarHabitacion</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/listaHoteles</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/detalleHotel</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/actualizarHotel</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/agregarHotel</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/eliminarHotel</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/listaReservaciones</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/detalleReservacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/actualizarReservacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/agregarReservacion</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>reshotel</servlet-name>
+   <url-pattern>/reshotel/eliminarReservacion</url-pattern>
+ </servlet-mapping>
 
 </web-app>

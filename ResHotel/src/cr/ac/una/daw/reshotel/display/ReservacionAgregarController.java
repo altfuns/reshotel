@@ -41,7 +41,7 @@ public class ReservacionAgregarController implements Controller {
 
 
 		Collection<Cliente> clientes = clienteManager.getClientes();
-		List<Habitacion> habitaciones = habitacionManager.getHabitaciones();
+		Collection<Habitacion> habitaciones = habitacionManager.getHabitaciones();
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("reservacion", dto);
 		myModel.put("clientes", clientes);
@@ -52,5 +52,13 @@ public class ReservacionAgregarController implements Controller {
 
 	public void setReservacionManager(ReservacionManager ReservacionManager) {
 		this.reservacionManager = ReservacionManager;
+	}
+
+	public void setClienteManager(ClienteManager clienteManager) {
+		this.clienteManager = clienteManager;
+	}
+
+	public void setHabitacionManager(HabitacionManager habitacionManager) {
+		this.habitacionManager = habitacionManager;
 	}
 }

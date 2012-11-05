@@ -1,6 +1,7 @@
 package cr.ac.una.daw.reshotel.display;
 
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,7 +41,7 @@ public class HabitacionAgregarController implements Controller {
 		entity.setMobiliario("");
 		entity.setCosto(0);
 
-		List<Hotel> hoteles = hotelManager.getHoteles();
+		Collection<Hotel> hoteles = hotelManager.getHoteles();
 
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("habitacion", entity);
@@ -52,4 +53,10 @@ public class HabitacionAgregarController implements Controller {
 	public void setHabitacionManager(HabitacionManager HabitacionManager) {
 		this.habitacionManager = HabitacionManager;
 	}
+
+	public void setHotelManager(HotelManager hotelManager) {
+		this.hotelManager = hotelManager;
+	}
+	
+	
 }

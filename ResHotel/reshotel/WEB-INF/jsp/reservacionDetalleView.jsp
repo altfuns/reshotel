@@ -1,3 +1,5 @@
+<%@page import="cr.ac.una.daw.reshotel.domain.Habitacion"%>
+<%@page import="cr.ac.una.daw.reshotel.domain.Reservacion"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.HabitacionDTO"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.ReservacionDTO"%>
 <%@ page import="java.util.*"%>
@@ -11,14 +13,16 @@
 
 <div class="encabezadoPagina">Detalle de reservaci&oacute;n</div>
 <%
-	ReservacionDTO reservacion = (ReservacionDTO) request
-			.getAttribute("reservacion");
-	List<HabitacionDTO> habitaciones = (List<HabitacionDTO>) request
-			.getAttribute("habitaciones");
+	Map<String, Object> myModel = (Map<String, Object>) request
+			.getAttribute("model");
+	Reservacion reservacion = (Reservacion) myModel
+			.get("reservacion");
+	List<Habitacion> habitaciones = (List<Habitacion>) myModel
+			.get("habitaciones");
 %>
 <form name="ActualizarReservacion"
 	action="/reshotel/actualizarReservacion" method="get">
-	<input type="hidden" name="id" value="<%=reservacion.id%>" />
+	<input type="hidden" name="id" value="<%=reservacion.getId()%>" />
 	<table>
 		<tbody>
 			<tr>
@@ -26,11 +30,11 @@
 				<td><select name="habitacion">
 						<option value="-1">Seleccione una opción</option>
 						<%
-							for (HabitacionDTO habitacion : habitaciones) {
+							for (Habitacion habitacion : habitaciones) {
 						%>
-						<option value="<%=habitacion.id%>"
-							<%=habitacion.id == reservacion.habitacionId ? "selected"
-						: ""%>><%=habitacion.numero%></option>
+						<option value="<%=habitacion.getId()%>"
+							<%=habitacion.getId() == reservacion.getHabitacionId() ? "selected"
+						: ""%>><%=habitacion.getNumero()%></option>
 						<%
 							}
 						%>
@@ -39,27 +43,27 @@
 			<tr>
 				<th>Fecha Entrada</th>
 				<td><input type="text" name="fechaEntrada"
-					value="<%=reservacion.fechaEntrada%>" /></td>
+					value="<%=reservacion.getFechaEntrada()%>" /></td>
 			</tr>
 			<tr>
 				<th>Fecha Salida</th>
 				<td><input type="text" name="fechaSalida"
-					value="<%=reservacion.fechaSalida%>" /></td>
+					value="<%=reservacion.getFechaSalida()%>" /></td>
 			</tr>
 			<tr>
 				<th>Ocupaci&oacute;n:</th>
 				<td><input type="text" name="ocupacion"
-					value="<%=reservacion.ocupacion%>" /></td>
+					value="<%=reservacion.getOcupacion()%>" /></td>
 			</tr>
 			<tr>
 				<th>Monto:</th>
 				<td><input type="text" name="monto"
-					value="<%=reservacion.monto%>" /></td>
+					value="<%=reservacion.getMonto()%>" /></td>
 			</tr>
 			<tr>
 				<th>Cliente:</th>
 				<td><input type="text" name="cliente"
-					value="<%=reservacion.identificacionCliente%>" /></td>
+					value="<%=reservacion.getIdentificacionCliente()%>" /></td>
 			</tr>
 		</tbody>
 		<tfoot>
