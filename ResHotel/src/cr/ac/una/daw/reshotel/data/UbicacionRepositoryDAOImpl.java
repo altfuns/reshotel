@@ -30,9 +30,8 @@ public class UbicacionRepositoryDAOImpl implements UbicacionRepository {
 	public Ubicacion findUbicacion(int id) {
 		UbicacionDTO ubicacionDTO = ubicacionDAO.findById(id);
 		if (ubicacionDTO != null) {
-			Ubicacion ubicacion = new Ubicacion();
 			System.out.println(ubicacionDTO.id);
-			UbicacionAssembler.update(ubicacion, ubicacionDTO);
+			Ubicacion ubicacion = UbicacionAssembler.create(ubicacionDTO);
 			return ubicacion;
 		}
 		return null;
@@ -48,9 +47,8 @@ public class UbicacionRepositoryDAOImpl implements UbicacionRepository {
 		List<Ubicacion> ubicacionList = new ArrayList<Ubicacion>();
 		Iterator<UbicacionDTO> itr = ubicacionsDTO.iterator();
 		while (itr.hasNext()) {
-			Ubicacion ubicacion = new Ubicacion();
 			UbicacionDTO ubicacionDTO = (UbicacionDTO) itr.next();
-			UbicacionAssembler.update(ubicacion, ubicacionDTO);
+			Ubicacion ubicacion = UbicacionAssembler.create(ubicacionDTO);
 			ubicacionList.add(ubicacion);
 		}
 		return ubicacionList;

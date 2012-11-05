@@ -13,6 +13,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
+import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 import cr.ac.una.daw.reshotel.service.ReservacionManager;
 
@@ -28,17 +29,17 @@ public class ReservacionActualizarController implements Controller {
 
 		int id = Integer.parseInt(request.getParameter("id"));
 
-		ReservacionDTO dto = id == -1 ? new ReservacionDTO()
+		Reservacion entity = id == -1 ? new Reservacion()
 				: reservacionManager.find(id);
 		
-		dto.habitacionId = Integer.parseInt(request.getParameter("habitacion"));
-		dto.fechaEntrada = request.getParameter("fechaEntrada");
-		dto.fechaSalida = request.getParameter("fechaSalida");
-		dto.ocupacion = Integer.parseInt(request.getParameter("ocupacion"));
-		dto.monto = Double.parseDouble(request.getParameter("monto"));
-		dto.identificacionCliente = request.getParameter("cliente");
+		entity.setHabitacionId(Integer.parseInt(request.getParameter("habitacion")));
+		entity.setFechaEntrada(request.getParameter("fechaEntrada"));
+		entity.setFechaSalida(request.getParameter("fechaSalida"));
+		entity.setOcupacion(Integer.parseInt(request.getParameter("ocupacion")));
+		entity.setMonto(Double.parseDouble(request.getParameter("monto")));
+		entity.setIdentificacionCliente(request.getParameter("cliente"));
 
-		reservacionManager.save(dto);
+		reservacionManager.save(entity);
 
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("now", now);

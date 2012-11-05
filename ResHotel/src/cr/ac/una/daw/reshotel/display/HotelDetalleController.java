@@ -14,7 +14,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
-import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
+import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 import cr.ac.una.daw.reshotel.service.HotelManager;
 
@@ -30,7 +30,7 @@ public class HotelDetalleController implements Controller {
 		logger.info("returning hotel view with " + now);
 
 		int id = Integer.parseInt(request.getParameter("id"));
-		List<HabitacionDTO> habitaciones = habitacionManager.getHabitaciones();
+		List<Habitacion> habitaciones = habitacionManager.getHabitaciones();
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("hotel", this.hotelManager.find(id));
 		myModel.put("habitaciones", habitaciones);

@@ -30,9 +30,8 @@ public class HabitacionRepositoryDAOImpl implements HabitacionRepository {
 	public Habitacion findHabitacion(int id) {
 		HabitacionDTO habitacionDTO = habitacionDAO.findById(id);
 		if (habitacionDTO != null) {
-			Habitacion habitacion = new Habitacion();
 			System.out.println(habitacionDTO.numero);
-			HabitacionAssembler.update(habitacion, habitacionDTO);
+			Habitacion habitacion = HabitacionAssembler.create(habitacionDTO);
 			return habitacion;
 		}
 		return null;
@@ -48,9 +47,8 @@ public class HabitacionRepositoryDAOImpl implements HabitacionRepository {
 		List<Habitacion> habitacionList = new ArrayList<Habitacion>();
 		Iterator<HabitacionDTO> itr = habitacionsDTO.iterator();
 		while (itr.hasNext()) {
-			Habitacion habitacion = new Habitacion();
 			HabitacionDTO habitacionDTO = (HabitacionDTO) itr.next();
-			HabitacionAssembler.update(habitacion, habitacionDTO);
+			Habitacion habitacion = HabitacionAssembler.create(habitacionDTO);
 			habitacionList.add(habitacion);
 		}
 		return habitacionList;

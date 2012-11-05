@@ -5,7 +5,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
+import cr.ac.una.daw.reshotel.assembler.HabitacionAssembler;
 import cr.ac.una.daw.reshotel.assembler.HotelAssembler;
+import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.domain.HotelRepository;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
@@ -30,9 +32,8 @@ public class HotelRepositoryDAOImpl implements HotelRepository {
 	public Hotel findHotel(int id) {
 		HotelDTO hotelDTO = hotelDAO.findById(id);
 		if (hotelDTO != null) {
-			Hotel hotel = new Hotel();
 			System.out.println(hotelDTO.id);
-			HotelAssembler.update(hotel, hotelDTO);
+			Hotel hotel = HotelAssembler.create(hotelDTO);
 			return hotel;
 		}
 		return null;
@@ -48,9 +49,8 @@ public class HotelRepositoryDAOImpl implements HotelRepository {
 		List<Hotel> hotelList = new ArrayList<Hotel>();
 		Iterator<HotelDTO> itr = hotelsDTO.iterator();
 		while (itr.hasNext()) {
-			Hotel hotel = new Hotel();
 			HotelDTO hotelDTO = (HotelDTO) itr.next();
-			HotelAssembler.update(hotel, hotelDTO);
+			Hotel hotel = HotelAssembler.create(hotelDTO);
 			hotelList.add(hotel);
 		}
 		return hotelList;

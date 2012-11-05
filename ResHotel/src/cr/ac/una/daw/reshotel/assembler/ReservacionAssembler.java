@@ -25,9 +25,22 @@ public class ReservacionAssembler {
 		dto.identificacionCliente = obj.getIdentificacionCliente();
 		return dto;
 	}
-	
+
+	public static Reservacion create(ReservacionDTO dto) {
+		Reservacion entity = new Reservacion();
+		entity.setId(dto.getId());
+		entity.setHabitacionId(dto.getHabitacionId());
+		entity.setFechaEntrada(dto.getFechaEntrada());
+		entity.setFechaSalida(dto.getFechaSalida());
+		entity.setOcupacion(dto.getOcupacion());
+		entity.setMonto(dto.getMonto());
+		entity.setIdentificacionCliente(dto.getIdentificacionCliente());
+		return entity;
+	}
+
 	/**
 	 * Actualizado los datos del dto basado en los del objeto
+	 * 
 	 * @param obj
 	 * @param dto
 	 */

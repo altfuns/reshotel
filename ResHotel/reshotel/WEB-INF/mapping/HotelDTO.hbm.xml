@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="cr.ac.una.daw.reshotel.dto.HotelDTO" table="hotel">
+    <id name="id" column="id" type="int">
+        <generator class="native"></generator>
+    </id>
+    <property name="telefono" column="telefono" type="string"></property>
+    <property name="email" column="email" type="string"></property>
+    <property name="clase" column="clase" type="int"></property>
+    <property name="nombrePersonaEncargada" column="nombre_persona_encargada" type="string"></property>
+    <property name="ubicacionId" column="ubicacion" type="int"></property>
+</class>
+</hibernate-mapping>

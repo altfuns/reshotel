@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" >
+
+    <bean
+        name="/reshotel/listaClientes"
+        class="cr.ac.una.daw.reshotel.display.ClienteController" >
+
+        <property
+            name="clienteManager"
+            ref="clienteManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/detalleCliente"
+        class="cr.ac.una.daw.reshotel.display.ClienteDetalleController" >
+
+        <property
+            name="clienteManager"
+            ref="clienteManager" />
+        <property
+            name="ubicacionManager"
+            ref="ubicacionManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/actualizarCliente"
+        class="cr.ac.una.daw.reshotel.display.ClienteActualizarController" >
+
+        <property
+            name="clienteManager"
+            ref="clienteManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/agregarCliente"
+        class="cr.ac.una.daw.reshotel.display.ClienteAgregarController" >
+
+        <property
+            name="clienteManager"
+            ref="clienteManager" />
+    </bean>
+
+    <bean
+        name="/reshotel/eliminarCliente"
+        class="cr.ac.una.daw.reshotel.display.ClienteEliminarController" >
+
+        <property
+            name="clienteManager"
+            ref="clienteManager" />
+    </bean>
+
+    <bean
+        id="viewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+
+        <property
+            name="viewClass"
+            value="org.springframework.web.servlet.view.JstlView" />
+
+        <property
+            name="prefix"
+            value="/WEB-INF/jsp/" />
+
+        <property
+            name="suffix"
+            value=".jsp" />
+    </bean>
+
+</beans>

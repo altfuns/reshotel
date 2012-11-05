@@ -2,37 +2,47 @@ package cr.ac.una.daw.reshotel.service;
 
 import java.util.List;
 
+import cr.ac.una.daw.reshotel.domain.ClienteRepository;
+import cr.ac.una.daw.reshotel.domain.Habitacion;
+import cr.ac.una.daw.reshotel.domain.HabitacionRepository;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
 public class SimpleHabitacionManager implements HabitacionManager {
-	private List<HabitacionDTO> habitaciones;
+	private List<Habitacion> habitaciones;
+	
+	private HabitacionRepository repository;
 
-	public List<HabitacionDTO> getHabitaciones() {
+	public void setRepository(HabitacionRepository repository) {
+		this.repository = repository;
+	}
+
+	public List<Habitacion> getHabitaciones() {
 		return habitaciones;
 	}
 
-	public void setHabitacions(List<HabitacionDTO> habitaciones) {
+	public void setHabitaciones(List<Habitacion> habitaciones) {
 		this.habitaciones = habitaciones;
 	}
 
 	@Override
-	public HabitacionDTO find(int id) {
-		for (HabitacionDTO habitacion : habitaciones) {
-			if (id == habitacion.id) {
-				return habitacion;
-			}
+	public Habitacion find(int id) {
+		return repository.findHabitacion(id);
+	}
+
+	@Override
+	public void save(Habitacion habitacion) {
+		if (habitacion.getId() != -1) {
+			repository.updateHabitacion(habitacion);
+		} else {
+			repository.insertHabitacion(habitacion);
 		}
-		return null;
 	}
 
 	@Override
-	public void save(HabitacionDTO habitacion) {
-
-	}
-
-	@Override
-	public void delete(HabitacionDTO habitacion) {
-		// TODO Auto-generated method stub
+	public void delete(Habitacion habitacion) {
+		if(habitacion != null){
+			repository.deleteHabitacion(habitacion);
+		}
 		
 	}
 }

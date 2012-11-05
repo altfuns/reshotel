@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="cr.ac.una.daw.reshotel.dto.ReservacionDTO" table="reservacion">
+    <id name="id" column="id" type="int">
+        <generator class="native"></generator>
+    </id>
+    <property name="habitacionId" column="habitacion" type="int"></property>
+    <property name="fechaEntrada" column="fecha_entrada" type="string"></property>
+    <property name="fechaSalida" column="fecha_salida" type="string"></property>
+    <property name="ocupacion" column="ocupacion" type="int"></property>
+    <property name="monto" column="monto" type="double"></property>
+    <property name="identificacionCliente" column="identificacion_cliente" type="string"></property>
+</class>
+</hibernate-mapping>

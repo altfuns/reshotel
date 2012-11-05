@@ -7,7 +7,7 @@
         <generator class="native"></generator>
     </id>
     <property name="habitacionId" column="habitacion" type="int"></property>
-    <property name="fechaEntrada" column=fecha_entrada type="string"></property>
+    <property name="fechaEntrada" column="fecha_entrada" type="string"></property>
     <property name="fechaSalida" column="fecha_salida" type="string"></property>
     <property name="ocupacion" column="ocupacion" type="int"></property>
     <property name="monto" column="monto" type="double"></property>

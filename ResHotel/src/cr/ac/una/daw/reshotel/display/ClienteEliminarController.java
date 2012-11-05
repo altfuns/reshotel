@@ -13,7 +13,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
-import cr.ac.una.daw.reshotel.dto.ClienteDTO;
+import cr.ac.una.daw.reshotel.domain.Cliente;
 import cr.ac.una.daw.reshotel.service.ClienteManager;
 
 public class ClienteEliminarController implements Controller {
@@ -28,10 +28,10 @@ public class ClienteEliminarController implements Controller {
 
 		int id = Integer.parseInt(request.getParameter("id"));
 
-		ClienteDTO dto = clienteManager.find(id);
+		Cliente entity = clienteManager.find(id);
 
-		if (dto != null) {
-			clienteManager.delete(dto);
+		if (entity != null) {
+			clienteManager.delete(entity);
 		}
 
 		Map<String, Object> myModel = new HashMap<String, Object>();

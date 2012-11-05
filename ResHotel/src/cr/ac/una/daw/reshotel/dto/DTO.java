@@ -6,4 +6,14 @@ package cr.ac.una.daw.reshotel.dto;
  */
 public class DTO {
 	public int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
 }

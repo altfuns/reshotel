@@ -23,8 +23,21 @@ public class ClienteAssembler {
 		return dto;
 	}
 
+	public static Cliente create(ClienteDTO dto) {
+		Cliente obj = new Cliente();
+		obj.setId(dto.getId());
+		obj.setIdentificacion(dto.getIdentificacion());
+		obj.setNombre(dto.getNombre());
+		obj.setTelefono(dto.getTelefono());
+		obj.setNumeroTarjetaCredito(dto.getNumeroTarjetaCredito());
+		obj.setResidenciaId(dto.getResidenciaId());
+
+		return obj;
+	}
+
 	/**
 	 * Actualizado los datos del dto basado en los del objeto
+	 * 
 	 * @param obj
 	 * @param dto
 	 */

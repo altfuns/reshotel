@@ -1,40 +1,45 @@
 package cr.ac.una.daw.reshotel.service;
 
+import java.util.Collection;
 import java.util.List;
 
+import javax.servlet.ServletContext;
+
 import cr.ac.una.daw.reshotel.domain.Cliente;
+import cr.ac.una.daw.reshotel.domain.ClienteRepository;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
+import cr.ac.una.daw.reshotel.data.*;
 
 public class SimpleClienteManager implements ClienteManager {
-	private List<ClienteDTO> clientes;
 
-	public List<ClienteDTO> getClientes() {
-		return clientes;
+	private ClienteRepository repository;
+
+	public void setRepository(ClienteRepository repository) {
+		this.repository = repository;
 	}
 
-	public void setClientes(List<ClienteDTO> clientes) {
-		this.clientes = clientes;
+	public Collection<Cliente> getClientes() {
+		return repository.findAllCliente();
 	}
 
 	@Override
-	public ClienteDTO find(int id) {
-		for (ClienteDTO cliente : clientes) {
-			if (id == cliente.id) {
-				return cliente;
-			}
+	public Cliente find(int id) {
+		return repository.findCliente(id);
+	}
+
+	@Override
+	public void save(Cliente cliente) {
+		if (cliente.getId() != -1) {
+			repository.updateCliente(cliente);
+		} else {
+			repository.insertCliente(cliente);
 		}
-		return null;
+
 	}
 
 	@Override
-	public void save(ClienteDTO cliente) {
-		
-		
-	}
+	public boolean delete(Cliente cliente) {
+		return repository.deleteCliente(cliente);
 
-	@Override
-	public void delete(ClienteDTO cliente) {
-		// TODO Auto-generated method stub
-		
 	}
 }

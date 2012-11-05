@@ -23,6 +23,15 @@ public class UbicacionAssembler {
 		return dto;
 	}
 
+	public static Ubicacion create(UbicacionDTO dto) {
+		Ubicacion obj = new Ubicacion();
+		obj.setId(dto.getId());
+		obj.setCiudad(dto.getCiudad());
+		obj.setPais(dto.getPais());
+
+		return obj;
+	}
+
 	/**
 	 * Actualizado los datos del dto basado en los del objeto
 	 * 

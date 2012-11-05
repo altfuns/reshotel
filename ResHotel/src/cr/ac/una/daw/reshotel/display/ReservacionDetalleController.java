@@ -1,6 +1,7 @@
 package cr.ac.una.daw.reshotel.display;
 
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +15,8 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
+import cr.ac.una.daw.reshotel.domain.Cliente;
+import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 import cr.ac.una.daw.reshotel.service.ClienteManager;
@@ -33,8 +36,8 @@ public class ReservacionDetalleController implements Controller {
 		logger.info("returning reservacion view with " + now);
 
 		int id = Integer.parseInt(request.getParameter("id"));
-		List<ClienteDTO> clientes = clienteManager.getClientes();
-		List<HabitacionDTO> habitaciones = habitacionManager.getHabitaciones();
+		Collection<Cliente> clientes = clienteManager.getClientes();
+		List<Habitacion> habitaciones = habitacionManager.getHabitaciones();
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("reservacion", this.reservacionManager.find(id));
 		myModel.put("clientes", clientes);

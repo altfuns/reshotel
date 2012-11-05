@@ -2,37 +2,45 @@ package cr.ac.una.daw.reshotel.service;
 
 import java.util.List;
 
-import cr.ac.una.daw.reshotel.dto.HotelDTO;
+import cr.ac.una.daw.reshotel.domain.Hotel;
+import cr.ac.una.daw.reshotel.domain.HotelRepository;
 
 public class SimpleHotelManager implements HotelManager {
-	private List<HotelDTO> hoteles;
+	private List<Hotel> hoteles;
 
-	public List<HotelDTO> getHoteles() {
+	private HotelRepository repository;
+
+	public void setRepository(HotelRepository repository) {
+		this.repository = repository;
+	}
+	
+	public List<Hotel> getHoteles() {
 		return hoteles;
 	}
 
-	public void setHotels(List<HotelDTO> hoteles) {
+	public void setHoteles(List<Hotel> hoteles) {
 		this.hoteles = hoteles;
 	}
 
 	@Override
-	public HotelDTO find(int id) {
-		for (HotelDTO hotel : hoteles) {
-			if (id == hotel.id) {
-				return hotel;
-			}
+	public Hotel find(int id) {
+		return repository.findHotel(id);
+	}
+
+	@Override
+	public void save(Hotel hotel) {
+		if (hotel.getId() != -1) {
+			repository.updateHotel(hotel);
+		} else {
+			repository.insertHotel(hotel);
 		}
-		return null;
 	}
 
 	@Override
-	public void save(HotelDTO hotel) {
-
-	}
-
-	@Override
-	public void delete(HotelDTO hotel) {
-		// TODO Auto-generated method stub
+	public void delete(Hotel hotel) {
+		if(hotel != null){
+			repository.deleteHotel(hotel);
+		}
 		
 	}
 }

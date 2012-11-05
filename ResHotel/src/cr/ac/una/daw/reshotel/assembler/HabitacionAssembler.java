@@ -25,6 +25,18 @@ public class HabitacionAssembler {
 		return dto;
 	}
 
+	public static Habitacion create(HabitacionDTO dto) {
+		Habitacion obj = new Habitacion();
+		obj.setId(obj.getId());
+		obj.setOcupacionMaxima(obj.getOcupacionMaxima());
+		obj.setNumero(obj.getNumero());
+		obj.setMobiliario(obj.getMobiliario());
+		obj.setCosto(obj.getCosto());
+		obj.setReservaciones(obj.getReservaciones());
+
+		return obj;
+	}
+
 	/**
 	 * Actualizado los datos del dto basado en los del objeto
 	 * 

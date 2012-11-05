@@ -13,6 +13,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
+import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 
@@ -28,15 +29,15 @@ public class HabitacionActualizarController implements Controller {
 
 		int id = Integer.parseInt(request.getParameter("id"));
 
-		HabitacionDTO dto = id == -1 ? new HabitacionDTO() : habitacionManager
+		Habitacion entity = id == -1 ? new Habitacion() : habitacionManager
 				.find(id);
-		dto.ocupacionMaxima = Integer.parseInt(request
-				.getParameter("ocupacionMaxima"));
-		dto.numero = Integer.parseInt(request.getParameter("numero"));
-		dto.mobiliario = request.getParameter("mobiliario");
-		dto.costo = Double.parseDouble(request.getParameter("costo"));
+		entity.setOcupacionMaxima(Integer.parseInt(request
+				.getParameter("ocupacionMaxima")));
+		entity.setNumero(Integer.parseInt(request.getParameter("numero")));
+		entity.setMobiliario(request.getParameter("mobiliario"));
+		entity.setCosto(Double.parseDouble(request.getParameter("costo")));
 
-		habitacionManager.save(dto);
+		habitacionManager.save(entity);
 
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("now", now);

@@ -1,3 +1,4 @@
+<%@page import="cr.ac.una.daw.reshotel.domain.Cliente"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.ClienteDTO"%>
 <%@ page import="java.util.*"%>
 <html>
@@ -9,7 +10,8 @@
 
 <div class="encabezadoPagina">Listado de clientes</div>
 <%
-	List<ClienteDTO> objs = (List<ClienteDTO>) request.getAttribute("clientes");
+	Map<String, Object> myModel = (Map<String, Object>)request.getAttribute("model");
+	List<Cliente> objs = (List<Cliente>) myModel.get("clientes");
 %>
 <table>
 	<thead>
@@ -22,15 +24,15 @@
 	</thead>
 	<tbody>
 		<%
-			for (ClienteDTO obj : objs) {
+			for (Cliente obj : objs) {
 		%>
 		<tr>
-			<td><%=obj.identificacion%></td>
-			<td><%=obj.nombre%></td>
-			<td><%=obj.telefono%></td>
-			<td><a href='/reshotel/detalleCliente?id=<%=obj.id%>'> <input class="btn" 
+			<td><%=obj.getIdentificacion()%></td>
+			<td><%=obj.getNombre()%></td>
+			<td><%=obj.getTelefono()%></td>
+			<td><a href='/reshotel/detalleCliente?id=<%=obj.getId()%>'> <input class="btn" 
 					type="submit" value="Detalle" /></a> <a
-				href='/reshotel/eliminarCliente?id=<%=obj.id%>'> <input class="btn btn-danger" 
+				href='/reshotel/eliminarCliente?id=<%=obj.getId()%>'> <input class="btn btn-danger" 
 					type="submit" value="Eliminar" /></a></td>
 		</tr>
 		<%

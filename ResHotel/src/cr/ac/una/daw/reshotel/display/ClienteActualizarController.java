@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,8 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
+import cr.ac.una.daw.reshotel.domain.Cliente;
+import cr.ac.una.daw.reshotel.domain.ClienteRepository;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 import cr.ac.una.daw.reshotel.service.ClienteManager;
 
@@ -28,17 +31,17 @@ public class ClienteActualizarController implements Controller {
 
 		int id = Integer.parseInt(request.getParameter("id"));
 
-		ClienteDTO dto = id == -1 ? new ClienteDTO() : clienteManager.find(id);
+		Cliente entity = id == -1 ? new Cliente() : clienteManager.find(id);
 
-		dto.telefono = request.getParameter("telefono");
-		dto.nombre = request.getParameter("nombre");
-		dto.identificacion = request.getParameter("identificacion");
-		dto.numeroTarjetaCredito = Integer.parseInt(request
-				.getParameter("numeroTarjetaCredito"));
-		dto.residencia.id = Integer
-				.parseInt(request.getParameter("residencia"));
+		entity.setTelefono(request.getParameter("telefono"));
+		entity.setNombre(request.getParameter("nombre"));
+		entity.setIdentificacion(request.getParameter("identificacion"));
+		entity.setNumeroTarjetaCredito(Integer.parseInt(request
+				.getParameter("numeroTarjetaCredito")));
+		entity.setResidenciaId(Integer.parseInt(request
+				.getParameter("residencia")));
 
-		clienteManager.save(dto);
+		clienteManager.save(entity);
 
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("now", now);

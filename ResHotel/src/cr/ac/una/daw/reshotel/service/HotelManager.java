@@ -4,14 +4,13 @@ import java.io.Serializable;
 import java.util.List;
 
 import cr.ac.una.daw.reshotel.domain.Hotel;
-import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
 public interface HotelManager extends Serializable {
-	public List<HotelDTO> getHoteles();
+	public List<Hotel> getHoteles();
 
-	public HotelDTO find(int id);
+	public Hotel find(int id);
 
-	public void save(HotelDTO hotel);
-	
-	public void delete(HotelDTO hotel);
+	public void save(Hotel hotel);
+
+	public void delete(Hotel hotel);
 }

@@ -30,9 +30,9 @@ public class ClienteRepositoryDAOImpl implements ClienteRepository {
 	public Cliente findCliente(int id) {
 		ClienteDTO clienteDTO = clienteDAO.findById(id);
 		if (clienteDTO != null) {
-			Cliente cliente = new Cliente();
+
 			System.out.println(clienteDTO.getNombre());
-			ClienteAssembler.update(cliente, clienteDTO);
+			Cliente cliente = ClienteAssembler.create(clienteDTO);
 			return cliente;
 		}
 		return null;
@@ -48,10 +48,11 @@ public class ClienteRepositoryDAOImpl implements ClienteRepository {
 		List<Cliente> clienteList = new ArrayList<Cliente>();
 		Iterator<ClienteDTO> itr = clientesDTO.iterator();
 		while (itr.hasNext()) {
-			Cliente cliente = new Cliente();
 			ClienteDTO clienteDTO = (ClienteDTO) itr.next();
-			ClienteAssembler.update(cliente, clienteDTO);
+			System.out.println(clienteDTO.getNombre());
+			Cliente cliente = ClienteAssembler.create(clienteDTO);
 			clienteList.add(cliente);
+			System.out.println(cliente.getNombre());
 		}
 		return clienteList;
 	}

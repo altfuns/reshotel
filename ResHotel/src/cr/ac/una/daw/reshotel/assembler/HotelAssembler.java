@@ -23,6 +23,18 @@ public class HotelAssembler {
 		return dto;
 	}
 
+	public static Hotel create(HotelDTO dto) {
+		Hotel entity = new Hotel();
+		entity.setId(dto.getId());
+		entity.setTelefono(dto.getTelefono());
+		entity.setEmail(dto.getEmail());
+		entity.setClase(dto.getClase());
+		entity.setNombrePersonaEncargada(dto.getNombrePersonaEncargada());
+		entity.setUbicacionId(dto.getUbicacionId());
+
+		return entity;
+	}
+
 	/**
 	 * Actualizado los datos del dto basado en los del objeto
 	 * 

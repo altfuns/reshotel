@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="cr.ac.una.daw.reshotel.dto.UbicacionDTO" table="ubicacion">
+    <id name="id" column="id" type="int">
+        <generator class="native"></generator>
+    </id>
+    <property name="ciudad" column="ciudad" type="string"></property>
+    <property name="pais" column="pais" type="string"></property>
+</class>
+</hibernate-mapping>

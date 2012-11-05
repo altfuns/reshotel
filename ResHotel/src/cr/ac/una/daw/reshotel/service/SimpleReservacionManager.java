@@ -2,37 +2,45 @@ package cr.ac.una.daw.reshotel.service;
 
 import java.util.List;
 
-import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
+import cr.ac.una.daw.reshotel.domain.Reservacion;
+import cr.ac.una.daw.reshotel.domain.ReservacionRepository;
 
 public class SimpleReservacionManager implements ReservacionManager {
-	private List<ReservacionDTO> reservaciones;
+	private List<Reservacion> reservaciones;
 
-	public List<ReservacionDTO> getReservaciones() {
+	private ReservacionRepository repository;
+
+	public void setRepository(ReservacionRepository repository) {
+		this.repository = repository;
+	}
+
+	public List<Reservacion> getReservaciones() {
 		return reservaciones;
 	}
 
-	public void setReservacions(List<ReservacionDTO> reservaciones) {
+	public void setReservaciones(List<Reservacion> reservaciones) {
 		this.reservaciones = reservaciones;
 	}
 
 	@Override
-	public ReservacionDTO find(int id) {
-		for (ReservacionDTO reservacion : reservaciones) {
-			if (id == reservacion.id) {
-				return reservacion;
-			}
+	public Reservacion find(int id) {
+		return repository.findReservacion(id);
+	}
+
+	@Override
+	public void save(cr.ac.una.daw.reshotel.domain.Reservacion reservacion) {
+		if (reservacion.getId() != -1) {
+			repository.updateReservacion(reservacion);
+		} else {
+			repository.insertReservacion(reservacion);
 		}
-		return null;
 	}
 
 	@Override
-	public void save(ReservacionDTO reservacion) {
+	public void delete(Reservacion reservacion) {
+		if (reservacion != null) {
+			repository.deleteReservacion(reservacion);
+		}
 
-	}
-
-	@Override
-	public void delete(ReservacionDTO reservacion) {
-		// TODO Auto-generated method stub
-		
 	}
 }

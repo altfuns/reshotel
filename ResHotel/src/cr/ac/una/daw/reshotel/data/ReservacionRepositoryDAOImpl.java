@@ -18,28 +18,31 @@ public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 	}
 
 	public boolean insertReservacion(Reservacion reservacion) {
-		ReservacionDTO reservacionDTO = ReservacionAssembler.create(reservacion);
+		ReservacionDTO reservacionDTO = ReservacionAssembler
+				.create(reservacion);
 		return (reservacionDAO.insert(reservacionDTO));
 	}
 
 	public boolean deleteReservacion(Reservacion reservacion) {
-		ReservacionDTO reservacionDTO = ReservacionAssembler.create(reservacion);
+		ReservacionDTO reservacionDTO = ReservacionAssembler
+				.create(reservacion);
 		return (reservacionDAO.delete(reservacionDTO));
 	}
 
 	public Reservacion findReservacion(int id) {
 		ReservacionDTO reservacionDTO = reservacionDAO.findById(id);
 		if (reservacionDTO != null) {
-			Reservacion reservacion = new Reservacion();
 			System.out.println(reservacionDTO.id);
-			ReservacionAssembler.update(reservacion, reservacionDTO);
+			Reservacion reservacion = ReservacionAssembler
+					.create(reservacionDTO);
 			return reservacion;
 		}
 		return null;
 	}
 
 	public boolean updateReservacion(Reservacion reservacion) {
-		ReservacionDTO reservacionDTO = ReservacionAssembler.create(reservacion);
+		ReservacionDTO reservacionDTO = ReservacionAssembler
+				.create(reservacion);
 		return (reservacionDAO.update(reservacionDTO));
 	}
 
@@ -48,9 +51,9 @@ public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 		List<Reservacion> reservacionList = new ArrayList<Reservacion>();
 		Iterator<ReservacionDTO> itr = reservacionsDTO.iterator();
 		while (itr.hasNext()) {
-			Reservacion reservacion = new Reservacion();
 			ReservacionDTO reservacionDTO = (ReservacionDTO) itr.next();
-			ReservacionAssembler.update(reservacion, reservacionDTO);
+			Reservacion reservacion = ReservacionAssembler
+					.create(reservacionDTO);
 			reservacionList.add(reservacion);
 		}
 		return reservacionList;

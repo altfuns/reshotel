@@ -13,6 +13,7 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
+import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 import cr.ac.una.daw.reshotel.service.ReservacionManager;
 
@@ -28,7 +29,7 @@ public class ReservacionEliminarController implements Controller {
 
 		int id = Integer.parseInt(request.getParameter("id"));
 
-		ReservacionDTO dto = reservacionManager.find(id);
+		Reservacion dto = reservacionManager.find(id);
 
 		if (dto != null) {
 			reservacionManager.delete(dto);

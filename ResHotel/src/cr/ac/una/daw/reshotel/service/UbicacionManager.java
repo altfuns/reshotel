@@ -1,16 +1,18 @@
 package cr.ac.una.daw.reshotel.service;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.List;
 
+import cr.ac.una.daw.reshotel.domain.Ubicacion;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 
 public interface UbicacionManager extends Serializable {
-	public List<UbicacionDTO> getUbicaciones();
+	public Collection<Ubicacion> getUbicaciones();
 
-	public UbicacionDTO find(int id);
+	public Ubicacion find(int id);
 
-	public void save(UbicacionDTO ubicacion);
+	public void save(Ubicacion ubicacion);
 	
-	public void delete(UbicacionDTO ubicacion);
+	public void delete(Ubicacion ubicacion);
 }

@@ -1,6 +1,5 @@
 package cr.ac.una.daw.reshotel.domain;
 
-
 /**
  * 
  * {@link Reservacion} representa los datos de una fila de la tabla RESERVACION
@@ -8,13 +7,13 @@ package cr.ac.una.daw.reshotel.domain;
  */
 public class Reservacion extends DomainObject {
 
-	private int habitacionId;
+	private int habitacionId = -1;
 	private Habitacion habitacion;
-	private String fechaEntrada;
-	private String fechaSalida;
-	private int ocupacion; // TODO revisar tipo de dato
-	private double monto;
-	private String identificacionCliente;
+	private String fechaEntrada = "";
+	private String fechaSalida = "";
+	private int ocupacion = 0; // TODO revisar tipo de dato
+	private double monto = 0;
+	private String identificacionCliente = "";
 
 	public Reservacion() {
 		super();

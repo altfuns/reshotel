@@ -7,12 +7,12 @@ package cr.ac.una.daw.reshotel.domain;
  */
 public class Hotel extends DomainObject {
 
-	private int ubicacionId;
+	private int ubicacionId = -1;
 	private Ubicacion ubicacion;
-	private String telefono;
-	private String email;
-	private int clase;
-	private String nombrePersonaEncargada;
+	private String telefono = "";
+	private String email = "";
+	private int clase = 0;
+	private String nombrePersonaEncargada = "";
 
 	public Hotel() {
 		super();

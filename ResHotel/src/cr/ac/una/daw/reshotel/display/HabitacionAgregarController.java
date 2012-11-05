@@ -14,6 +14,8 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
+import cr.ac.una.daw.reshotel.domain.Habitacion;
+import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
@@ -30,18 +32,18 @@ public class HabitacionAgregarController implements Controller {
 		String now = (new java.util.Date()).toString();
 		logger.info("returning habitacion view with " + now);
 
-		HabitacionDTO dto = new HabitacionDTO();
+		Habitacion entity = new Habitacion();
 
-		dto.id = -1;
-		dto.ocupacionMaxima = 0;
-		dto.numero = 0;
-		dto.mobiliario = "";
-		dto.costo = 0;
+		entity.setId(-1);
+		entity.setOcupacionMaxima(0);
+		entity.setNumero(0);
+		entity.setMobiliario("");
+		entity.setCosto(0);
 
-		List<HotelDTO> hoteles = hotelManager.getHoteles();
+		List<Hotel> hoteles = hotelManager.getHoteles();
 
 		Map<String, Object> myModel = new HashMap<String, Object>();
-		myModel.put("habitacion", dto);
+		myModel.put("habitacion", entity);
 		myModel.put("hoteles", hoteles);
 
 		return new ModelAndView("habitacionDetalleView", "model", myModel);

@@ -45,7 +45,7 @@
         <property name="configLocation" >
 
             <value>
-classpath:hibernate.cfg.xml
+classpath:hibernate.cfg.xml
             </value>
         </property>
     </bean>
@@ -71,12 +71,22 @@ classpath:hibernate.cfg.xml
 
     <bean
         id="clienteRepository"
-        class="ccr.ac.una.daw.reshotel.data.CienteRepositoryDAOImpl" >
+        class="cr.ac.una.daw.reshotel.data.ClienteRepositoryDAOImpl" >
 
         <constructor-arg>
 
             <ref bean="clienteDAO" />
         </constructor-arg>
+    </bean>
+
+    <bean
+        id="clienteManager"
+        class="cr.ac.una.daw.reshotel.service.SimpleClienteManager" >
+
+        <property name="repository" >
+
+            <ref bean="clienteRepository" />
+        </property>
     </bean>
 
     <bean
@@ -91,12 +101,22 @@ classpath:hibernate.cfg.xml
 
     <bean
         id="habitacionRepository"
-        class="ccr.ac.una.daw.reshotel.data.HabitacionRepositoryDAOImpl" >
+        class="cr.ac.una.daw.reshotel.data.HabitacionRepositoryDAOImpl" >
 
         <constructor-arg>
 
             <ref bean="habitacionDAO" />
         </constructor-arg>
+    </bean>
+    
+     <bean
+        id="habitacionManager"
+        class="cr.ac.una.daw.reshotel.service.SimpleHabitacionManager" >
+
+        <property name="repository" >
+
+            <ref bean="habitacionRepository" />
+        </property>
     </bean>
 
     <bean
@@ -111,7 +131,7 @@ classpath:hibernate.cfg.xml
 
     <bean
         id="hotelRepository"
-        class="ccr.ac.una.daw.reshotel.data.HotelRepositoryDAOImpl" >
+        class="cr.ac.una.daw.reshotel.data.HotelRepositoryDAOImpl" >
 
         <constructor-arg>
 
@@ -131,7 +151,7 @@ classpath:hibernate.cfg.xml
 
     <bean
         id="reservacionRepository"
-        class="ccr.ac.una.daw.reshotel.data.ReservacionRepositoryDAOImpl" >
+        class="cr.ac.una.daw.reshotel.data.ReservacionRepositoryDAOImpl" >
 
         <constructor-arg>
 
@@ -151,7 +171,7 @@ classpath:hibernate.cfg.xml
 
     <bean
         id="ubicacionRepository"
-        class="ccr.ac.una.daw.reshotel.data.UbicacionRepositoryDAOImpl" >
+        class="cr.ac.una.daw.reshotel.data.UbicacionRepositoryDAOImpl" >
 
         <constructor-arg>
 
@@ -159,7 +179,16 @@ classpath:hibernate.cfg.xml
         </constructor-arg>
     </bean>
     
-    
+    <bean
+        id="ubicacionManager"
+        class="cr.ac.una.daw.reshotel.service.SimpleUbicacionManager" >
+
+        <property name="repository" >
+
+            <ref bean="ubicacionRepository" />
+        </property>
+    </bean>
+
     <context:property-placeholder location="WEB-INF/jdbc.properties" />
 
 </beans>
