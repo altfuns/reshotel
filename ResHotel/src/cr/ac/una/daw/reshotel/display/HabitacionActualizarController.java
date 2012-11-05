@@ -31,6 +31,9 @@ public class HabitacionActualizarController implements Controller {
 
 		Habitacion entity = id == -1 ? new Habitacion() : habitacionManager
 				.find(id);
+		entity.setHotelId(Integer.parseInt(request
+				.getParameter("hotel")));
+		System.out.println(entity.getHotelId());
 		entity.setOcupacionMaxima(Integer.parseInt(request
 				.getParameter("ocupacionMaxima")));
 		entity.setNumero(Integer.parseInt(request.getParameter("numero")));

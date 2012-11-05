@@ -14,6 +14,7 @@ CREATE TABLE hotel (
 
 CREATE TABLE habitacion (
 	id INTEGER PRIMARY KEY,
+	hotel INTEGER,
 	ocupacion_maxima INTEGER,
 	numero INTEGER,
 	mobiliario TEXT,

@@ -10,12 +10,23 @@ import cr.ac.una.daw.reshotel.domain.Reservacion;
  */
 public class HabitacionDTO extends DTO {
 
+	public int hotelId;
 	public int ocupacionMaxima;
 	public int numero;
 	// TODO: revisar que es mobiliario
 	public String mobiliario;
 	public double costo;
 	public List<Reservacion> reservaciones;
+
+	
+	
+	public int getHotelId() {
+		return hotelId;
+	}
+
+	public void setHotelId(int hotelId) {
+		this.hotelId = hotelId;
+	}
 
 	public int getOcupacionMaxima() {
 		return ocupacionMaxima;

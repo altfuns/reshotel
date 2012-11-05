@@ -6,6 +6,7 @@
     <id name="id" column="id" type="int">
         <generator class="native"></generator>
     </id>
+    <property name="hotelId" column="hotel" type="int"></property>
     <property name="ocupacionMaxima" column="ocupacion_maxima" type="int"></property>
     <property name="numero" column="numero" type="int"></property>
     <property name="mobiliario" column="mobiliario" type="string"></property>

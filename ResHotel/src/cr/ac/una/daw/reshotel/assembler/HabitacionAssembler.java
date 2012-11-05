@@ -16,6 +16,7 @@ public class HabitacionAssembler {
 	public static HabitacionDTO create(Habitacion obj) {
 		HabitacionDTO dto = new HabitacionDTO();
 		dto.id = obj.getId();
+		dto.hotelId = obj.getHotelId();
 		dto.ocupacionMaxima = obj.getOcupacionMaxima();
 		dto.numero = obj.getNumero();
 		dto.mobiliario = obj.getMobiliario();
@@ -28,6 +29,7 @@ public class HabitacionAssembler {
 	public static Habitacion create(HabitacionDTO dto) {
 		Habitacion obj = new Habitacion();
 		obj.setId(dto.getId());
+		obj.setHotelId(dto.getHotelId());
 		obj.setOcupacionMaxima(dto.getOcupacionMaxima());
 		obj.setNumero(dto.getNumero());
 		obj.setMobiliario(dto.getMobiliario());
@@ -45,6 +47,7 @@ public class HabitacionAssembler {
 	 */
 	public static void update(Habitacion obj, HabitacionDTO dto) {
 		dto.id = obj.getId();
+		dto.hotelId = obj.getHotelId();
 		dto.ocupacionMaxima = obj.getOcupacionMaxima();
 		dto.numero = obj.getNumero();
 		dto.mobiliario = obj.getMobiliario();

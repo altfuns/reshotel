@@ -13,6 +13,7 @@ import cr.ac.una.daw.reshotel.data.Constantes.HabitacionColumns;
  */
 public class Habitacion extends DomainObject {
 
+	private int hotelId;
 	private int ocupacionMaxima;
 	private int numero;
 	// TODO: revisar que es mobiliario
@@ -33,6 +34,16 @@ public class Habitacion extends DomainObject {
 		this.mobiliario = mobiliario;
 		this.costo = costo;
 		this.reservaciones = reservaciones;
+	}
+
+	
+	
+	public int getHotelId() {
+		return hotelId;
+	}
+
+	public void setHotelId(int hotelId) {
+		this.hotelId = hotelId;
 	}
 
 	public int getOcupacionMaxima() {

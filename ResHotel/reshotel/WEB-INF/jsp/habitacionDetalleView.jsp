@@ -1,3 +1,4 @@
+<%@page import="cr.ac.una.daw.reshotel.domain.Hotel"%>
 <%@page import="cr.ac.una.daw.reshotel.domain.Habitacion"%>
 <%@page import="cr.ac.una.daw.reshotel.dto.HabitacionDTO"%>
 <%@ page import="java.util.*"%>
@@ -13,14 +14,29 @@
 <%
 	Map<String, Object> myModel = (Map<String, Object>) request
 			.getAttribute("model");
-	Habitacion habitacion = (Habitacion) myModel
-			.get("habitacion");
+	Habitacion habitacion = (Habitacion) myModel.get("habitacion");
+	List<Hotel> hoteles = (List<Hotel>) myModel.get("hoteles");
 %>
 <form name="ActualizarHabitacion"
 	action="/reshotel/actualizarHabitacion" method="get">
 	<input type="hidden" name="id" value="<%=habitacion.getId()%>" />
 	<table>
 		<tbody>
+			<tr>
+				<th>Hotel:</th>
+				<td><select name="hotel">
+						<option value="-1">Seleccione una opción</option>
+						<%
+							for (Hotel hotel : hoteles) {
+						%>
+						<option value="<%=hotel.getId()%>"
+							<%=hotel.getId() == habitacion.getHotelId() ? "selected"
+						: ""%>><%=hotel.getId()%></option>
+						<%
+							}
+						%>
+				</select></td>
+			</tr>
 			<tr>
 				<th>Ocupaci&oacute;n M&aacute;xima:</th>
 				<td><input type="text" name="ocupacionMaxima"
