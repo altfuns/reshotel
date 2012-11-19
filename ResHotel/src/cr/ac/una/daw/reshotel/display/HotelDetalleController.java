@@ -21,6 +21,11 @@ import cr.ac.una.daw.reshotel.service.HabitacionManager;
 import cr.ac.una.daw.reshotel.service.HotelManager;
 import cr.ac.una.daw.reshotel.service.UbicacionManager;
 
+/**
+ * 
+ * Controlador de pagina para mostrar el detalle de un hotel.
+ *
+ */
 public class HotelDetalleController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HotelManager hotelManager;

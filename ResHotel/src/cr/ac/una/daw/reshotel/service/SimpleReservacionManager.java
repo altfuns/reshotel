@@ -6,6 +6,11 @@ import java.util.List;
 import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.domain.ReservacionRepository;
 
+/**
+ * Implementa los metodos necesarios para dar mantenimiento a una reservacion.
+ * Interactua con el repositio de datos de la capa de acceso a datos.
+ *
+ */
 public class SimpleReservacionManager implements ReservacionManager {
 	private List<Reservacion> reservaciones;
 

@@ -10,6 +10,11 @@ import cr.ac.una.daw.reshotel.domain.ClienteRepository;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 import cr.ac.una.daw.reshotel.data.*;
 
+/**
+ * Implementa los metodos necesarios para dar mantenimiento a un cliente.
+ * Interactua con el repositio de datos de la capa de acceso a datos.
+ *
+ */
 public class SimpleClienteManager implements ClienteManager {
 
 	private ClienteRepository repository;

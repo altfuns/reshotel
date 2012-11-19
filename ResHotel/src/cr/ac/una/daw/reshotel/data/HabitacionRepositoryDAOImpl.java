@@ -10,23 +10,38 @@ import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.domain.HabitacionRepository;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * Repositorio de datos de la clase Habitacion
+ * @author alfonso
+ *
+ */
 public class HabitacionRepositoryDAOImpl implements HabitacionRepository {
 	private HabitacionDAO habitacionDAO;
 
+	
 	HabitacionRepositoryDAOImpl(HabitacionDAO habitacionDAO) {
 		this.habitacionDAO = habitacionDAO;
 	}
 
+	/**
+	 * Crea un nuevo registro de habitacion
+	 */
 	public boolean insertHabitacion(Habitacion habitacion) {
 		HabitacionDTO habitacionDTO = HabitacionAssembler.create(habitacion);
 		return (habitacionDAO.insert(habitacionDTO));
 	}
 
+	/**
+	 * Elimina el registro de la habitacion
+	 */
 	public boolean deleteHabitacion(Habitacion habitacion) {
 		HabitacionDTO habitacionDTO = HabitacionAssembler.create(habitacion);
 		return (habitacionDAO.delete(habitacionDTO));
 	}
 
+	/**
+	 * Busca el registro de habitacion
+	 */
 	public Habitacion findHabitacion(int id) {
 		HabitacionDTO habitacionDTO = habitacionDAO.findById(id);
 		if (habitacionDTO != null) {
@@ -37,11 +52,17 @@ public class HabitacionRepositoryDAOImpl implements HabitacionRepository {
 		return null;
 	}
 
+	/**
+	 * Actualiza el registro de habitacion
+	 */
 	public boolean updateHabitacion(Habitacion habitacion) {
 		HabitacionDTO habitacionDTO = HabitacionAssembler.create(habitacion);
 		return (habitacionDAO.update(habitacionDTO));
 	}
 
+	/**
+	 * Obtiene todos los registros de habitaciones
+	 */
 	public Collection<Habitacion> findAllHabitacion() {
 		Collection<HabitacionDTO> habitacionsDTO = habitacionDAO.findAll();
 		List<Habitacion> habitacionList = new ArrayList<Habitacion>();

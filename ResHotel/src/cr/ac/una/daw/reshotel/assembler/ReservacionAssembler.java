@@ -3,6 +3,11 @@ package cr.ac.una.daw.reshotel.assembler;
 import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
+/**
+ * Esamblador de la clase Reservacion
+ * @author alfonso
+ *
+ */
 public class ReservacionAssembler {
 
 	/**

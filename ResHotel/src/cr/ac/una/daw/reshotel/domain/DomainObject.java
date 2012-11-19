@@ -1,5 +1,10 @@
 package cr.ac.una.daw.reshotel.domain;
 
+/**
+ * 
+ * Contiene los elementos comunes de un objeto de dominio
+ *
+ */
 public class DomainObject {
 
 	protected int id = -1;

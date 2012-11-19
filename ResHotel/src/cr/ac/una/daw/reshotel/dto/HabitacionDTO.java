@@ -2,6 +2,7 @@ package cr.ac.una.daw.reshotel.dto;
 
 import java.util.List;
 
+import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.domain.Reservacion;
 
 /**
@@ -17,6 +18,7 @@ public class HabitacionDTO extends DTO {
 	public String mobiliario;
 	public double costo;
 	public List<Reservacion> reservaciones;
+	public HotelDTO hotel;
 
 	
 	
@@ -67,5 +69,17 @@ public class HabitacionDTO extends DTO {
 	public void setReservaciones(List<Reservacion> reservaciones) {
 		this.reservaciones = reservaciones;
 	}
+
+	public HotelDTO getHotel() {
+		return hotel;
+	}
+
+	public void setHotel(HotelDTO hotel) {
+		this.hotel = hotel;
+	}
+
+
+	
+	
 
 }

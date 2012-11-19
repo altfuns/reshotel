@@ -12,6 +12,11 @@ import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.domain.HotelRepository;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
+/**
+ * Repositorio de datos de la clase Hotel
+ * @author alfonso
+ *
+ */
 public class HotelRepositoryDAOImpl implements HotelRepository {
 	private HotelDAO hotelDAO;
 
@@ -19,31 +24,47 @@ public class HotelRepositoryDAOImpl implements HotelRepository {
 		this.hotelDAO = hotelDAO;
 	}
 
+	/**
+	 * Inserta un nuevo hotel
+	 */
 	public boolean insertHotel(Hotel hotel) {
 		HotelDTO hotelDTO = HotelAssembler.create(hotel);
 		return (hotelDAO.insert(hotelDTO));
 	}
 
+	/**
+	 * Elimina el hotel con id
+	 */
 	public boolean deleteHotel(Hotel hotel) {
 		HotelDTO hotelDTO = HotelAssembler.create(hotel);
 		return (hotelDAO.delete(hotelDTO));
 	}
 
+	/**
+	 * Obtiene el registro de hotel
+	 */
 	public Hotel findHotel(int id) {
 		HotelDTO hotelDTO = hotelDAO.findById(id);
 		if (hotelDTO != null) {
 			System.out.println(hotelDTO.id);
+			System.out.println(hotelDTO.ubicacionId);
 			Hotel hotel = HotelAssembler.create(hotelDTO);
 			return hotel;
 		}
 		return null;
 	}
 
+	/**
+	 * Actualiza el registro de hotel
+	 */
 	public boolean updateHotel(Hotel hotel) {
 		HotelDTO hotelDTO = HotelAssembler.create(hotel);
 		return (hotelDAO.update(hotelDTO));
 	}
 
+	/**
+	 * Encuentra el registro de hotel
+	 */
 	public Collection<Hotel> findAllHotel() {
 		Collection<HotelDTO> hotelsDTO = hotelDAO.findAll();
 		List<Hotel> hotelList = new ArrayList<Hotel>();
@@ -52,6 +73,7 @@ public class HotelRepositoryDAOImpl implements HotelRepository {
 			HotelDTO hotelDTO = (HotelDTO) itr.next();
 			Hotel hotel = HotelAssembler.create(hotelDTO);
 			System.out.println(hotel.getId());
+			System.out.println(hotel.getUbicacionId());
 			hotelList.add(hotel);
 		}
 		return hotelList;

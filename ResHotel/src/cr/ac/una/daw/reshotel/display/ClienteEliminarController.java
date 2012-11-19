@@ -16,6 +16,11 @@ import org.springframework.web.servlet.mvc.Controller;
 import cr.ac.una.daw.reshotel.domain.Cliente;
 import cr.ac.una.daw.reshotel.service.ClienteManager;
 
+/**
+ * 
+ * Controlador de pagina para eliminar un Cliente
+ *
+ */
 public class ClienteEliminarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ClienteManager clienteManager;

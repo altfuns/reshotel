@@ -17,6 +17,11 @@ import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 
+/**
+ * 
+ * Controlador de pagina para eliminar un Habitacion
+ *
+ */
 public class HabitacionEliminarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HabitacionManager habitacionManager;

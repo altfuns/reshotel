@@ -17,6 +17,7 @@
 <table>
 	<thead>
 		<tr>
+			<th>NOmbre</th>
 			<th>Telefono</th>
 			<th>Email</th>
 			<th>Clase</th>
@@ -30,6 +31,7 @@
 				for (Hotel obj : objs) {
 		%>
 		<tr>
+			<td><%=obj.getNombre()%></td>
 			<td><%=obj.getTelefono()%></td>
 			<td><%=obj.getEmail()%></td>
 			<td><%=obj.getClase()%></td>

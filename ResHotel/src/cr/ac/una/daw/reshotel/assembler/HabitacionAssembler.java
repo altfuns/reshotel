@@ -3,6 +3,12 @@ package cr.ac.una.daw.reshotel.assembler;
 import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * Ensamblador de la clase Habitacion
+ * 
+ * @author alfonso
+ * 
+ */
 public class HabitacionAssembler {
 	/**
 	 * Crea una nueva instancia de la clase {@link HabitacionDTO} desde un
@@ -26,6 +32,13 @@ public class HabitacionAssembler {
 		return dto;
 	}
 
+	/**
+	 * Create un objeto habitacion desde un objeto HabitacionDTO
+	 * 
+	 * @param dto
+	 * @return
+	 * Nueva instancia de la clase Habitacion
+	 */
 	public static Habitacion create(HabitacionDTO dto) {
 		Habitacion obj = new Habitacion();
 		obj.setId(dto.getId());
@@ -35,6 +48,9 @@ public class HabitacionAssembler {
 		obj.setMobiliario(dto.getMobiliario());
 		obj.setCosto(dto.getCosto());
 		obj.setReservaciones(dto.getReservaciones());
+		if (dto.getHotel() != null) {
+			obj.setHotel(HotelAssembler.create(dto.getHotel()));
+		}
 
 		return obj;
 	}

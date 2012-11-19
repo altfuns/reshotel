@@ -2,6 +2,11 @@ package cr.ac.una.daw.reshotel.domain;
 
 import java.util.Collection;
 
+/**
+ * 
+ * HotelRepository brinda los metodos necesarios para el matenimiento de Hoteles 
+ *
+ */
 public interface HotelRepository {
 	public boolean insertHotel(Hotel hotel);
 

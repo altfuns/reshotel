@@ -1,0 +1,1719 @@
+info it worked if it ends with ok
+verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'socket.io' ]
+info using npm@1.1.4
+info using node@v0.6.19
+verbose config file /home/alfonso/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose cache add [ 'socket.io', null ]
+silly cache add: name, spec, args [ undefined, 'socket.io', [ 'socket.io', null ] ]
+verbose parsed url { pathname: 'socket.io', path: 'socket.io', href: 'socket.io' }
+verbose addNamed [ 'socket.io', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'socket.io', '', false ]
+verbose raw, before any munging socket.io
+verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+verbose url resolved https://registry.npmjs.org/socket.io
+verbose etag "BAIMWWH651A6U8PPLPYSU9L0H"
+http GET https://registry.npmjs.org/socket.io
+http 304 https://registry.npmjs.org/socket.io
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"BAIMWWH651A6U8PPLPYSU9L0H"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:36 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag socket.io from cache
+silly name, range, hasData 2 [ 'socket.io', '', true ]
+silly versions [ 'socket.io',
+silly versions   [ '0.3.8',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.5.1',
+silly versions     '0.5.3',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.3',
+silly versions     '0.6.4',
+silly versions     '0.6.5',
+silly versions     '0.6.6',
+silly versions     '0.6.7',
+silly versions     '0.6.8',
+silly versions     '0.6.9',
+silly versions     '0.6.10',
+silly versions     '0.6.11',
+silly versions     '0.6.12',
+silly versions     '0.6.14',
+silly versions     '0.6.15',
+silly versions     '0.6.16',
+silly versions     '0.6.17',
+silly versions     '0.6.18',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.7.4',
+silly versions     '0.7.5',
+silly versions     '0.7.6',
+silly versions     '0.7.7',
+silly versions     '0.7.8',
+silly versions     '0.7.9',
+silly versions     '0.7.10',
+silly versions     '0.7.11',
+silly versions     '0.8.0',
+silly versions     '0.8.1',
+silly versions     '0.8.2',
+silly versions     '0.8.3',
+silly versions     '0.8.4',
+silly versions     '0.8.5',
+silly versions     '0.8.6',
+silly versions     '0.8.7',
+silly versions     '0.9.0',
+silly versions     '0.9.1',
+silly versions     '0.9.1-1',
+silly versions     '0.9.2',
+silly versions     '0.9.3',
+silly versions     '0.9.4',
+silly versions     '0.9.5',
+silly versions     '0.9.6',
+silly versions     '0.9.7',
+silly versions     '0.9.8',
+silly versions     '0.9.9',
+silly versions     '0.9.10',
+silly versions     '0.9.11' ] ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '18957f802cf463945881a0179156168743cf3d35',
+verbose bin dist     tarball: 'http://registry.npmjs.org/socket.io/-/socket.io-0.9.11.tgz' } ]
+verbose caching /home/alfonso/.npm/socket.io/0.9.11/package/package.json
+verbose loadDefaults socket.io@0.9.11
+silly resolved [ { name: 'socket.io',
+silly resolved     version: '0.9.11',
+silly resolved     description: 'Real-time apps made cross-browser & easy with a WebSocket-like API',
+silly resolved     homepage: 'http://socket.io',
+silly resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' },
+silly resolved        { name: 'Arnout Kazemier', email: 'info@3rd-eden.com' },
+silly resolved        { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Einar Otto Stangvik', email: 'einaros@gmail.com' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/LearnBoost/socket.io.git' },
+silly resolved     dependencies: 
+silly resolved      { 'socket.io-client': '0.9.11',
+silly resolved        policyfile: '0.0.4',
+silly resolved        redis: '0.7.3' },
+silly resolved     devDependencies: 
+silly resolved      { expresso: '0.9.2',
+silly resolved        should: '*',
+silly resolved        benchmark: '0.2.2',
+silly resolved        microtime: '0.1.3-1',
+silly resolved        colors: '0.5.1' },
+silly resolved     optionalDependencies: { redis: '0.7.3' },
+silly resolved     main: 'index',
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     scripts: { test: 'make test' },
+silly resolved     _id: 'socket.io@0.9.11',
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'socket.io' } ]
+info into /home/alfonso/workspace/una/reshotel/ResHotel socket.io@0.9.11
+info installOne socket.io@0.9.11
+verbose from cache /home/alfonso/.npm/socket.io/0.9.11/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm'
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm 755
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/LICENSE
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/.travis.yml
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/Makefile
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/Readme.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/index.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/History.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/benchmarks
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/benchmarks/runner.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/benchmarks/decode.bench.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/benchmarks/encode.bench.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/socket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/parser.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/util.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/static.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transport.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/logger.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/store.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/socket.io.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/client.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/manager.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/namespace.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/stores
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/stores/memory.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/stores/redis.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/http-polling.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/index.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/http.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/websocket
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/websocket/default.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/websocket/hybi-16.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/websocket/hybi-07-12.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package/lib/transports/websocket/index.js
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/___socket.io.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/package.json
+verbose loadDefaults socket.io@0.9.11
+info preinstall socket.io@0.9.11
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'socket.io-client@0.9.11', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'socket.io-client@0.9.11',
+silly cache add: name, spec, args   [ 'socket.io-client@0.9.11', null ] ]
+verbose parsed url { pathname: 'socket.io-client@0.9.11',
+verbose parsed url   path: 'socket.io-client@0.9.11',
+verbose parsed url   href: 'socket.io-client@0.9.11' }
+silly cache add: name, spec, args [ 'socket.io-client',
+silly cache add: name, spec, args   '0.9.11',
+silly cache add: name, spec, args   [ 'socket.io-client', '0.9.11' ] ]
+verbose parsed url { pathname: '0.9.11', path: '0.9.11', href: '0.9.11' }
+verbose addNamed [ 'socket.io-client', '0.9.11' ]
+verbose addNamed [ '0.9.11', '0.9.11' ]
+verbose cache add [ 'policyfile@0.0.4', null ]
+silly cache add: name, spec, args [ undefined, 'policyfile@0.0.4', [ 'policyfile@0.0.4', null ] ]
+verbose parsed url { pathname: 'policyfile@0.0.4',
+verbose parsed url   path: 'policyfile@0.0.4',
+verbose parsed url   href: 'policyfile@0.0.4' }
+silly cache add: name, spec, args [ 'policyfile', '0.0.4', [ 'policyfile', '0.0.4' ] ]
+verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+verbose addNamed [ 'policyfile', '0.0.4' ]
+verbose addNamed [ '0.0.4', '0.0.4' ]
+verbose cache add [ 'redis@0.7.3', null ]
+silly cache add: name, spec, args [ undefined, 'redis@0.7.3', [ 'redis@0.7.3', null ] ]
+verbose parsed url { pathname: 'redis@0.7.3',
+verbose parsed url   path: 'redis@0.7.3',
+verbose parsed url   href: 'redis@0.7.3' }
+silly cache add: name, spec, args [ 'redis', '0.7.3', [ 'redis', '0.7.3' ] ]
+verbose parsed url { pathname: '0.7.3', path: '0.7.3', href: '0.7.3' }
+verbose addNamed [ 'redis', '0.7.3' ]
+verbose addNamed [ '0.7.3', '0.7.3' ]
+verbose raw, before any munging socket.io-client/0.9.11
+verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-client/0.9.11' ]
+verbose url resolved https://registry.npmjs.org/socket.io-client/0.9.11
+verbose etag "A40T8Y67YVQXRFIDFE1G3RZ4N"
+http GET https://registry.npmjs.org/socket.io-client/0.9.11
+verbose raw, before any munging policyfile/0.0.4
+verbose url resolving [ 'https://registry.npmjs.org/', './policyfile/0.0.4' ]
+verbose url resolved https://registry.npmjs.org/policyfile/0.0.4
+verbose etag "2KV6P04UH9SRH9PRJ2MA8QY9H"
+http GET https://registry.npmjs.org/policyfile/0.0.4
+verbose raw, before any munging redis/0.7.3
+verbose url resolving [ 'https://registry.npmjs.org/', './redis/0.7.3' ]
+verbose url resolved https://registry.npmjs.org/redis/0.7.3
+verbose etag "B5MJ3PZKEVJ155OLLE4M52X8U"
+http GET https://registry.npmjs.org/redis/0.7.3
+http 304 https://registry.npmjs.org/socket.io-client/0.9.11
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"A40T8Y67YVQXRFIDFE1G3RZ4N"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:37 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag socket.io-client/0.9.11 from cache
+http 304 https://registry.npmjs.org/policyfile/0.0.4
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"2KV6P04UH9SRH9PRJ2MA8QY9H"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:37 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag policyfile/0.0.4 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '94defc1b29e0d8a8fe958c1cf33300f68d8a19c7',
+verbose bin dist     tarball: 'http://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.11.tgz' } ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'd6b82ead98ae79ebe228e2daf5903311ec982e4d',
+verbose bin dist     tarball: 'http://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz' } ]
+http 304 https://registry.npmjs.org/redis/0.7.3
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"B5MJ3PZKEVJ155OLLE4M52X8U"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:37 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag redis/0.7.3 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'ee57b7a44d25ec1594e44365d8165fa7d1d4811a',
+verbose bin dist     tarball: 'http://registry.npmjs.org/redis/-/redis-0.7.3.tgz' } ]
+verbose caching /home/alfonso/.npm/socket.io-client/0.9.11/package/package.json
+verbose loadDefaults socket.io-client@0.9.11
+verbose caching /home/alfonso/.npm/policyfile/0.0.4/package/package.json
+verbose loadDefaults policyfile@0.0.4
+verbose caching /home/alfonso/.npm/redis/0.7.3/package/package.json
+verbose loadDefaults redis@0.7.3
+silly resolved [ { name: 'socket.io-client',
+silly resolved     description: 'Socket.IO client for the browser and node.js',
+silly resolved     version: '0.9.11',
+silly resolved     main: './lib/io.js',
+silly resolved     browserify: './dist/socket.io.js',
+silly resolved     homepage: 'http://socket.io',
+silly resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' },
+silly resolved        { name: 'Arnout Kazemier', email: 'info@3rd-eden.com' },
+silly resolved        { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Einar Otto Stangvik', email: 'einaros@gmail.com' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/LearnBoost/socket.io-client.git' },
+silly resolved     dependencies: 
+silly resolved      { 'uglify-js': '1.2.5',
+silly resolved        ws: '0.4.x',
+silly resolved        xmlhttprequest: '1.4.2',
+silly resolved        'active-x-obfuscator': '0.0.1' },
+silly resolved     devDependencies: 
+silly resolved      { expresso: '*',
+silly resolved        express: '2.5.x',
+silly resolved        jade: '*',
+silly resolved        stylus: '*',
+silly resolved        'socket.io': '0.9.11',
+silly resolved        'socket.io-client': '0.9.11',
+silly resolved        should: '*' },
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     _id: 'socket.io-client@0.9.11',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'socket.io-client@0.9.11',
+silly resolved     scripts: {} },
+silly resolved   { name: 'policyfile',
+silly resolved     version: '0.0.4',
+silly resolved     author: { name: 'Arnout Kazemier' },
+silly resolved     description: 'Flash Socket Policy File Server. A server to respond to Flash Socket Policy requests, both inline and through a dedicated server instance.',
+silly resolved     main: 'index',
+silly resolved     keywords: 
+silly resolved      [ 'flash',
+silly resolved        'socket',
+silly resolved        'policy',
+silly resolved        'file',
+silly resolved        'server',
+silly resolved        'Flash Socket Policy File Server',
+silly resolved        'cross domain' ],
+silly resolved     directories: { lib: './lib' },
+silly resolved     maintainers: 
+silly resolved      [ { name: 'Arnout Kazemier',
+silly resolved          email: 'info@3rd-Eden.com',
+silly resolved          url: 'http://blog.3rd-Eden.com' } ],
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'https://github.com/3rd-Eden/FlashPolicyFileServer/blob/master/LICENSE' } ],
+silly resolved     repositories: 
+silly resolved      [ { type: 'git',
+silly resolved          url: 'https://github.com/3rd-Eden/FlashPolicyFileServer.git' } ],
+silly resolved     _id: 'policyfile@0.0.4',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'policyfile@0.0.4',
+silly resolved     scripts: {} },
+silly resolved   { name: 'redis',
+silly resolved     version: '0.7.3',
+silly resolved     description: 'Redis client library',
+silly resolved     author: { name: 'Matt Ranney', email: 'mjr@ranney.com' },
+silly resolved     maintainers: 
+silly resolved      [ { name: 'David Trejo',
+silly resolved          email: 'david.daniel.trejo@gmail.com',
+silly resolved          url: 'http://dtrejo.com/' } ],
+silly resolved     main: './index.js',
+silly resolved     scripts: { test: 'node ./test.js' },
+silly resolved     devDependencies: { metrics: '>=0.1.5' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/mranney/node_redis.git' },
+silly resolved     _id: 'redis@0.7.3',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'redis@0.7.3' } ]
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io socket.io-client@0.9.11
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io policyfile@0.0.4
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io redis@0.7.3
+info installOne socket.io-client@0.9.11
+info installOne policyfile@0.0.4
+info installOne redis@0.7.3
+verbose from cache /home/alfonso/.npm/socket.io-client/0.9.11/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client
+verbose from cache /home/alfonso/.npm/policyfile/0.0.4/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile
+verbose from cache /home/alfonso/.npm/redis/0.7.3/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm'
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm 755
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm 755
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm 755
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/LICENSE
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/Makefile
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/README.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/index.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/examples
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/examples/basic.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/examples/basic.fallback.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/doc
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/doc/index.html
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/lib/server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/tests
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/unit.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl/ssl.crt
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl/ssl.private.key
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___policyfile.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile/package.json
+verbose loadDefaults policyfile@0.0.4
+info preinstall policyfile@0.0.4
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/policyfile/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules' ]
+info linkStuff policyfile@0.0.4
+verbose linkBins policyfile@0.0.4
+verbose linkMans policyfile@0.0.4
+verbose rebuildBundles policyfile@0.0.4
+info install policyfile@0.0.4
+info postinstall policyfile@0.0.4
+verbose installOne cb policyfile@0.0.4
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/mem.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/diff_multi_bench_output.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/changelog.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/multi_bench.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/README.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/generate_commands.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/index.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/mget.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/multi2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/subquery.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/pub_sub.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/unix_socket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/eval.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/auth.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/psubscribe.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/monitor.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/subqueries.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/web_server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/extend.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/multi.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/backpressure_drain.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/file.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/simple.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/examples/sort.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib/to_array.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib/util.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib/commands.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib/queue.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser/javascript.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser/hiredis.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/reconnect_test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/buffer_bench.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/hiredis_parser.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/re_sub_test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/sub_quit_test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/codec.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub/pub.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub/server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub/run
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop/pub.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop/server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop/run
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/00
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/speed.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/size-rate.png
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/plot
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___redis.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis/package.json
+verbose loadDefaults redis@0.7.3
+info preinstall redis@0.7.3
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/redis/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules' ]
+info linkStuff redis@0.7.3
+verbose linkBins redis@0.7.3
+verbose linkMans redis@0.7.3
+verbose rebuildBundles redis@0.7.3
+info install redis@0.7.3
+info postinstall redis@0.7.3
+verbose installOne cb redis@0.7.3
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/Makefile
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/README.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/History.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/WebSocketMain.swf
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/socket.io.min.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/WebSocketMainInsecure.swf
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/socket.io.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/bin
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/bin/builder.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/parser.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/events.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/socket.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/io.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/util.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/worker.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node/builder.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node/builder.common.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/socket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/parser.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/util.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/events.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transport.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/io.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/json.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/namespace.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/xhr.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/web_socket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/WebSocketMain.swf
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/WebSocketMainInsecure.zip
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/README.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/sample.html
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/swfobject.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocket.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMain.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/build.sh
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/___socket.io-client.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose loadDefaults socket.io-client@0.9.11
+info preinstall socket.io-client@0.9.11
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'uglify-js@1.2.5', null ]
+silly cache add: name, spec, args [ undefined, 'uglify-js@1.2.5', [ 'uglify-js@1.2.5', null ] ]
+verbose parsed url { pathname: 'uglify-js@1.2.5',
+verbose parsed url   path: 'uglify-js@1.2.5',
+verbose parsed url   href: 'uglify-js@1.2.5' }
+silly cache add: name, spec, args [ 'uglify-js', '1.2.5', [ 'uglify-js', '1.2.5' ] ]
+verbose parsed url { pathname: '1.2.5', path: '1.2.5', href: '1.2.5' }
+verbose addNamed [ 'uglify-js', '1.2.5' ]
+verbose addNamed [ '1.2.5', '1.2.5' ]
+verbose cache add [ 'ws@0.4.x', null ]
+silly cache add: name, spec, args [ undefined, 'ws@0.4.x', [ 'ws@0.4.x', null ] ]
+verbose parsed url { pathname: 'ws@0.4.x', path: 'ws@0.4.x', href: 'ws@0.4.x' }
+silly cache add: name, spec, args [ 'ws', '0.4.x', [ 'ws', '0.4.x' ] ]
+verbose parsed url { pathname: '0.4.x', path: '0.4.x', href: '0.4.x' }
+verbose addNamed [ 'ws', '0.4.x' ]
+verbose addNamed [ null, '>=0.4.0- <0.5.0-' ]
+silly name, range, hasData [ 'ws', '>=0.4.0- <0.5.0-', false ]
+verbose raw, before any munging uglify-js/1.2.5
+verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js/1.2.5' ]
+verbose url resolved https://registry.npmjs.org/uglify-js/1.2.5
+verbose etag "AR2YLFRAPSR93OAEQWU4V4Z1Z"
+http GET https://registry.npmjs.org/uglify-js/1.2.5
+verbose cache add [ 'xmlhttprequest@1.4.2', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'xmlhttprequest@1.4.2',
+silly cache add: name, spec, args   [ 'xmlhttprequest@1.4.2', null ] ]
+verbose parsed url { pathname: 'xmlhttprequest@1.4.2',
+verbose parsed url   path: 'xmlhttprequest@1.4.2',
+verbose parsed url   href: 'xmlhttprequest@1.4.2' }
+silly cache add: name, spec, args [ 'xmlhttprequest', '1.4.2', [ 'xmlhttprequest', '1.4.2' ] ]
+verbose parsed url { pathname: '1.4.2', path: '1.4.2', href: '1.4.2' }
+verbose addNamed [ 'xmlhttprequest', '1.4.2' ]
+verbose addNamed [ '1.4.2', '1.4.2' ]
+verbose cache add [ 'active-x-obfuscator@0.0.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'active-x-obfuscator@0.0.1',
+silly cache add: name, spec, args   [ 'active-x-obfuscator@0.0.1', null ] ]
+verbose parsed url { pathname: 'active-x-obfuscator@0.0.1',
+verbose parsed url   path: 'active-x-obfuscator@0.0.1',
+verbose parsed url   href: 'active-x-obfuscator@0.0.1' }
+silly cache add: name, spec, args [ 'active-x-obfuscator',
+silly cache add: name, spec, args   '0.0.1',
+silly cache add: name, spec, args   [ 'active-x-obfuscator', '0.0.1' ] ]
+verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+verbose addNamed [ 'active-x-obfuscator', '0.0.1' ]
+verbose addNamed [ '0.0.1', '0.0.1' ]
+verbose raw, before any munging ws
+verbose url resolving [ 'https://registry.npmjs.org/', './ws' ]
+verbose url resolved https://registry.npmjs.org/ws
+verbose etag "DHL3GDT3MP0RQAS2WISOYXY69"
+http GET https://registry.npmjs.org/ws
+verbose raw, before any munging active-x-obfuscator/0.0.1
+verbose url resolving [ 'https://registry.npmjs.org/', './active-x-obfuscator/0.0.1' ]
+verbose url resolved https://registry.npmjs.org/active-x-obfuscator/0.0.1
+verbose etag "5M9A642L9VWRWUP4U50RAZNYH"
+http GET https://registry.npmjs.org/active-x-obfuscator/0.0.1
+verbose raw, before any munging xmlhttprequest/1.4.2
+verbose url resolving [ 'https://registry.npmjs.org/', './xmlhttprequest/1.4.2' ]
+verbose url resolved https://registry.npmjs.org/xmlhttprequest/1.4.2
+verbose etag "24FJFJIX5JPU2U69GU1IJ1ONJ"
+http GET https://registry.npmjs.org/xmlhttprequest/1.4.2
+http 304 https://registry.npmjs.org/active-x-obfuscator/0.0.1
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"5M9A642L9VWRWUP4U50RAZNYH"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:40 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag active-x-obfuscator/0.0.1 from cache
+http 304 https://registry.npmjs.org/uglify-js/1.2.5
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"AR2YLFRAPSR93OAEQWU4V4Z1Z"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:40 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag uglify-js/1.2.5 from cache
+http 304 https://registry.npmjs.org/xmlhttprequest/1.4.2
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"24FJFJIX5JPU2U69GU1IJ1ONJ"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:40 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag xmlhttprequest/1.4.2 from cache
+http 304 https://registry.npmjs.org/ws
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"DHL3GDT3MP0RQAS2WISOYXY69"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:40 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag ws from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '089b89b37145ff1d9ec74af6530be5526cae1f1a',
+verbose bin dist     tarball: 'http://registry.npmjs.org/active-x-obfuscator/-/active-x-obfuscator-0.0.1.tgz' } ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'b542c2c76f78efb34b200b20177634330ff702b6',
+verbose bin dist     tarball: 'http://registry.npmjs.org/uglify-js/-/uglify-js-1.2.5.tgz' } ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '01453a1d9bed1e8f172f6495bbf4c8c426321500',
+verbose bin dist     tarball: 'http://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.4.2.tgz' } ]
+silly name, range, hasData 2 [ 'ws', '>=0.4.0- <0.5.0-', true ]
+silly versions [ 'ws',
+silly versions   [ '0.2.6',
+silly versions     '0.2.8',
+silly versions     '0.2.9',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.3.4',
+silly versions     '0.3.4-2',
+silly versions     '0.3.5',
+silly versions     '0.3.5-2',
+silly versions     '0.3.5-3',
+silly versions     '0.3.5-4',
+silly versions     '0.3.6',
+silly versions     '0.3.7',
+silly versions     '0.3.8',
+silly versions     '0.3.9',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.4.2',
+silly versions     '0.4.3',
+silly versions     '0.4.5',
+silly versions     '0.4.6',
+silly versions     '0.4.7',
+silly versions     '0.4.8',
+silly versions     '0.4.9',
+silly versions     '0.4.10',
+silly versions     '0.4.11',
+silly versions     '0.4.12',
+silly versions     '0.4.13',
+silly versions     '0.4.14',
+silly versions     '0.4.15',
+silly versions     '0.4.16',
+silly versions     '0.4.17',
+silly versions     '0.4.18',
+silly versions     '0.4.19',
+silly versions     '0.4.20',
+silly versions     '0.4.21',
+silly versions     '0.4.22' ] ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '12b19ed222ce3a9f81858de6d8f41ed553ca56ae',
+verbose bin dist     tarball: 'http://registry.npmjs.org/ws/-/ws-0.4.22.tgz' } ]
+verbose caching /home/alfonso/.npm/active-x-obfuscator/0.0.1/package/package.json
+verbose loadDefaults active-x-obfuscator@0.0.1
+verbose caching /home/alfonso/.npm/uglify-js/1.2.5/package/package.json
+verbose loadDefaults uglify-js@1.2.5
+verbose caching /home/alfonso/.npm/xmlhttprequest/1.4.2/package/package.json
+verbose loadDefaults xmlhttprequest@1.4.2
+verbose caching /home/alfonso/.npm/ws/0.4.22/package/package.json
+verbose loadDefaults ws@0.4.22
+silly resolved [ { author: 
+silly resolved      { name: 'Felix Geisendörfer',
+silly resolved        email: 'felix@debuggable.com',
+silly resolved        url: 'http://debuggable.com/' },
+silly resolved     name: 'active-x-obfuscator',
+silly resolved     description: 'A module to (safely) obfuscate all occurrences of the string \'ActiveX\' inside any JavaScript code.',
+silly resolved     version: '0.0.1',
+silly resolved     homepage: 'https://github.com/felixge/node-active-x-obfuscator',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/felixge/node-active-x-obfuscator.git' },
+silly resolved     main: './index',
+silly resolved     scripts: { test: 'node test.js' },
+silly resolved     engines: { node: '*' },
+silly resolved     dependencies: { zeparser: '0.0.5' },
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _id: 'active-x-obfuscator@0.0.1',
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'active-x-obfuscator@0.0.1' },
+silly resolved   { name: 'uglify-js',
+silly resolved     description: 'JavaScript parser and compressor/beautifier toolkit',
+silly resolved     author: 
+silly resolved      { name: 'Mihai Bazon',
+silly resolved        email: 'mihai.bazon@gmail.com',
+silly resolved        url: 'http://mihai.bazon.net/blog' },
+silly resolved     version: '1.2.5',
+silly resolved     main: './uglify-js.js',
+silly resolved     bin: { uglifyjs: './bin/uglifyjs' },
+silly resolved     repository: { type: 'git', url: 'git@github.com:mishoo/UglifyJS.git' },
+silly resolved     _id: 'uglify-js@1.2.5',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'uglify-js@1.2.5',
+silly resolved     scripts: {} },
+silly resolved   { name: 'xmlhttprequest',
+silly resolved     description: 'XMLHttpRequest for Node',
+silly resolved     version: '1.4.2',
+silly resolved     author: { name: 'Dan DeFelippi', url: 'http://driverdan.com' },
+silly resolved     keywords: [ 'xhr', 'ajax' ],
+silly resolved     licenses: [ { type: 'MIT', url: 'http://creativecommons.org/licenses/MIT/' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/driverdan/node-XMLHttpRequest.git' },
+silly resolved     bugs: { name: 'http://github.com/driverdan/node-XMLHttpRequest/issues' },
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     directories: { lib: './lib', example: './example' },
+silly resolved     main: './lib/XMLHttpRequest.js',
+silly resolved     _id: 'xmlhttprequest@1.4.2',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'xmlhttprequest@1.4.2',
+silly resolved     scripts: {} },
+silly resolved   { author: 
+silly resolved      { name: 'Einar Otto Stangvik',
+silly resolved        email: 'einaros@gmail.com',
+silly resolved        url: 'http://2x.io' },
+silly resolved     name: 'ws',
+silly resolved     description: 'simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js, up-to-date against RFC-6455',
+silly resolved     version: '0.4.22',
+silly resolved     repository: { type: 'git', url: 'git://github.com/einaros/ws.git' },
+silly resolved     bin: { wscat: './bin/wscat' },
+silly resolved     scripts: { test: 'make test', install: 'node install.js' },
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     config: { verbose: false },
+silly resolved     dependencies: { commander: '~0.6.1', tinycolor: '0.x', options: 'latest' },
+silly resolved     devDependencies: 
+silly resolved      { mocha: '~1.2.1',
+silly resolved        should: '0.6.x',
+silly resolved        'expect.js': '0.1.x',
+silly resolved        benchmark: '0.3.x',
+silly resolved        ansi: 'latest' },
+silly resolved     _id: 'ws@0.4.22',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'ws@0.4.x' } ]
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client active-x-obfuscator@0.0.1
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client uglify-js@1.2.5
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client xmlhttprequest@1.4.2
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client ws@0.4.22
+info installOne active-x-obfuscator@0.0.1
+info installOne uglify-js@1.2.5
+info installOne xmlhttprequest@1.4.2
+info installOne ws@0.4.22
+verbose from cache /home/alfonso/.npm/active-x-obfuscator/0.0.1/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator
+verbose from cache /home/alfonso/.npm/uglify-js/1.2.5/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js
+verbose from cache /home/alfonso/.npm/xmlhttprequest/1.4.2/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+verbose from cache /home/alfonso/.npm/ws/0.4.22/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm'
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm 755
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm 755
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm 755
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm 755
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/autotest.watchr
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/README.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/testdata.txt
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-exceptions.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-events.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-request-methods.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-headers.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-request-protocols.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-constants.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/lib/XMLHttpRequest.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/example
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/example/demo.js
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+verbose loadDefaults xmlhttprequest@1.4.2
+info preinstall xmlhttprequest@1.4.2
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules' ]
+info linkStuff xmlhttprequest@1.4.2
+verbose linkBins xmlhttprequest@1.4.2
+verbose linkMans xmlhttprequest@1.4.2
+verbose rebuildBundles xmlhttprequest@1.4.2
+info install xmlhttprequest@1.4.2
+info postinstall xmlhttprequest@1.4.2
+verbose installOne cb xmlhttprequest@1.4.2
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.index.js.un~
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.package.json.un~
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.Readme.md.un~
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.test.js.un~
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/..gitignore.un~
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/Readme.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/index.js
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json
+verbose loadDefaults active-x-obfuscator@0.0.1
+info preinstall active-x-obfuscator@0.0.1
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'zeparser@0.0.5', null ]
+silly cache add: name, spec, args [ undefined, 'zeparser@0.0.5', [ 'zeparser@0.0.5', null ] ]
+verbose parsed url { pathname: 'zeparser@0.0.5',
+verbose parsed url   path: 'zeparser@0.0.5',
+verbose parsed url   href: 'zeparser@0.0.5' }
+silly cache add: name, spec, args [ 'zeparser', '0.0.5', [ 'zeparser', '0.0.5' ] ]
+verbose parsed url { pathname: '0.0.5', path: '0.0.5', href: '0.0.5' }
+verbose addNamed [ 'zeparser', '0.0.5' ]
+verbose addNamed [ '0.0.5', '0.0.5' ]
+verbose raw, before any munging zeparser/0.0.5
+verbose url resolving [ 'https://registry.npmjs.org/', './zeparser/0.0.5' ]
+verbose url resolved https://registry.npmjs.org/zeparser/0.0.5
+verbose etag "CWYDVPMUP7BLFCECRQQLX34JX"
+http GET https://registry.npmjs.org/zeparser/0.0.5
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/install.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/.travis.yml
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/Makefile
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/README.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/binding.gyp
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/index.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/History.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/src
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/src/bufferutil.cc
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/src/validation.cc
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/doc
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/doc/ws.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bin
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bin/wscat
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/util.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/parser.benchmark.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/sender.benchmark.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/speed.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Validation.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/WebSocket.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Sender.hixie.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Receiver.hixie.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Sender.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/BufferPool.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/BufferUtil.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/WebSocketServer.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Receiver.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Validation.fallback.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/BufferUtil.fallback.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/ErrorCodes.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/WebSocketServer.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/testserver.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/autobahn.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Receiver.hixie.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/WebSocket.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Sender.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/autobahn-server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Validation.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/BufferPool.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Sender.hixie.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/WebSocket.integration.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Receiver.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/hybi-common.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/key.pem
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/textfile
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/certificate.pem
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/request.pem
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public/app.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public/index.html
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public/uploader.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/public
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/public/index.html
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats-express_3
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats-express_3/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats-express_3/server.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats-express_3/public
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats-express_3/public/index.html
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json
+verbose loadDefaults ws@0.4.22
+info preinstall ws@0.4.22
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'commander@~0.6.1', null ]
+silly cache add: name, spec, args [ undefined, 'commander@~0.6.1', [ 'commander@~0.6.1', null ] ]
+verbose parsed url { pathname: 'commander@~0.6.1',
+verbose parsed url   path: 'commander@~0.6.1',
+verbose parsed url   href: 'commander@~0.6.1' }
+silly cache add: name, spec, args [ 'commander', '~0.6.1', [ 'commander', '~0.6.1' ] ]
+verbose parsed url { pathname: '~0.6.1', path: '~0.6.1', href: '~0.6.1' }
+verbose addNamed [ 'commander', '~0.6.1' ]
+verbose addNamed [ null, '>=0.6.1- <0.7.0-' ]
+silly name, range, hasData [ 'commander', '>=0.6.1- <0.7.0-', false ]
+verbose cache add [ 'tinycolor@0.x', null ]
+silly cache add: name, spec, args [ undefined, 'tinycolor@0.x', [ 'tinycolor@0.x', null ] ]
+verbose parsed url { pathname: 'tinycolor@0.x',
+verbose parsed url   path: 'tinycolor@0.x',
+verbose parsed url   href: 'tinycolor@0.x' }
+silly cache add: name, spec, args [ 'tinycolor', '0.x', [ 'tinycolor', '0.x' ] ]
+verbose parsed url { pathname: '0.x', path: '0.x', href: '0.x' }
+verbose addNamed [ 'tinycolor', '0.x' ]
+verbose addNamed [ null, '>=0.0.0- <1.0.0-' ]
+silly name, range, hasData [ 'tinycolor', '>=0.0.0- <1.0.0-', false ]
+verbose raw, before any munging tinycolor
+verbose url resolving [ 'https://registry.npmjs.org/', './tinycolor' ]
+verbose url resolved https://registry.npmjs.org/tinycolor
+verbose etag "70U88D2SSX6YPNTHGKAI9PV2D"
+http GET https://registry.npmjs.org/tinycolor
+verbose cache add [ 'options@latest', null ]
+silly cache add: name, spec, args [ undefined, 'options@latest', [ 'options@latest', null ] ]
+verbose parsed url { pathname: 'options@latest',
+verbose parsed url   path: 'options@latest',
+verbose parsed url   href: 'options@latest' }
+silly cache add: name, spec, args [ 'options', 'latest', [ 'options', 'latest' ] ]
+verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+verbose addNamed [ 'options', 'latest' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'options', 'latest' ]
+verbose raw, before any munging commander
+verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+verbose url resolved https://registry.npmjs.org/commander
+verbose etag "59UGOBY870YNPGXJNNGBOVQBO"
+http GET https://registry.npmjs.org/commander
+verbose raw, before any munging options
+verbose url resolving [ 'https://registry.npmjs.org/', './options' ]
+verbose url resolved https://registry.npmjs.org/options
+verbose etag "EW9FGKND7HXBPO21IYP5S8R6X"
+http GET https://registry.npmjs.org/options
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/docstyle.css
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/README.html
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/package.json~
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/README.org
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/uglify-js.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/liftvars.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/instrument2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/uglify-hangs.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/269.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/goto2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/app.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/goto.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/uglify-hangs2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/embed-tokens.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/instrument.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/tmp/hoist.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/bin
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/bin/uglifyjs
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/lib/object-ast.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/lib/squeeze-more.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/lib/parse-js.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/lib/process.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/beautify.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/testparser.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/scripts.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/array2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/assignment.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue50.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue29.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue30.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue13.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue20.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue14.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/whitespace.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue16.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/forstatement.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue68.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue11.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/if.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue48.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/null_string.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/strict-equals.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue4.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/array1.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue27.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue53.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue21.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue9.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue54.1.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue278.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/with.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/concatstring.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/var.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/array4.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/ifreturn2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue25.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue17.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue69.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/array3.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/empty-blocks.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue28.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/ifreturn.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/mangle.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue34.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/issue10.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test/const.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/array2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/assignment.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue50.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue29.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue30.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue13.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue20.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue14.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/whitespace.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue16.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/forstatement.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue68.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue11.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/if.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue48.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/null_string.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/strict-equals.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue4.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/array1.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue27.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue53.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue21.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue9.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue54.1.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue278.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/with.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/concatstring.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/var.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/array4.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/ifreturn2.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue25.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue17.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue69.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/array3.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/empty-blocks.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue28.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/ifreturn.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/mangle.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue34.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/issue10.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/expected/const.js
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json
+verbose loadDefaults uglify-js@1.2.5
+info preinstall uglify-js@1.2.5
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules' ]
+info linkStuff uglify-js@1.2.5
+verbose linkBins uglify-js@1.2.5
+verbose bins linking [ { uglifyjs: './bin/uglifyjs' },
+verbose bins linking   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin',
+verbose bins linking   false ]
+verbose linkMans uglify-js@1.2.5
+verbose rebuildBundles uglify-js@1.2.5
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin'
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin 755
+info install uglify-js@1.2.5
+info postinstall uglify-js@1.2.5
+verbose installOne cb uglify-js@1.2.5
+http 304 https://registry.npmjs.org/zeparser/0.0.5
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"CWYDVPMUP7BLFCECRQQLX34JX"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:41 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag zeparser/0.0.5 from cache
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '03726561bc268f2e5444f54c665b7fd4a8c029e2',
+verbose bin dist     tarball: 'http://registry.npmjs.org/zeparser/-/zeparser-0.0.5.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/zeparser/-/zeparser-0.0.5.tgz',
+verbose addRemoteTarball   '03726561bc268f2e5444f54c665b7fd4a8c029e2' ]
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1352163895440'
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1352163895440/1352163895440-0.5518782418221235'
+verbose mkdir done: /tmp/npm-1352163895440/1352163895440-0.5518782418221235 755
+verbose fetch to /tmp/npm-1352163895440/1352163895440-0.5518782418221235/tmp.tgz
+http GET https://registry.npmjs.org/zeparser/-/zeparser-0.0.5.tgz
+http 304 https://registry.npmjs.org/tinycolor
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"70U88D2SSX6YPNTHGKAI9PV2D"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:41 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag tinycolor from cache
+silly name, range, hasData 2 [ 'tinycolor', '>=0.0.0- <1.0.0-', true ]
+silly versions [ 'tinycolor', [ '0.0.1' ] ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: '320b5a52d83abb5978d81a3e887d4aefb15a6164',
+verbose bin dist     tarball: 'http://registry.npmjs.org/tinycolor/-/tinycolor-0.0.1.tgz' } ]
+verbose caching /home/alfonso/.npm/tinycolor/0.0.1/package/package.json
+verbose loadDefaults tinycolor@0.0.1
+http 304 https://registry.npmjs.org/commander
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"59UGOBY870YNPGXJNNGBOVQBO"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:41 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag commander from cache
+http 304 https://registry.npmjs.org/options
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"EW9FGKND7HXBPO21IYP5S8R6X"',
+silly get cb     date: 'Tue, 06 Nov 2012 01:04:41 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag options from cache
+silly name, range, hasData 2 [ 'commander', '>=0.6.1- <0.7.0-', true ]
+silly versions [ 'commander',
+silly versions   [ '0.2.1',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.4.2',
+silly versions     '0.4.3',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.5.2',
+silly versions     '1.0.0',
+silly versions     '1.0.1',
+silly versions     '1.0.2',
+silly versions     '1.0.3',
+silly versions     '1.0.4',
+silly versions     '1.0.5' ] ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'fa68a14f6a945d54dbbe50d8cdb3320e9e3b1a06',
+verbose bin dist     tarball: 'http://registry.npmjs.org/commander/-/commander-0.6.1.tgz' } ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-x64-3.5.0-17-generic',
+verbose bin dist   { shasum: 'de6a803319c8343269e07e2ba9ed4eab0e2bb35d',
+verbose bin dist     tarball: 'http://registry.npmjs.org/options/-/options-0.0.3.tgz' } ]
+verbose caching /home/alfonso/.npm/commander/0.6.1/package/package.json
+verbose loadDefaults commander@0.6.1
+verbose caching /home/alfonso/.npm/options/0.0.3/package/package.json
+verbose loadDefaults options@0.0.3
+silly resolved [ { author: 
+silly resolved      { name: 'Einar Otto Stangvik',
+silly resolved        email: 'einaros@gmail.com',
+silly resolved        url: 'http://2x.io' },
+silly resolved     name: 'tinycolor',
+silly resolved     description: 'a to-the-point color module for node',
+silly resolved     version: '0.0.1',
+silly resolved     repository: { type: 'git', url: 'git://github.com/einaros/tinycolor.git' },
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     main: 'tinycolor',
+silly resolved     _id: 'tinycolor@0.0.1',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'tinycolor@0.x',
+silly resolved     scripts: {} },
+silly resolved   { name: 'commander',
+silly resolved     version: '0.6.1',
+silly resolved     description: 'the complete solution for node.js command-line programs',
+silly resolved     keywords: [ 'command', 'option', 'parser', 'prompt', 'stdin' ],
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/visionmedia/commander.js.git' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { should: '>= 0.0.1' },
+silly resolved     scripts: { test: 'make test' },
+silly resolved     main: 'index',
+silly resolved     engines: { node: '>= 0.4.x' },
+silly resolved     _id: 'commander@0.6.1',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'commander@~0.6.1' },
+silly resolved   { author: 
+silly resolved      { name: 'Einar Otto Stangvik',
+silly resolved        email: 'einaros@gmail.com',
+silly resolved        url: 'http://2x.io' },
+silly resolved     name: 'options',
+silly resolved     description: 'A very light-weight in-code option parsers for node.js.',
+silly resolved     version: '0.0.3',
+silly resolved     repository: { type: 'git', url: 'git://github.com/einaros/options.js.git' },
+silly resolved     main: 'lib/options',
+silly resolved     scripts: { test: 'make test' },
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     dependencies: {},
+silly resolved     devDependencies: { mocha: 'latest', 'expect.js': 'latest' },
+silly resolved     _id: 'options@0.0.3',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'options@latest' } ]
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws tinycolor@0.0.1
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws commander@0.6.1
+info into /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws options@0.0.3
+info installOne tinycolor@0.0.1
+info installOne commander@0.6.1
+info installOne options@0.0.3
+verbose from cache /home/alfonso/.npm/tinycolor/0.0.1/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor
+verbose from cache /home/alfonso/.npm/commander/0.6.1/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander
+verbose from cache /home/alfonso/.npm/options/0.0.3/package/package.json
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm'
+verbose mkdir (expected) error ENOENT, stat '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm'
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm 755
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm 755
+verbose mkdir done: /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm 755
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 1000, 1000 ]
+verbose unpackTarget /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package/tinycolor.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package/example.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package/README.md
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___tinycolor.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json
+verbose loadDefaults tinycolor@0.0.1
+info preinstall tinycolor@0.0.1
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules' ]
+info linkStuff tinycolor@0.0.1
+verbose linkBins tinycolor@0.0.1
+verbose linkMans tinycolor@0.0.1
+verbose rebuildBundles tinycolor@0.0.1
+info install tinycolor@0.0.1
+info postinstall tinycolor@0.0.1
+verbose installOne cb tinycolor@0.0.1
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/Makefile
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/README.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/lib/options.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/test
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/test/options.test.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/test/fixtures
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package/test/fixtures/test.conf
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___options.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json
+verbose loadDefaults options@0.0.3
+info preinstall options@0.0.3
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/options/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules' ]
+info linkStuff options@0.0.3
+verbose linkBins options@0.0.3
+verbose linkMans options@0.0.3
+verbose rebuildBundles options@0.0.3
+info install options@0.0.3
+info postinstall options@0.0.3
+verbose installOne cb options@0.0.3
+silly afterUntar ok
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/package.json
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/.npmignore
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/.travis.yml
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/Makefile
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/Readme.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/index.js
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/History.md
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/lib
+silly asyncMap in gTP /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package/lib/commander.js
+verbose gunzed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package
+verbose rm'ed /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander
+verbose renamed [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/___commander.npm/package',
+verbose renamed   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander' ]
+verbose caching /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json
+verbose loadDefaults commander@0.6.1
+info preinstall commander@0.6.1
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/commander/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules' ]
+info linkStuff commander@0.6.1
+verbose linkBins commander@0.6.1
+verbose linkMans commander@0.6.1
+verbose rebuildBundles commander@0.6.1
+info install commander@0.6.1
+info postinstall commander@0.6.1
+verbose installOne cb commander@0.6.1
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+info build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules' ]
+info linkStuff ws@0.4.22
+verbose linkBins ws@0.4.22
+verbose bins linking [ { wscat: './bin/wscat' },
+verbose bins linking   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin',
+verbose bins linking   false ]
+verbose linkMans ws@0.4.22
+verbose rebuildBundles ws@0.4.22
+verbose rebuildBundles [ 'commander', 'options', 'tinycolor' ]
+info install ws@0.4.22
+verbose unsafe-perm in lifecycle false
+verbose Setting uid from 0 1000
+verbose stack at uid setting Error
+verbose stack at uid setting     at exec (/usr/share/npm/lib/utils/exec.js:36:17)
+verbose stack at uid setting     at Array.0 (/usr/share/npm/lib/utils/lifecycle.js:141:5)
+verbose stack at uid setting     at EventEmitter._tickCallback (node.js:190:39)
+silly exec sh "-c" "node install.js"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node install.js' ],
+silly spawning   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws' ]
+info ws@0.4.22 Failed to exec install script
+ERR! error installing ws@0.4.22
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json
+info preuninstall ws@0.4.22
+WARN This failure might be due to the use of legacy binary "node" 
+WARN For further explanations, please read
+WARN /usr/share/doc/nodejs/README.Debian
+WARN 
+info uninstall ws@0.4.22
+verbose unbuild ws@0.4.22 [ false,
+verbose unbuild ws@0.4.22   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules',
+verbose unbuild ws@0.4.22   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules' ]
+verbose binRoot [ '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin',
+verbose binRoot   { wscat: './bin/wscat' } ]
+info postuninstall ws@0.4.22
+verbose installOne cb ws@0.4.22
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client
+ERR! error installing socket.io-client@0.9.11
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules/socket.io-client/package.json
+info preuninstall socket.io-client@0.9.11
+info uninstall socket.io-client@0.9.11
+verbose unbuild socket.io-client@0.9.11 [ false,
+verbose unbuild socket.io-client@0.9.11   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules',
+verbose unbuild socket.io-client@0.9.11   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/node_modules' ]
+info postuninstall socket.io-client@0.9.11
+verbose installOne cb socket.io-client@0.9.11
+verbose about to build /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io
+ERR! error installing socket.io@0.9.11
+info unbuild /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io
+verbose from cache /home/alfonso/workspace/una/reshotel/ResHotel/node_modules/socket.io/package.json
+info preuninstall socket.io@0.9.11
+info uninstall socket.io@0.9.11
+verbose unbuild socket.io@0.9.11 [ true,
+verbose unbuild socket.io@0.9.11   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules',
+verbose unbuild socket.io@0.9.11   '/home/alfonso/workspace/una/reshotel/ResHotel/node_modules' ]
+info postuninstall socket.io@0.9.11
+verbose installOne cb socket.io@0.9.11
+ERR! ws@0.4.22 install: `node install.js`
+ERR! `sh "-c" "node install.js"` failed with 1
+ERR! 
+ERR! Failed at the ws@0.4.22 install script.
+ERR! This is most likely a problem with the ws package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node install.js
+ERR! You can get their info via:
+ERR!     npm owner ls ws
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 3.5.0-17-generic
+ERR! command "/usr/bin/nodejs" "/usr/bin/npm" "install" "socket.io"
+ERR! cwd /home/alfonso/workspace/una/reshotel/ResHotel
+ERR! node -v v0.6.19
+ERR! npm -v 1.1.4
+ERR! code ELIFECYCLE
+ERR! message ws@0.4.22 install: `node install.js`
+ERR! message `sh "-c" "node install.js"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]

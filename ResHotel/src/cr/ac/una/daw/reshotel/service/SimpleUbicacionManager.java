@@ -8,6 +8,11 @@ import cr.ac.una.daw.reshotel.domain.Ubicacion;
 import cr.ac.una.daw.reshotel.domain.UbicacionRepository;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 
+/**
+ * Implementa los metodos necesarios para dar mantenimiento a una ubicacion.
+ * Interactua con el repositio de datos de la capa de acceso a datos.
+ *
+ */
 public class SimpleUbicacionManager implements UbicacionManager {
 	private List<Ubicacion> ubicaciones;
 

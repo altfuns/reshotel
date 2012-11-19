@@ -17,6 +17,11 @@ import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 import cr.ac.una.daw.reshotel.service.HotelManager;
 
+/**
+ * 
+ * Controlador de pagina para eliminar un Hotel
+ *
+ */
 public class HotelEliminarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HotelManager hotelManager;

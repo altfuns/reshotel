@@ -8,6 +8,11 @@ import cr.ac.una.daw.reshotel.domain.Habitacion;
 import cr.ac.una.daw.reshotel.domain.HabitacionRepository;
 import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 
+/**
+ * Implementa los metodos necesarios para dar mantenimiento a una habitacion.
+ * Interactua con el repositio de datos de la capa de acceso a datos.
+ *
+ */
 public class SimpleHabitacionManager implements HabitacionManager {
 	private List<Habitacion> habitaciones;
 	

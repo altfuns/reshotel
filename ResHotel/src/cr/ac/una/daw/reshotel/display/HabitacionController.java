@@ -15,7 +15,11 @@ import org.springframework.web.servlet.mvc.Controller;
 
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 
-
+/**
+ * 
+ * Controlador de pagina para mostrar la lista de habitaciones.
+ *
+ */
 public class HabitacionController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HabitacionManager habitacionManager;

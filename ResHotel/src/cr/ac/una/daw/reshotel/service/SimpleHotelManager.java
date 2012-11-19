@@ -6,6 +6,11 @@ import java.util.List;
 import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.domain.HotelRepository;
 
+/**
+ * Implementa los metodos necesarios para dar mantenimiento a un hotel.
+ * Interactua con el repositio de datos de la capa de acceso a datos.
+ *
+ */
 public class SimpleHotelManager implements HotelManager {
 	private List<Hotel> hoteles;
 

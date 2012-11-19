@@ -23,6 +23,11 @@ import cr.ac.una.daw.reshotel.service.ClienteManager;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 import cr.ac.una.daw.reshotel.service.ReservacionManager;
 
+/**
+ * 
+ * Controlador de pagina para mostrar el detalle de una reservacion.
+ *
+ */
 public class ReservacionDetalleController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ReservacionManager reservacionManager;

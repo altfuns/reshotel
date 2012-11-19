@@ -20,6 +20,7 @@ public class Habitacion extends DomainObject {
 	private String mobiliario;
 	private double costo;
 	private List<Reservacion> reservaciones;
+	private Hotel hotel;
 
 	public Habitacion() {
 		super();
@@ -85,4 +86,14 @@ public class Habitacion extends DomainObject {
 	public void setReservaciones(List<Reservacion> reservaciones) {
 		this.reservaciones = reservaciones;
 	}
+
+	public Hotel getHotel() {
+		return hotel;
+	}
+
+	public void setHotel(Hotel hotel) {
+		this.hotel = hotel;
+	}
+	
+	
 }

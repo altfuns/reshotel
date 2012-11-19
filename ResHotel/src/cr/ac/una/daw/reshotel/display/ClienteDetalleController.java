@@ -1,6 +1,7 @@
 package cr.ac.una.daw.reshotel.display;
 
 import java.io.IOException;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
@@ -20,6 +21,11 @@ import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 import cr.ac.una.daw.reshotel.service.ClienteManager;
 import cr.ac.una.daw.reshotel.service.UbicacionManager;
 
+/**
+ * 
+ * Controlador de pagina para mostrar el detalle de un cliente.
+ *
+ */
 public class ClienteDetalleController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ClienteManager clienteManager;

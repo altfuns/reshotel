@@ -6,6 +6,7 @@
     <id name="id" column="id" type="int">
         <generator class="native"></generator>
     </id>
+    <property name="nombre" column="nombre" type="string"></property>
     <property name="telefono" column="telefono" type="string"></property>
     <property name="email" column="email" type="string"></property>
     <property name="clase" column="clase" type="int"></property>

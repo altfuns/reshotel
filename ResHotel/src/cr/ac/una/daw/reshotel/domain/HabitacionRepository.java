@@ -2,6 +2,11 @@ package cr.ac.una.daw.reshotel.domain;
 
 import java.util.Collection;
 
+/**
+ * 
+ * HabitacionRepository brinda los metodos necesarios para el matenimiento de Habitaciones 
+ *
+ */
 public interface HabitacionRepository {
 	public boolean insertHabitacion(Habitacion habitacion);
 

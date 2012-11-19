@@ -17,6 +17,11 @@ import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 import cr.ac.una.daw.reshotel.service.HotelManager;
 
+/**
+ * 
+ * Controlador de pagina para actualizar el registro de Hotel
+ *
+ */
 public class HotelActualizarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HotelManager hotelManager;
@@ -31,6 +36,7 @@ public class HotelActualizarController implements Controller {
 
 		Hotel entity = id == -1 ? new Hotel() : hotelManager.find(id);
 
+		entity.setNombre(request.getParameter("nombre"));
 		entity.setTelefono(request.getParameter("telefono"));
 		entity.setClase(Integer.parseInt(request.getParameter("clase")));
 		entity.setEmail(request.getParameter("email"));

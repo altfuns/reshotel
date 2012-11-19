@@ -15,7 +15,11 @@ import org.springframework.web.servlet.mvc.Controller;
 
 import cr.ac.una.daw.reshotel.service.HotelManager;
 
-
+/**
+ * 
+ * Controlador de pagina para mostrar la lista de hoteles.
+ *
+ */
 public class HotelController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HotelManager hotelManager;

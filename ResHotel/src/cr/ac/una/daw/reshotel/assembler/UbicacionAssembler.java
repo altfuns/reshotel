@@ -3,6 +3,11 @@ package cr.ac.una.daw.reshotel.assembler;
 import cr.ac.una.daw.reshotel.domain.Ubicacion;
 import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 
+/**
+ * Ensablador de la clase ubicacion
+ * @author alfonso
+ *
+ */
 public class UbicacionAssembler {
 
 	/**
@@ -23,6 +28,11 @@ public class UbicacionAssembler {
 		return dto;
 	}
 
+	/**
+	 * Crea una nueva ubicacion apatir de su DTO
+	 * @param dto
+	 * @return
+	 */
 	public static Ubicacion create(UbicacionDTO dto) {
 		Ubicacion obj = new Ubicacion();
 		obj.setId(dto.getId());

@@ -22,6 +22,11 @@ import cr.ac.una.daw.reshotel.dto.UbicacionDTO;
 import cr.ac.una.daw.reshotel.service.ClienteManager;
 import cr.ac.una.daw.reshotel.service.UbicacionManager;
 
+/**
+ * 
+ * Controlador de pagina para establecer los datos por omision de un Cliente
+ *
+ */
 public class ClienteAgregarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ClienteManager clienteManager;

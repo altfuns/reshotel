@@ -19,6 +19,11 @@ import cr.ac.una.daw.reshotel.domain.ClienteRepository;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 import cr.ac.una.daw.reshotel.service.ClienteManager;
 
+/**
+ * 
+ * Controlador de pagina para actualizar el registro de Cliente
+ *
+ */
 public class ClienteActualizarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ClienteManager clienteManager;

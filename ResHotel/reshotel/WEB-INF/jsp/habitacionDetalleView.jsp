@@ -31,7 +31,7 @@
 						%>
 						<option value="<%=hotel.getId()%>"
 							<%=hotel.getId() == habitacion.getHotelId() ? "selected"
-						: ""%>><%=hotel.getId()%></option>
+						: ""%>><%=hotel.getNombre()%></option>
 						<%
 							}
 						%>

@@ -3,6 +3,11 @@ package cr.ac.una.daw.reshotel.assembler;
 import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.dto.HotelDTO;
 
+/**
+ * Ensamblador de la clase Hotel
+ * @author alfonso
+ *
+ */
 public class HotelAssembler {
 	/**
 	 * Encargado de convertir un Hotel en un HotelDTO
@@ -14,17 +19,25 @@ public class HotelAssembler {
 	public static HotelDTO create(Hotel obj) {
 		HotelDTO dto = new HotelDTO();
 		dto.id = obj.getId();
+		dto.nombre = obj.getNombre();
 		dto.telefono = obj.getTelefono();
 		dto.email = obj.getEmail();
 		dto.clase = obj.getClase();
 		dto.nombrePersonaEncargada = obj.getNombrePersonaEncargada();
 		dto.ubicacion.id = obj.getUbicacionId();
+		dto.ubicacionId = obj.getUbicacionId();
 
 		return dto;
 	}
 
+	/**
+	 * Create un objeto Hotel desde un DTO
+	 * @param dto
+	 * @return
+	 */
 	public static Hotel create(HotelDTO dto) {
 		Hotel entity = new Hotel();
+		entity.setNombre(dto.getNombre());
 		entity.setId(dto.getId());
 		entity.setTelefono(dto.getTelefono());
 		entity.setEmail(dto.getEmail());
@@ -43,6 +56,7 @@ public class HotelAssembler {
 	 */
 	public static void update(Hotel obj, HotelDTO dto) {
 		dto.id = obj.getId();
+		dto.nombre = obj.getNombre();
 		dto.telefono = obj.getTelefono();
 		dto.email = obj.getEmail();
 		dto.clase = obj.getClase();

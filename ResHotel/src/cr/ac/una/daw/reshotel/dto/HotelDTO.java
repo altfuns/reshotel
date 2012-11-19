@@ -6,12 +6,22 @@ package cr.ac.una.daw.reshotel.dto;
  */
 public class HotelDTO extends DTO {
 
+	public String nombre;
 	public String telefono;
 	public String email;
 	public int clase;
 	public String nombrePersonaEncargada;
-	private int ubicacionId;
+	public int ubicacionId;
 	public UbicacionDTO ubicacion = new UbicacionDTO();
+
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
 	public String getTelefono() {
 		return telefono;

@@ -26,6 +26,11 @@
 	<table>
 		<tbody>
 			<tr>
+				<th>Nombre:</th>
+				<td><input type="text" name="nombre"
+					value="<%=hotel.getNombre()%>" /></td>
+			</tr>
+			<tr>
 				<th>Tel&eacute;fono:</th>
 				<td><input type="text" name="telefono"
 					value="<%=hotel.getTelefono()%>" /></td>

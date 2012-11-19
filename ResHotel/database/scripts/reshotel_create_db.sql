@@ -10,13 +10,22 @@ CREATE TABLE cliente (
 
 CREATE TABLE habitacion (
 	id INTEGER PRIMARY KEY,
+	hotel INTEGER,
 	ocupacion_maxima INTEGER,
 	numero INTEGER,
 	mobiliario TEXT,
 	costo REAL								
 );
 
-CREATE TABLE hotel (ubicacion INTEGER, id INTEGER PRIMARY KEY, telefono TEXT, email TEXT, clase INTEGER, nombre_persona_encargada TEXT);
+CREATE TABLE hotel (
+	id INTEGER PRIMARY KEY,
+	nombre TEXT,
+	ubicacion INTEGER,
+	telefono TEXT,
+	email TEXT,
+	clase INTEGER,
+	nombre_persona_encargada TEXT
+);
 
 CREATE TABLE reservacion (
 	id INTEGER PRIMARY KEY,

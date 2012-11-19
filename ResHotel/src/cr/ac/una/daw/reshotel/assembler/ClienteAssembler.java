@@ -3,6 +3,11 @@ package cr.ac.una.daw.reshotel.assembler;
 import cr.ac.una.daw.reshotel.domain.Cliente;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 
+/**
+ * Ensamblador del objeto Cliente
+ * @author alfonso
+ *
+ */
 public class ClienteAssembler {
 	/**
 	 * Encargado de convertir un ClienteRowGateway en un ClienteDTO
@@ -19,10 +24,17 @@ public class ClienteAssembler {
 		dto.telefono = obj.getTelefono();
 		dto.numeroTarjetaCredito = obj.getNumeroTarjetaCredito();
 		dto.residencia.id = obj.getResidenciaId();
+		dto.residenciaId = obj.getResidenciaId();
 
 		return dto;
 	}
 
+	/**
+	 * Crea un objeto cliente desde un objeto DTO
+	 * @param dto
+	 * @return
+	 * Nueva instancia de la clase Cliente
+	 */
 	public static Cliente create(ClienteDTO dto) {
 		Cliente obj = new Cliente();
 		obj.setId(dto.getId());

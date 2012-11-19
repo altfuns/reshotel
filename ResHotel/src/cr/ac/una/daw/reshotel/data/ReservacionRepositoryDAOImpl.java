@@ -10,6 +10,11 @@ import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.domain.ReservacionRepository;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
+/**
+ * Repositorio de datos de la clase Rervacion
+ * @author alfonso
+ *
+ */
 public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 	private ReservacionDAO reservacionDAO;
 
@@ -17,18 +22,27 @@ public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 		this.reservacionDAO = reservacionDAO;
 	}
 
+	/**
+	 * Inserta un nuevo registro de Reservacion
+	 */
 	public boolean insertReservacion(Reservacion reservacion) {
 		ReservacionDTO reservacionDTO = ReservacionAssembler
 				.create(reservacion);
 		return (reservacionDAO.insert(reservacionDTO));
 	}
 
+	/**
+	 * Elimina el registro de reservacion
+	 */
 	public boolean deleteReservacion(Reservacion reservacion) {
 		ReservacionDTO reservacionDTO = ReservacionAssembler
 				.create(reservacion);
 		return (reservacionDAO.delete(reservacionDTO));
 	}
 
+	/**
+	 * Obtiene el registro de reservacion 
+	 */
 	public Reservacion findReservacion(int id) {
 		ReservacionDTO reservacionDTO = reservacionDAO.findById(id);
 		if (reservacionDTO != null) {
@@ -40,12 +54,18 @@ public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 		return null;
 	}
 
+	/**
+	 * Actualiza el registro de reservacion
+	 */
 	public boolean updateReservacion(Reservacion reservacion) {
 		ReservacionDTO reservacionDTO = ReservacionAssembler
 				.create(reservacion);
 		return (reservacionDAO.update(reservacionDTO));
 	}
 
+	/**
+	 * Obtiene todos los registros de reservacion
+	 */
 	public Collection<Reservacion> findAllReservacion() {
 		Collection<ReservacionDTO> reservacionsDTO = reservacionDAO.findAll();
 		List<Reservacion> reservacionList = new ArrayList<Reservacion>();

@@ -15,7 +15,11 @@ import org.springframework.web.servlet.mvc.Controller;
 
 import cr.ac.una.daw.reshotel.service.ReservacionManager;
 
-
+/**
+ * 
+ * Controlador de pagina para mostrar la lista de reservaciones.
+ *
+ */
 public class ReservacionController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ReservacionManager reservacionManager;

@@ -22,6 +22,11 @@ import cr.ac.una.daw.reshotel.dto.HotelDTO;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 import cr.ac.una.daw.reshotel.service.HotelManager;
 
+/**
+ * 
+ * Controlador de pagina para establecer los datos por omision de una Habitacion
+ *
+ */
 public class HabitacionAgregarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HabitacionManager habitacionManager;

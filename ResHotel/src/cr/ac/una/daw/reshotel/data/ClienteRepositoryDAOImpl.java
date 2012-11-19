@@ -10,6 +10,11 @@ import cr.ac.una.daw.reshotel.domain.Cliente;
 import cr.ac.una.daw.reshotel.domain.ClienteRepository;
 import cr.ac.una.daw.reshotel.dto.ClienteDTO;
 
+/**
+ * Repositorio de datos de clientes
+ * @author alfonso
+ *
+ */
 public class ClienteRepositoryDAOImpl implements ClienteRepository {
 	private ClienteDAO clienteDAO;
 
@@ -17,16 +22,25 @@ public class ClienteRepositoryDAOImpl implements ClienteRepository {
 		this.clienteDAO = clienteDAO;
 	}
 
+	/**
+	 * Inserta el registre del cliente en la BD
+	 */
 	public boolean insertCliente(Cliente cliente) {
 		ClienteDTO clienteDTO = ClienteAssembler.create(cliente);
 		return (clienteDAO.insert(clienteDTO));
 	}
 
+	/**
+	 * Elimina la fila con los datos del cliente
+	 */
 	public boolean deleteCliente(Cliente cliente) {
 		ClienteDTO clienteDTO = ClienteAssembler.create(cliente);
 		return (clienteDAO.delete(clienteDTO));
 	}
 
+	/**
+	 * Busca el cliente que contenga el id dado.
+	 */
 	public Cliente findCliente(int id) {
 		ClienteDTO clienteDTO = clienteDAO.findById(id);
 		if (clienteDTO != null) {
@@ -38,11 +52,17 @@ public class ClienteRepositoryDAOImpl implements ClienteRepository {
 		return null;
 	}
 
+	/**
+	 * Actualiza el registro de cliente
+	 */
 	public boolean updateCliente(Cliente cliente) {
 		ClienteDTO clienteDTO = ClienteAssembler.create(cliente);
 		return (clienteDAO.update(clienteDTO));
 	}
 
+	/**
+	 * Obtiene todos los registros de la tabla clientes 
+	 */
 	public Collection<Cliente> findAllCliente() {
 		Collection<ClienteDTO> clientesDTO = clienteDAO.findAll();
 		List<Cliente> clienteList = new ArrayList<Cliente>();

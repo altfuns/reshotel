@@ -25,6 +25,11 @@ import cr.ac.una.daw.reshotel.service.ClienteManager;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 import cr.ac.una.daw.reshotel.service.ReservacionManager;
 
+/**
+ * 
+ * Controlador de pagina para establecer los datos por omision de una Reservacion
+ *
+ */
 public class ReservacionAgregarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ReservacionManager reservacionManager;

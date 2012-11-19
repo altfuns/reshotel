@@ -18,6 +18,11 @@ import cr.ac.una.daw.reshotel.domain.Hotel;
 import cr.ac.una.daw.reshotel.service.HabitacionManager;
 import cr.ac.una.daw.reshotel.service.HotelManager;
 
+/**
+ * 
+ * Controlador de pagina para mostrar el detalle de una habitacion.
+ *
+ */
 public class HabitacionDetalleController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private HabitacionManager habitacionManager;

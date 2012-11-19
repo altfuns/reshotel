@@ -7,6 +7,7 @@ package cr.ac.una.daw.reshotel.domain;
  */
 public class Hotel extends DomainObject {
 
+	private String nombre = "";
 	private int ubicacionId = -1;
 	private Ubicacion ubicacion;
 	private String telefono = "";
@@ -18,14 +19,25 @@ public class Hotel extends DomainObject {
 		super();
 	}
 
-	public Hotel(Ubicacion ubicacion, String telefono, String email, int clase,
+	public Hotel(String nombre, Ubicacion ubicacion, String telefono, String email, int clase,
 			String nombrePersonaEncargada) {
 		super();
+		this.nombre = nombre;
 		this.ubicacion = ubicacion;
 		this.telefono = telefono;
 		this.email = email;
 		this.clase = clase;
 		this.nombrePersonaEncargada = nombrePersonaEncargada;
+	}
+	
+	
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public int getUbicacionId() {

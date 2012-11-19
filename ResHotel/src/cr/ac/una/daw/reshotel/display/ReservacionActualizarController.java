@@ -17,6 +17,11 @@ import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 import cr.ac.una.daw.reshotel.service.ReservacionManager;
 
+/**
+ * 
+ * Controlador de pagina para actualizar el registro de Reservacion
+ *
+ */
 public class ReservacionActualizarController implements Controller {
 	protected final Log logger = LogFactory.getLog(getClass());
 	private ReservacionManager reservacionManager;

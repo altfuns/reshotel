@@ -18,8 +18,9 @@
 <table>
 	<thead>
 		<tr>
-			<th>Ocupaci&oacute;n M&aacute;xima</th>
+			<th>Hotel</th>
 			<th>N&uacute;mero</th>
+			<th>Ocupaci&oacute;n M&aacute;xima</th>
 			<th>Mobiliario</th>
 			<th>Costo</th>
 			<th>Acciones</th>
@@ -30,8 +31,9 @@
 			for (Habitacion obj : objs) {
 		%>
 		<tr>
-			<td><%=obj.getOcupacionMaxima()%></td>
+			<td><%=obj.getHotel().getNombre()%></td>
 			<td><%=obj.getNumero()%></td>
+			<td><%=obj.getOcupacionMaxima()%></td>
 			<td><%=obj.getMobiliario()%></td>
 			<td><%=obj.getCosto()%></td>
 			<td><a href='/reshotel/detalleHabitacion?id=<%=obj.getId()%>'> <input
