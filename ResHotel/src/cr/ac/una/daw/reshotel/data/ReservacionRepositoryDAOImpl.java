@@ -8,18 +8,23 @@ import java.util.List;
 import cr.ac.una.daw.reshotel.assembler.ReservacionAssembler;
 import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.domain.ReservacionRepository;
+import cr.ac.una.daw.reshotel.dto.HabitacionDTO;
 import cr.ac.una.daw.reshotel.dto.ReservacionDTO;
 
 /**
  * Repositorio de datos de la clase Rervacion
+ * 
  * @author alfonso
- *
+ * 
  */
 public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 	private ReservacionDAO reservacionDAO;
+	private HabitacionDAO habitacionDAO;
 
-	ReservacionRepositoryDAOImpl(ReservacionDAO reservacionDAO) {
+	ReservacionRepositoryDAOImpl(ReservacionDAO reservacionDAO,
+			HabitacionDAO habitacionDAO) {
 		this.reservacionDAO = reservacionDAO;
+		this.habitacionDAO = habitacionDAO;
 	}
 
 	/**
@@ -41,7 +46,7 @@ public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 	}
 
 	/**
-	 * Obtiene el registro de reservacion 
+	 * Obtiene el registro de reservacion
 	 */
 	public Reservacion findReservacion(int id) {
 		ReservacionDTO reservacionDTO = reservacionDAO.findById(id);
@@ -72,6 +77,9 @@ public class ReservacionRepositoryDAOImpl implements ReservacionRepository {
 		Iterator<ReservacionDTO> itr = reservacionsDTO.iterator();
 		while (itr.hasNext()) {
 			ReservacionDTO reservacionDTO = (ReservacionDTO) itr.next();
+			HabitacionDTO habitacion = habitacionDAO.findById(reservacionDTO
+					.getHabitacionId());
+			reservacionDTO.setHabitacion(habitacion);
 			Reservacion reservacion = ReservacionAssembler
 					.create(reservacionDTO);
 			reservacionList.add(reservacion);

@@ -1,15 +1,18 @@
 package cr.ac.una.daw.reshotel.service;
 
+import java.text.ParseException;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 import cr.ac.una.daw.reshotel.domain.Reservacion;
 import cr.ac.una.daw.reshotel.domain.ReservacionRepository;
+import cr.ac.una.daw.reshotel.util.DateUtil;
 
 /**
  * Implementa los metodos necesarios para dar mantenimiento a una reservacion.
  * Interactua con el repositio de datos de la capa de acceso a datos.
- *
+ * 
  */
 public class SimpleReservacionManager implements ReservacionManager {
 	private List<Reservacion> reservaciones;
@@ -48,5 +51,22 @@ public class SimpleReservacionManager implements ReservacionManager {
 			repository.deleteReservacion(reservacion);
 		}
 
+	}
+
+	@Override
+	public boolean isReserved(Reservacion reservacion, Date inDate, Date outDate)
+			throws ParseException {
+		Collection<Reservacion> reservaciones = repository.findAllReservacion();
+		for (Reservacion res : reservaciones) {
+			Date rid = DateUtil.parseISO8601(res.getFechaEntrada());
+			Date rod = DateUtil.parseISO8601(res.getFechaSalida());
+			if (reservacion.getId() != res.getId()
+					&& res.getHabitacionId() == reservacion.getHabitacionId()
+					&& ((inDate.after(rid) && inDate.before(rod)) || (outDate
+							.after(rid) && outDate.before(rod)))) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

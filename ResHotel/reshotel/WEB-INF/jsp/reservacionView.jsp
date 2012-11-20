@@ -32,7 +32,7 @@
 			for (Reservacion obj : objs) {
 		%>
 		<tr>
-			<td><%=obj.getHabitacionId()%></td>
+			<td><%=obj.getHabitacion().getNumero()%></td>
 			<td><%=obj.getFechaEntrada()%></td>
 			<td><%=obj.getFechaSalida()%></td>
 			<td><%=obj.getOcupacion()%></td>

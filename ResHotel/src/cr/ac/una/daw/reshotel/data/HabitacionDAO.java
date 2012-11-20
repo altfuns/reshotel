@@ -46,6 +46,18 @@ public class HabitacionDAO extends HibernateDaoSupport {
 		HabitacionDTO habitacion;
 		habitacion = (HabitacionDTO) getHibernateTemplate().get(
 				HabitacionDTO.class, new Integer(id));
+		if (habitacion != null) {
+			HotelDTO hotel = (HotelDTO) getHibernateTemplate().get(
+					HotelDTO.class, new Integer(habitacion.getHotelId()));
+			if (hotel != null) {
+				System.out.println(hotel.getNombre());
+				habitacion.setHotel(hotel);
+				System.out.println(habitacion.getHotel().getNombre() + ","
+						+ habitacion.getNumero());
+			}
+			
+		}
+
 		return habitacion;
 	}
 

@@ -40,6 +40,9 @@ public class ReservacionAssembler {
 		entity.setOcupacion(dto.getOcupacion());
 		entity.setMonto(dto.getMonto());
 		entity.setIdentificacionCliente(dto.getIdentificacionCliente());
+		if(dto.getHabitacion() != null){
+			entity.setHabitacion(HabitacionAssembler.create(dto.getHabitacion()));
+		}
 		return entity;
 	}
 

@@ -45,7 +45,7 @@
         <property name="configLocation" >
 
             <value>
-classpath:hibernate.cfg.xml
+classpath:hibernate.cfg.xml
             </value>
         </property>
     </bean>
@@ -108,8 +108,8 @@ classpath:hibernate.cfg.xml
             <ref bean="habitacionDAO" />
         </constructor-arg>
     </bean>
-    
-     <bean
+
+    <bean
         id="habitacionManager"
         class="cr.ac.una.daw.reshotel.service.SimpleHabitacionManager" >
 
@@ -138,8 +138,8 @@ classpath:hibernate.cfg.xml
             <ref bean="hotelDAO" />
         </constructor-arg>
     </bean>
-    
-     <bean
+
+    <bean
         id="hotelManager"
         class="cr.ac.una.daw.reshotel.service.SimpleHotelManager" >
 
@@ -167,8 +167,13 @@ classpath:hibernate.cfg.xml
 
             <ref bean="reservacionDAO" />
         </constructor-arg>
+
+        <constructor-arg>
+
+            <ref bean="habitacionDAO" />
+        </constructor-arg>
     </bean>
-    
+
     <bean
         id="reservacionManager"
         class="cr.ac.una.daw.reshotel.service.SimpleReservacionManager" >
@@ -198,7 +203,7 @@ classpath:hibernate.cfg.xml
             <ref bean="ubicacionDAO" />
         </constructor-arg>
     </bean>
-    
+
     <bean
         id="ubicacionManager"
         class="cr.ac.una.daw.reshotel.service.SimpleUbicacionManager" >
